@@ -4,7 +4,7 @@ Landing page moderna e responsiva para divulgação do aplicativo Android "Lista
 
 ## 📋 Sobre o Projeto
 
-Esta landing page foi criira para promover o aplicativo "Lista de Compras" através do site https://listadecompras.shop. A página destaca as principais funcionalidades do aplicativo e facilita o download na Google Play Store.
+Esta landing page foi criada para promover o aplicativo "Lista de Compras" através do site https://listadecompras.shop. A página destaca as principais funcionalidades do aplicativo e facilita o download na Google Play Store.
 
 ## 🎯 Funcionalidades da Landing Page
 
@@ -15,27 +15,33 @@ Esta landing page foi criira para promover o aplicativo "Lista de Compras" atrav
 - Links para download na Google Play Store
 - Animações e transições suaves
 - Otimização para SEO
+- Blog com conteúdo educativo sobre finanças pessoais
 
 ## 🛠️ Tecnologias Utilizadas
 
 - HTML5
 - CSS3 (com variáveis CSS e Flexbox/Grid)
 - JavaScript (ES6+)
+- PHP (para processamento do formulário de contato)
 
 ## 📁 Estrutura do Projeto
 
 ```
 pagelanding/
 ├── index.html              # Página principal
+├── blog.html               # Página do blog
 ├── termos-de-uso.html      # Termos de uso
 ├── politica-privacidade.html # Política de privacidade
 ├── styles.css              # Estilos da página
 ├── script.js               # Funcionalidades interativas
+├── send_email.php          # Processamento do formulário de contato
 ├── favicon.ico             # Ícone do site
 ├── assets/                 # Pasta de assets
 │   ├── logos/              # Logos do aplicativo
 │   ├── badges/             # Badges de download
-│   └── screenshots/        # Imagens de tela do aplicativo
+│   ├── screenshots/        # Imagens de tela do aplicativo
+│   └── packfavicon/        # Ícones favicon em diferentes tamanhos
+├── posts/                  # Artigos do blog
 └── README.md               # Este arquivo
 ```
 
@@ -59,8 +65,8 @@ Para personalizar a landing page para o seu aplicativo:
 3. Modifique as cores no arquivo `styles.css` alterando as variáveis CSS:
    ```css
    :root {
-       --primary-color: #4CAF50;    /* Cor principal */
-       --secondary-color: #2196F3;  /* Cor secundária */
+       --primary-color: #4CAF50;    /* Verde principal */
+       --secondary-color: #1976D2;  /* Azul secundário */
        --accent-color: #FF9800;     /* Cor de destaque */
    }
    ```
@@ -73,16 +79,7 @@ Para personalizar a landing page para o seu aplicativo:
 - **Categorias**: 10 categorias pré-definidas para organizar itens
 - **Compartilhamento**: Envie listas via WhatsApp
 - **Personalização**: Tema claro/escuro e múltiplos idiomas
-
-## 🤝 Contribuição
-
-Sinta-se à vontade para contribuir com melhorias para esta landing page:
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+- **Blog Educacional**: Conteúdo sobre finanças pessoais e economia
 
 ## 📄 Licença
 
@@ -90,6 +87,6 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 ## 📞 Contato
 
-Seu Nome - seu.email@exemplo.com
+Antonio -  [sr.antoniocarlos@gmail.com](sr.antoniocarlos@gmail.com)
 
 Link do Projeto: [https://listadecompras.shop](https://listadecompras.shop)

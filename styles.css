@@ -7,7 +7,7 @@
 
 :root {
     --primary-color: #4CAF50;
-    --secondary-color: #2196F3;
+    --secondary-color: #1976D2;
     --accent-color: #FF9800;
     --dark-color: #333;
     --light-color: #f8f9fa;
@@ -157,18 +157,26 @@ body {
 .hero-image {
     flex: 1;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-image img {
     max-width: 100%;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 /* Limitando o tamanho da imagem do mockup em telas maiores */
 @media (min-width: 769px) {
     .hero-image img {
-        max-width: 400px;
+        max-width: 500px;
+        max-height: 500px;
     }
 }
 
@@ -217,6 +225,115 @@ body {
 
 .feature-card p {
     color: var(--gray-color);
+}
+
+/* Carrossel de Imagens */
+.carousel-section {
+    padding: 100px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.carousel-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+.carousel-section p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: var(--gray-color);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    height: 500px; /* Definir altura fixa para o contêiner */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 0 3px 3px 0;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.next-btn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.indicator.active {
+    background-color: white;
 }
 
 /* Como Funciona */

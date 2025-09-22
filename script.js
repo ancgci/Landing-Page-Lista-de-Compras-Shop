@@ -53,6 +53,7 @@ document.querySelector('.contact-form')?.addEventListener('submit', function(e) 
     const submitButton = form.querySelector('button[type="submit"]');
     const originalText = submitButton.textContent;
     
+    // Mostrar feedback visual durante o envio
     submitButton.textContent = 'Enviando...';
     submitButton.disabled = true;
     
@@ -67,4 +68,90 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentYear = new Date().getFullYear();
         yearElement.innerHTML = yearElement.innerHTML.replace('2025', currentYear);
     }
+});
+
+// Função para fechar mensagens de alerta (se houver)
+function closeAlert(element) {
+    element.style.opacity = '0';
+    setTimeout(() => {
+        element.style.display = 'none';
+    }, 300);
+}
+
+// Função do Carrossel de Imagens
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('.carousel');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelectorAll('.indicator');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    let currentSlide = 0;
+    const slideCount = slides.length;
+    
+    // Função para mostrar um slide específico
+    function showSlide(index) {
+        // Atualizar slides
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+        
+        // Atualizar indicadores
+        indicators.forEach((indicator, i) => {
+            indicator.classList.toggle('active', i === index);
+        });
+        
+        // Atualizar posição do carrossel
+        if (carousel) {
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+        }
+        
+        currentSlide = index;
+    }
+    
+    // Função para ir ao próximo slide
+    function nextSlide() {
+        const nextIndex = (currentSlide + 1) % slideCount;
+        showSlide(nextIndex);
+    }
+    
+    // Função para ir ao slide anterior
+    function prevSlide() {
+        const prevIndex = (currentSlide - 1 + slideCount) % slideCount;
+        showSlide(prevIndex);
+    }
+    
+    // Adicionar event listeners para botões
+    if (nextBtn) {
+        nextBtn.addEventListener('click', nextSlide);
+    }
+    
+    if (prevBtn) {
+        prevBtn.addEventListener('click', prevSlide);
+    }
+    
+    // Adicionar event listeners para indicadores
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            showSlide(index);
+        });
+    });
+    
+    // Auto play (opcional)
+    let carouselInterval = setInterval(nextSlide, 5000);
+    
+    // Pausar o auto play quando o mouse estiver sobre o carrossel
+    const carouselContainer = document.querySelector('.carousel-container');
+    if (carouselContainer) {
+        carouselContainer.addEventListener('mouseenter', () => {
+            clearInterval(carouselInterval);
+        });
+        
+        carouselContainer.addEventListener('mouseleave', () => {
+            carouselInterval = setInterval(nextSlide, 5000);
+        });
+    }
+    
+    // Inicializar o carrossel
+    showSlide(0);
 });
