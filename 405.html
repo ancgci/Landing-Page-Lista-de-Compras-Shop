@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro 405 - Método Não Permitido</title>
+    <meta name="description" content="Erro 405 - Método Não Permitido">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Lista de Compras</h1>
+                <p class="subtitle">Orçamento e Gastos Inteligentes!</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de Erro 405 -->
+    <section class="error">
+        <div class="container">
+            <div class="error-content">
+                <h2 class="error-code">405</h2>
+                <h3 class="error-title">Método Não Permitido</h3>
+                <p class="error-message">O método HTTP usado não é permitido para este recurso.</p>
+                <a href="index.html" class="btn btn-primary">Voltar para a página inicial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Lista de Compras</h3>
+                    <p>Gerencie suas compras de forma inteligente</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#features">Recursos</a>
+                    <a href="index.html#download">Download</a>
+                    <a href="index.html#contact">Contato</a>
+                    <a href="politica-privacidade.html">Política de Privacidade</a>
+                    <a href="termos-de-uso.html">Termos de Uso</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lista de Compras. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Atualizar o ano no footer
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearElement = document.querySelector('.footer-bottom p');
+            if (yearElement) {
+                const currentYear = new Date().getFullYear();
+                yearElement.innerHTML = yearElement.innerHTML.replace('2025', currentYear);
+            }
+        });
+    </script>
+</body>
+</html>

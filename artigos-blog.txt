@@ -1,0 +1,61 @@
+Relatório de Artigos Criados para o Blog
+
+Data: 19 de setembro de 2025
+
+Total de artigos criados: 13
+
+Lista de artigos:
+
+1. 5 Dicas para Economizar nas Compras
+   Arquivo: posts/dicas-economizar.html
+   Data: 19 de Setembro de 2025
+
+2. Como o Controle Financeiro Pode Melhorar Sua Vida
+   Arquivo: posts/controle-financeiro.html
+   Data: 19 de Setembro de 2025
+
+3. Organização Eficiente de Listas de Compras
+   Arquivo: posts/organizacao-listas.html
+   Data: 19 de Setembro de 2025
+
+4. Como Criar um Orçamento Mensal para Suas Compras
+   Arquivo: posts/como-criar-orcamento-mensal.html
+   Data: 19 de Setembro de 2025
+
+5. 10 Dicas Infalíveis para Economizar no Supermercado
+   Arquivo: posts/dicas-economizar-supermercado.html
+   Data: 19 de Setembro de 2025
+
+6. Estratégias Avançadas para Economizar nas Compras
+   Arquivo: posts/estrategias-economizar-compras.html
+   Data: 19 de Setembro de 2025
+
+7. Como Criar um Sistema de Controle Financeiro Pessoal Eficaz
+   Arquivo: posts/sistema-controle-financeiro.html
+   Data: 19 de Setembro de 2025
+
+8. Como Controlar os Gastos Familiares com Eficiência
+   Arquivo: posts/controle-gastos-familiares.html
+   Data: 19 de Setembro de 2025
+
+9. Planejamento de Compras Mensais: Guia Completo para Economizar
+   Arquivo: posts/planejamento-compras-mensais.html
+   Data: 19 de Setembro de 2025
+
+10. Economize nas Compras: 7 Técnicas Comprovadas para Reduzir Seus Gastos
+    Arquivo: posts/economize-compras-tecnicas.html
+    Data: 19 de Setembro de 2025
+
+11. Planejamento Financeiro para Compras: Como Evitar Impulsos e Economizar
+    Arquivo: posts/planejamento-financeiro-compras.html
+    Data: 19 de Setembro de 2025
+
+12. Maximize sua Economia: Estratégias Avançadas de Controle de Gastos
+    Arquivo: posts/maximize-economia-estrategias.html
+    Data: 19 de Setembro de 2025
+
+13. Orçamento Inteligente: Como Usar Dados para Economizar nas Compras
+    Arquivo: posts/orcamento-inteligente-dados.html
+    Data: 19 de Setembro de 2025
+
+Todos os artigos foram criados com sucesso e estão integrados à página do blog.
