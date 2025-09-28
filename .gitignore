@@ -1,0 +1,95 @@
+# Dependências e pastas de módulos
+node_modules/
+bower_components/
+
+# Arquivos de build e distribuição
+dist/
+build/
+out/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# Arquivos de configuração do editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos de cache
+.cache/
+*.cache
+
+# Arquivos de backup e temporários
+*.bak
+*.backup
+*.old
+*.orig
+*~
+
+# Arquivos gerados automaticamente
+*.min.js
+*.min.css
+*.map
+
+# Arquivos específicos do projeto que são redundantes
+script_backup.js
+script_fixed.js
+script_original.js
+
+# Arquivos de erro HTTP (podem ser tratados pelo servidor)
+400.html
+401.html
+403.html
+405.html
+500.html
+erro.html
+
+# Documentação auxiliar
+RESUMO_ARTIGOS_BLOG.md
+artigos-blog.txt
+
+# Arquivos de debug e desenvolvimento
+debug/
+coverage/
+*.prof
+
+# Arquivos do sistema de versionamento
+*.patch
+*.diff
+
+# Arquivos de IDE e ferramentas
+*.sublime-project
+*.sublime-workspace
+.atoms/
+.history/
+
+# Arquivos de sistema operacional
+.DS_Store?
+ehthumbs_vista.db
+Icon?
+Thumbs.db
+
+# Arquivos de configuração do Git
+.git/credentials
+
+# Pasta de assets se contiver arquivos gerados (opcional)
+# assets/generated/
