@@ -92,4 +92,4 @@ Thumbs.db
 .git/credentials
 
 # Pasta de assets se contiver arquivos gerados (opcional)
-# assets/generated/
+#assets/generated/

@@ -1,0 +1,87 @@
+# ================================
+# ULTRA-ROBUST .HTACCESS - x10Hosting
+# ================================
+
+RewriteEngine On
+RewriteBase /
+
+# Redireciona www → non-www
+RewriteCond %{HTTP_HOST} ^www\.listadecompras\.shop$ [NC]
+RewriteRule ^(.*)$ https://listadecompras.shop/$1 [R=301,L]
+
+# Força HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Bloqueio de arquivos sensíveis
+<FilesMatch "(\.htaccess|\.env|\.config|\.sql|\.ini|\.log|send_email\.php)">
+    Require all denied
+</FilesMatch>
+
+# Bloqueio de listagem de diretórios
+Options -Indexes
+
+# Cache de recursos estáticos
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType font/woff2 "access plus 1 month"
+    ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# Hotlinking
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https://(www\.)?listadecompras\.shop [NC]
+RewriteRule \.(gif|jpe?g|png)$ - [F,NC,L]
+
+# Bloqueio de bots maliciosos
+<IfModule mod_setenvif.c>
+    SetEnvIfNoCase User-Agent "wget|curl|python|libwww-perl|bot|spider|crawler" bad_bot
+    Deny from env=bad_bot
+</IfModule>
+
+# Proteção contra XSS e SQL injection
+<IfModule mod_rewrite.c>
+    RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+    RewriteCond %{QUERY_STRING} union.*select [NC,OR]
+    RewriteCond %{QUERY_STRING} base64_encode.*\( [NC,OR]
+    RewriteCond %{QUERY_STRING} (\.\./|\.\.) [NC,OR]
+    RewriteCond %{QUERY_STRING} (\;|\||`|\$) [NC]
+    RewriteRule ^(.*)$ - [F,L]
+</IfModule>
+
+# Proteção para formulários
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_METHOD} POST
+    RewriteCond %{QUERY_STRING} (\<|%3C|>|%3E|;|\||`|\$) [NC]
+    RewriteRule ^(.*)$ - [F,L]
+</IfModule>
+
+# Rate limiting e anti-brute force
+<IfModule mod_reqtimeout.c>
+    RequestReadTimeout header=10-20,minrate=500 body=10,minrate=500
+</IfModule>
+
+<IfModule mod_evasive20.c>
+    DOSHashTableSize    3097
+    DOSPageCount        2
+    DOSSiteCount        50
+    DOSPageInterval     1
+    DOSSiteInterval     1
+    DOSBlockingPeriod   10
+</IfModule>
+
+# Redirecionamento de URLs antigas
+Redirect 301 /antiga-pagina.html https://listadecompras.shop/nova-pagina.html
+
+# Página 404 personalizada
+ErrorDocument 404 /404.html
+
+# Bloqueio de dotfiles
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
