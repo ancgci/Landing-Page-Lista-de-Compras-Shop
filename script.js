@@ -1,4 +1,30 @@
-﻿// FunÃ§Ã£o para rolar suavemente atÃ© as seÃ§Ãµes
+﻿// Função para detectar o idioma do navegador
+function getBrowserLanguage() {
+    // Obter o idioma preferido do navegador
+    const browserLang = navigator.language || navigator.userLanguage || 'pt';
+    
+    // Mapear idiomas do navegador para os idiomas suportados pelo site
+    const languageMap = {
+        'pt': 'pt',
+        'pt-BR': 'pt',
+        'pt-PT': 'pt',
+        'en': 'en',
+        'en-US': 'en',
+        'en-GB': 'en',
+        'es': 'es',
+        'es-ES': 'es',
+        'es-MX': 'es',
+        'de': 'de',
+        'de-DE': 'de',
+        'it': 'it',
+        'it-IT': 'it'
+    };
+    
+    // Retornar o idioma mapeado ou português como padrão
+    return languageMap[browserLang] || 'pt';
+}
+
+// Função para rolar suavemente até as seções
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Lista de Compras</title>
-    <meta name="description" content="Blog do aplicativo Lista de Compras - Dicas, tutoriais e novidades sobre gerenciamento financeiro.">
+    <title data-i18n="blog_title">Blog - Lista de Compras</title>
+    <meta name="description" content="Blog do aplicativo Lista de Compras - Dicas, tutoriais e novidades sobre gerenciamento financeiro." data-i18n-meta="blog_meta_desc">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -13,16 +13,26 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <h1>Lista de Compras</h1>
-                <p class="subtitle">Orçamento e Gastos Inteligentes!</p>
+                <h1 data-i18n="site_logo">Lista de Compras</h1>
+                <p class="subtitle" data-i18n="site_subtitle">Orçamento e Gastos Inteligentes!</p>
             </div>
             <nav class="nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#features">Recursos</a></li>
-                    <li><a href="index.html#download">Download</a></li>
-                    <li><a href="index.html#contact">Contato</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="index.html#features" data-i18n="features">Recursos</a></li>
+                    <li><a href="index.html#download" data-i18n="download">Download</a></li>
+                    <li><a href="index.html#contact" data-i18n="contact">Contato</a></li>
+                    <li><a href="blog.html" data-i18n="blog">Blog</a></li>
+                    <!-- Language Switcher -->
+                    <li class="language-switcher">
+                        <select id="language-select" onchange="changeLanguage(this.value)">
+                            <option value="pt">PT</option>
+                            <option value="en">EN</option>
+                            <option value="es">ES</option>
+                            <option value="de">DE</option>
+                            <option value="it">IT</option>
+                        </select>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -31,173 +41,173 @@
     <!-- Seção do Blog -->
     <section class="blog">
         <div class="container">
-            <h1>Blog do Lista de Compras</h1>
-            <p class="blog-intro">Dicas, tutoriais e novidades sobre gerenciamento financeiro e nosso aplicativo.</p>
+            <h1 data-i18n="blog_header">Blog do Lista de Compras</h1>
+            <p class="blog-intro" data-i18n="blog_intro">Dicas, tutoriais e novidades sobre gerenciamento financeiro e nosso aplicativo.</p>
             
             <div class="blog-posts">
                 <!-- Exemplo de post -->
                 <article class="blog-post">
                     <div class="post-image">
-                        <img src="assets/screenshots/app-mockup.png" alt="Interface do aplicativo">
+                        <img src="assets/screenshots/app-mockup.png" alt="Interface do aplicativo" data-i18n-alt="blog_post_image1_alt">
                     </div>
                     <div class="post-content">
-                        <h2 class="post-title"><a href="posts/dicas-economizar.html">5 Dicas para Economizar nas Compras</a></h2>
-                        <p class="post-meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
-                        <p class="post-excerpt">Descubra estratégias práticas para reduzir seus gastos mensais e fazer compras mais inteligentes com nosso aplicativo...</p>
-                        <a href="posts/dicas-economizar.html" class="btn btn-secondary">Ler mais</a>
+                        <h2 class="post-title"><a href="posts/dicas-economizar.html" data-i18n="blog_post1_title">5 Dicas para Economizar nas Compras</a></h2>
+                        <p class="post-meta" data-i18n="blog_post1_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                        <p class="post-excerpt" data-i18n="blog_post1_excerpt">Descubra estratégias práticas para reduzir seus gastos mensais e fazer compras mais inteligentes com nosso aplicativo...</p>
+                        <a href="posts/dicas-economizar.html" class="btn btn-secondary" data-i18n="blog_post1_read_more">Ler mais</a>
                     </div>
                 </article>
                 
                 <article class="blog-post">
                     <div class="post-image">
-                        <img src="assets/screenshots/app-mockup.png" alt="Gráficos de gastos">
+                        <img src="assets/screenshots/app-mockup.png" alt="Gráficos de gastos" data-i18n-alt="blog_post_image2_alt">
                     </div>
                     <div class="post-content">
-                        <h2 class="post-title"><a href="posts/controle-financeiro.html">Como o Controle Financeiro Pode Melhorar Sua Vida</a></h2>
-                        <p class="post-meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
-                        <p class="post-excerpt">Entenda a importância de acompanhar seus gastos e como nosso aplicativo pode ajudar você a ter mais controle financeiro...</p>
-                        <a href="posts/controle-financeiro.html" class="btn btn-secondary">Ler mais</a>
+                        <h2 class="post-title"><a href="posts/controle-financeiro.html" data-i18n="blog_post2_title">Como o Controle Financeiro Pode Melhorar Sua Vida</a></h2>
+                        <p class="post-meta" data-i18n="blog_post2_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                        <p class="post-excerpt" data-i18n="blog_post2_excerpt">Entenda a importância de acompanhar seus gastos e como nosso aplicativo pode ajudar você a ter mais controle financeiro...</p>
+                        <a href="posts/controle-financeiro.html" class="btn btn-secondary" data-i18n="blog_post2_read_more">Ler mais</a>
                     </div>
                 </article>
                 
                 <article class="blog-post">
                     <div class="post-image">
-                        <img src="assets/screenshots/app-mockup.png" alt="Categorias de produtos">
+                        <img src="assets/screenshots/app-mockup.png" alt="Categorias de produtos" data-i18n-alt="blog_post_image3_alt">
                     </div>
                     <div class="post-content">
-                        <h2 class="post-title"><a href="posts/organizacao-listas.html">Organização Eficiente de Listas de Compras</a></h2>
-                        <p class="post-meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
-                        <p class="post-excerpt">Aprenda a criar listas de compras eficientes usando as funcionalidades do nosso aplicativo para melhorar sua experiência de compra...</p>
-                        <a href="posts/organizacao-listas.html" class="btn btn-secondary">Ler mais</a>
+                        <h2 class="post-title"><a href="posts/organizacao-listas.html" data-i18n="blog_post3_title">Organização Eficiente de Listas de Compras</a></h2>
+                        <p class="post-meta" data-i18n="blog_post3_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                        <p class="post-excerpt" data-i18n="blog_post3_excerpt">Aprenda a criar listas de compras eficientes usando as funcionalidades do nosso aplicativo para melhorar sua experiência de compra...</p>
+                        <a href="posts/organizacao-listas.html" class="btn btn-secondary" data-i18n="blog_post3_read_more">Ler mais</a>
                     </div>
                 </article>
                 
                 <article class="blog-post">
                     <div class="post-image">
-                        <img src="assets/screenshots/app-mockup.png" alt="Orçamento mensal">
+                        <img src="assets/screenshots/app-mockup.png" alt="Orçamento mensal" data-i18n-alt="blog_post_image4_alt">
                     </div>
                     <div class="post-content">
-                        <h2 class="post-title"><a href="posts/como-criar-orcamento-mensal.html">Como Criar um Orçamento Mensal para Suas Compras</a></h2>
-                        <p class="post-meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
-                        <p class="post-excerpt">Aprenda a criar um orçamento mensal eficaz para suas compras e economizar dinheiro com nosso aplicativo de lista de compras...</p>
-                        <a href="posts/como-criar-orcamento-mensal.html" class="btn btn-secondary">Ler mais</a>
+                        <h2 class="post-title"><a href="posts/como-criar-orcamento-mensal.html" data-i18n="blog_post4_title">Como Criar um Orçamento Mensal para Suas Compras</a></h2>
+                        <p class="post-meta" data-i18n="blog_post4_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                        <p class="post-excerpt" data-i18n="blog_post4_excerpt">Aprenda a criar um orçamento mensal eficaz para suas compras e economizar dinheiro com nosso aplicativo de lista de compras...</p>
+                        <a href="posts/como-criar-orcamento-mensal.html" class="btn btn-secondary" data-i18n="blog_post4_read_more">Ler mais</a>
                     </div>
                 </article>
                 
                 <article class="blog-post">
                     <div class="post-image">
-                        <img src="assets/screenshots/app-mockup.png" alt="Dicas para economizar">
+                        <img src="assets/screenshots/app-mockup.png" alt="Dicas para economizar" data-i18n-alt="blog_post_image5_alt">
                     </div>
                     <div class="post-content">
-                        <h2 class="post-title"><a href="posts/dicas-economizar-supermercado.html">10 Dicas Infalíveis para Economizar no Supermercado</a></h2>
-                        <p class="post-meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
-                        <p class="post-excerpt">Descubra 10 dicas práticas para economizar dinheiro no supermercado usando nosso aplicativo de lista de compras e controle financeiro...</p>
-                        <a href="posts/dicas-economizar-supermercado.html" class="btn btn-secondary">Ler mais</a>
+                        <h2 class="post-title"><a href="posts/dicas-economizar-supermercado.html" data-i18n="blog_post5_title">10 Dicas Infalíveis para Economizar no Supermercado</a></h2>
+                        <p class="post-meta" data-i18n="blog_post5_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                        <p class="post-excerpt" data-i18n="blog_post5_excerpt">Descubra 10 dicas práticas para economizar dinheiro no supermercado usando nosso aplicativo de lista de compras e controle financeiro...</p>
+                        <a href="posts/dicas-economizar-supermercado.html" class="btn btn-secondary" data-i18n="blog_post5_read_more">Ler mais</a>
                     </div>
                 </article>
                 
                 <article class="blog-post">
                     <div class="post-image">
-                        <img src="assets/screenshots/app-mockup.png" alt="Estratégias de economia">
+                        <img src="assets/screenshots/app-mockup.png" alt="Estratégias de economia" data-i18n-alt="blog_post_image6_alt">
                     </div>
                     <div class="post-content">
-                        <h2 class="post-title"><a href="posts/estrategias-economizar-compras.html">Estratégias Avançadas para Economizar nas Compras</a></h2>
-                        <p class="post-meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
-                        <p class="post-excerpt">Descubra estratégias avançadas para economizar dinheiro nas compras com nosso aplicativo de lista de compras e controle financeiro...</p>
-                        <a href="posts/estrategias-economizar-compras.html" class="btn btn-secondary">Ler mais</a>
+                        <h2 class="post-title"><a href="posts/estrategias-economizar-compras.html" data-i18n="blog_post6_title">Estratégias Avançadas para Economizar nas Compras</a></h2>
+                        <p class="post-meta" data-i18n="blog_post6_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                        <p class="post-excerpt" data-i18n="blog_post6_excerpt">Descubra estratégias avançadas para economizar dinheiro nas compras com nosso aplicativo de lista de compras e controle financeiro...</p>
+                        <a href="posts/estrategias-economizar-compras.html" class="btn btn-secondary" data-i18n="blog_post6_read_more">Ler mais</a>
                     </div>
                 </article>
                 
                 <article class="blog-post">
                     <div class="post-image">
-                        <img src="assets/screenshots/app-mockup.png" alt="Controle financeiro">
+                        <img src="assets/screenshots/app-mockup.png" alt="Controle financeiro" data-i18n-alt="blog_post_image7_alt">
                     </div>
                     <div class="post-content">
-                        <h2 class="post-title"><a href="posts/sistema-controle-financeiro.html">Como Criar um Sistema de Controle Financeiro Pessoal Eficaz</a></h2>
-                        <p class="post-meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
-                        <p class="post-excerpt">Aprenda a criar um sistema de controle financeiro pessoal eficaz usando nosso aplicativo de lista de compras e controle de gastos...</p>
-                        <a href="posts/sistema-controle-financeiro.html" class="btn btn-secondary">Ler mais</a>
+                        <h2 class="post-title"><a href="posts/sistema-controle-financeiro.html" data-i18n="blog_post7_title">Como Criar um Sistema de Controle Financeiro Pessoal Eficaz</a></h2>
+                        <p class="post-meta" data-i18n="blog_post7_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                        <p class="post-excerpt" data-i18n="blog_post7_excerpt">Aprenda a criar um sistema de controle financeiro pessoal eficaz usando nosso aplicativo de lista de compras e controle de gastos...</p>
+                        <a href="posts/sistema-controle-financeiro.html" class="btn btn-secondary" data-i18n="blog_post7_read_more">Ler mais</a>
                     </div>
                 </article>
                 
                 <article class="blog-post">
                     <div class="post-image">
-                        <img src="assets/screenshots/app-mockup.png" alt="Controle de gastos familiares">
+                        <img src="assets/screenshots/app-mockup.png" alt="Controle de gastos familiares" data-i18n-alt="blog_post_image8_alt">
                     </div>
                     <div class="post-content">
-                        <h2 class="post-title"><a href="posts/controle-gastos-familiares.html">Como Controlar os Gastos Familiares com Eficiência</a></h2>
-                        <p class="post-meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
-                        <p class="post-excerpt">Descubra estratégias práticas para controlar os gastos familiares e economizar dinheiro com nosso aplicativo de lista de compras...</p>
-                        <a href="posts/controle-gastos-familiares.html" class="btn btn-secondary">Ler mais</a>
+                        <h2 class="post-title"><a href="posts/controle-gastos-familiares.html" data-i18n="blog_post8_title">Como Controlar os Gastos Familiares com Eficiência</a></h2>
+                        <p class="post-meta" data-i18n="blog_post8_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                        <p class="post-excerpt" data-i18n="blog_post8_excerpt">Descubra estratégias práticas para controlar os gastos familiares e economizar dinheiro com nosso aplicativo de lista de compras...</p>
+                        <a href="posts/controle-gastos-familiares.html" class="btn btn-secondary" data-i18n="blog_post8_read_more">Ler mais</a>
                     </div>
                 </article>
                 
                 <article class="blog-post">
                     <div class="post-image">
-                        <img src="assets/screenshots/app-mockup.png" alt="Planejamento de compras">
+                        <img src="assets/screenshots/app-mockup.png" alt="Planejamento de compras" data-i18n-alt="blog_post_image9_alt">
                     </div>
                     <div class="post-content">
-                        <h2 class="post-title"><a href="posts/planejamento-compras-mensais.html">Planejamento de Compras Mensais: Guia Completo para Economizar</a></h2>
-                        <p class="post-meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
-                        <p class="post-excerpt">Aprenda a planejar suas compras mensais de forma eficiente para economizar dinheiro e evitar desperdícios...</p>
-                        <a href="posts/planejamento-compras-mensais.html" class="btn btn-secondary">Ler mais</a>
+                        <h2 class="post-title"><a href="posts/planejamento-compras-mensais.html" data-i18n="blog_post9_title">Planejamento de Compras Mensais: Guia Completo para Economizar</a></h2>
+                        <p class="post-meta" data-i18n="blog_post9_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                        <p class="post-excerpt" data-i18n="blog_post9_excerpt">Aprenda a planejar suas compras mensais de forma eficiente para economizar dinheiro e evitar desperdícios...</p>
+                        <a href="posts/planejamento-compras-mensais.html" class="btn btn-secondary" data-i18n="blog_post9_read_more">Ler mais</a>
                     </div>
                 </article>
                 
                 <article class="blog-post">
                     <div class="post-image">
-                        <img src="assets/screenshots/app-mockup.png" alt="Economize nas compras">
+                        <img src="assets/screenshots/app-mockup.png" alt="Economize nas compras" data-i18n-alt="blog_post_image10_alt">
                     </div>
                     <div class="post-content">
-                        <h2 class="post-title"><a href="posts/economize-compras-tecnicas.html">Economize nas Compras: 7 Técnicas Comprovadas para Reduzir Seus Gastos</a></h2>
-                        <p class="post-meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
-                        <p class="post-excerpt">Descubra 7 técnicas comprovadas para economizar dinheiro nas compras usando nosso aplicativo de lista de compras e controle financeiro...</p>
-                        <a href="posts/economize-compras-tecnicas.html" class="btn btn-secondary">Ler mais</a>
+                        <h2 class="post-title"><a href="posts/economize-compras-tecnicas.html" data-i18n="blog_post10_title">Economize nas Compras: 7 Técnicas Comprovadas para Reduzir Seus Gastos</a></h2>
+                        <p class="post-meta" data-i18n="blog_post10_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                        <p class="post-excerpt" data-i18n="blog_post10_excerpt">Descubra 7 técnicas comprovadas para economizar dinheiro nas compras usando nosso aplicativo de lista de compras e controle financeiro...</p>
+                        <a href="posts/economize-compras-tecnicas.html" class="btn btn-secondary" data-i18n="blog_post10_read_more">Ler mais</a>
                     </div>
                 </article>
                 
                 <article class="blog-post">
                     <div class="post-image">
-                        <img src="assets/screenshots/app-mockup.png" alt="Planejamento financeiro">
+                        <img src="assets/screenshots/app-mockup.png" alt="Planejamento financeiro" data-i18n-alt="blog_post_image11_alt">
                     </div>
                     <div class="post-content">
-                        <h2 class="post-title"><a href="posts/planejamento-financeiro-compras.html">Planejamento Financeiro para Compras: Como Evitar Impulsos e Economizar</a></h2>
-                        <p class="post-meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
-                        <p class="post-excerpt">Aprenda a fazer planejamento financeiro para compras, evitando impulsos e economizando dinheiro com nosso aplicativo de lista de compras...</p>
-                        <a href="posts/planejamento-financeiro-compras.html" class="btn btn-secondary">Ler mais</a>
+                        <h2 class="post-title"><a href="posts/planejamento-financeiro-compras.html" data-i18n="blog_post11_title">Planejamento Financeiro para Compras: Como Evitar Impulsos e Economizar</a></h2>
+                        <p class="post-meta" data-i18n="blog_post11_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                        <p class="post-excerpt" data-i18n="blog_post11_excerpt">Aprenda a fazer planejamento financeiro para compras, evitando impulsos e economizando dinheiro com nosso aplicativo de lista de compras...</p>
+                        <a href="posts/planejamento-financeiro-compras.html" class="btn btn-secondary" data-i18n="blog_post11_read_more">Ler mais</a>
                     </div>
                 </article>
                 
                 <article class="blog-post">
                     <div class="post-image">
-                        <img src="assets/screenshots/app-mockup.png" alt="Maximize economia">
+                        <img src="assets/screenshots/app-mockup.png" alt="Maximize economia" data-i18n-alt="blog_post_image12_alt">
                     </div>
                     <div class="post-content">
-                        <h2 class="post-title"><a href="posts/maximize-economia-estrategias.html">Maximize sua Economia: Estratégias Avançadas de Controle de Gastos</a></h2>
-                        <p class="post-meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
-                        <p class="post-excerpt">Descubra estratégias avançadas de controle de gastos para maximizar sua economia usando nosso aplicativo de lista de compras...</p>
-                        <a href="posts/maximize-economia-estrategias.html" class="btn btn-secondary">Ler mais</a>
+                        <h2 class="post-title"><a href="posts/maximize-economia-estrategias.html" data-i18n="blog_post12_title">Maximize sua Economia: Estratégias Avançadas de Controle de Gastos</a></h2>
+                        <p class="post-meta" data-i18n="blog_post12_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                        <p class="post-excerpt" data-i18n="blog_post12_excerpt">Descubra estratégias avançadas de controle de gastos para maximizar sua economia usando nosso aplicativo de lista de compras...</p>
+                        <a href="posts/maximize-economia-estrategias.html" class="btn btn-secondary" data-i18n="blog_post12_read_more">Ler mais</a>
                     </div>
                 </article>
                 
                 <article class="blog-post">
                     <div class="post-image">
-                        <img src="assets/screenshots/app-mockup.png" alt="Orçamento inteligente">
+                        <img src="assets/screenshots/app-mockup.png" alt="Orçamento inteligente" data-i18n-alt="blog_post_image13_alt">
                     </div>
                     <div class="post-content">
-                        <h2 class="post-title"><a href="posts/orcamento-inteligente-dados.html">Orçamento Inteligente: Como Usar Dados para Economizar nas Compras</a></h2>
-                        <p class="post-meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
-                        <p class="post-excerpt">Aprenda a criar orçamentos inteligentes usando dados para economizar dinheiro nas compras com nosso aplicativo de lista de compras...</p>
-                        <a href="posts/orcamento-inteligente-dados.html" class="btn btn-secondary">Ler mais</a>
+                        <h2 class="post-title"><a href="posts/orcamento-inteligente-dados.html" data-i18n="blog_post13_title">Orçamento Inteligente: Como Usar Dados para Economizar nas Compras</a></h2>
+                        <p class="post-meta" data-i18n="blog_post13_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                        <p class="post-excerpt" data-i18n="blog_post13_excerpt">Aprenda a criar orçamentos inteligentes usando dados para economizar dinheiro nas compras com nosso aplicativo de lista de compras...</p>
+                        <a href="posts/orcamento-inteligente-dados.html" class="btn btn-secondary" data-i18n="blog_post13_read_more">Ler mais</a>
                     </div>
                 </article>
             </div>
             
             <!-- Paginação -->
             <div class="pagination">
-                <a href="#" class="btn btn-secondary">← Anterior</a>
+                <a href="#" class="btn btn-secondary" data-i18n="blog_prev_page">← Anterior</a>
                 <span class="current-page">1</span>
-                <a href="#" class="btn btn-secondary">Próximo →</a>
+                <a href="#" class="btn btn-secondary" data-i18n="blog_next_page">Próximo →</a>
             </div>
         </div>
     </section>
@@ -207,31 +217,79 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h3>Lista de Compras</h3>
-                    <p>Gerencie suas compras de forma inteligente</p>
+                    <h3 data-i18n="site_logo">Lista de Compras</h3>
+                    <p data-i18n="footer_subtitle">Gerencie suas compras de forma inteligente</p>
                 </div>
                 <div class="footer-links">
-                    <a href="index.html#features">Recursos</a>
-                    <a href="index.html#download">Download</a>
-                    <a href="index.html#contact">Contato</a>
-                    <a href="politica-privacidade.html">Política de Privacidade</a>
-                    <a href="termos-de-uso.html">Termos de Uso</a>
-                    <a href="blog.html">Blog</a>
+                    <a href="index.html#features" data-i18n="features">Recursos</a>
+                    <a href="index.html#download" data-i18n="download">Download</a>
+                    <a href="index.html#contact" data-i18n="contact">Contato</a>
+                    <a href="politica-privacidade.html" data-i18n="privacy_policy">Política de Privacidade</a>
+                    <a href="termos-de-uso.html" data-i18n="terms_of_use">Termos de Uso</a>
+                    <a href="blog.html" data-i18n="blog">Blog</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Lista de Compras. Todos os direitos reservados.</p>
+                <p>&copy; 2025 <span data-i18n="footer_copyright">Lista de Compras. Todos os direitos reservados.</span></p>
             </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
+    <script src="translations.js"></script>
     <script>
-        // Atualizar o ano no footer
-        document.addEventListener('DOMContentLoaded', () => {
-            const yearElement = document.querySelector('.footer-bottom p');
-            if (yearElement) {
-                const currentYear = new Date().getFullYear();
-                yearElement.innerHTML = yearElement.innerHTML.replace('2025', currentYear);
+        // Language switcher function
+        function changeLanguage(lang) {
+            // Update all elements with data-i18n attributes
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.placeholder = translations[lang][key];
+                    } else {
+                        element.textContent = translations[lang][key];
+                    }
+                }
+            });
+            
+            // Update elements with data-i18n-alt attributes
+            document.querySelectorAll('[data-i18n-alt]').forEach(element => {
+                const key = element.getAttribute('data-i18n-alt');
+                if (translations[lang] && translations[lang][key]) {
+                    element.setAttribute('alt', translations[lang][key]);
+                }
+            });
+            
+            // Update meta description
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription && translations[lang].blog_meta_desc) {
+                metaDescription.setAttribute('content', translations[lang].blog_meta_desc);
+            }
+            
+            // Update page title
+            if (translations[lang].blog_title) {
+                document.title = translations[lang].blog_title;
+            }
+            
+            // Save language preference in localStorage
+            localStorage.setItem('preferredLanguage', lang);
+            
+            // Update language selector
+            document.getElementById('language-select').value = lang;
+        }
+        
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verificar se há um idioma salvo nas preferências do usuário
+            const savedLang = localStorage.getItem('preferredLanguage');
+            
+            if (savedLang) {
+                // Se houver um idioma salvo, usar esse idioma
+                changeLanguage(savedLang);
+            } else {
+                // Se não houver idioma salvo, detectar o idioma do navegador
+                const browserLang = getBrowserLanguage();
+                changeLanguage(browserLang);
             }
         });
     </script>

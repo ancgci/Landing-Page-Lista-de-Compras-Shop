@@ -284,9 +284,17 @@
         
         // Initialize language on page load
         document.addEventListener('DOMContentLoaded', function() {
-            // Check for saved language preference or default to Portuguese
-            const savedLang = localStorage.getItem('preferredLanguage') || 'pt';
-            changeLanguage(savedLang);
+            // Verificar se há um idioma salvo nas preferências do usuário
+            const savedLang = localStorage.getItem('preferredLanguage');
+            
+            if (savedLang) {
+                // Se houver um idioma salvo, usar esse idioma
+                changeLanguage(savedLang);
+            } else {
+                // Se não houver idioma salvo, detectar o idioma do navegador
+                const browserLang = getBrowserLanguage();
+                changeLanguage(browserLang);
+            }
         });
     </script>
 </body>
