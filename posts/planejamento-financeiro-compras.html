@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planejamento Financeiro para Compras: Como Evitar Impulsos e Economizar - Blog Lista de Compras</title>
-    <meta name="description" content="Aprenda a fazer planejamento financeiro para compras, evitando impulsos e economizando dinheiro com nosso aplicativo de lista de compras.">
+    <title data-i18n="blog_financial_shopping_planning_title">Planejamento Financeiro para Compras: Como Evitar Impulsos e Economizar - Blog Lista de Compras</title>
+    <meta name="description" content="Aprenda a fazer planejamento financeiro para compras, evitando impulsos e economizando dinheiro com nosso aplicativo de lista de compras." data-i18n-meta="blog_financial_shopping_planning_meta_desc">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
 </head>
@@ -17,7 +17,23 @@
                 <p class="subtitle">Orçamento e Gastos Inteligentes!</p>
             </div>
             <nav class="nav">
-                <ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#features">Recursos</a></li><li><a href="../index.html#download">Download</a></li><li><a href="../index.html#contact">Contato</a></li><li><a href="../blog.html">Blog</a></li></ul>
+                <ul>
+                    <li><a href="../index.html" data-i18n="home">Home</a></li>
+                    <li><a href="../index.html#features" data-i18n="features">Recursos</a></li>
+                    <li><a href="../index.html#download" data-i18n="download">Download</a></li>
+                    <li><a href="../index.html#contact" data-i18n="contact">Contato</a></li>
+                    <li><a href="../blog.html" data-i18n="blog">Blog</a></li>
+                    <!-- Language Switcher -->
+                    <li class="language-switcher">
+                        <select id="language-select" onchange="changeLanguage(this.value)">
+                            <option value="pt">PT</option>
+                            <option value="en">EN</option>
+                            <option value="es">ES</option>
+                            <option value="de">DE</option>
+                            <option value="it">IT</option>
+                        </select>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -27,336 +43,226 @@
         <div class="container">
             <article>
                 <header class="post-header">
-                    <h1 class="post-title-single">Planejamento Financeiro para Compras: Como Evitar Impulsos e Economizar</h1>
-                    <p class="post-meta-single">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                    <h1 class="post-title-single" data-i18n="blog_financial_shopping_planning_header">Planejamento Financeiro para Compras: Como Evitar Impulsos e Economizar</h1>
+                    <p class="post-meta-single" data-i18n="blog_financial_shopping_planning_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
                 </header>
                 
                 <div class="post-content-single">
-                    <p>O planejamento financeiro para compras é uma habilidade essencial para manter o controle sobre suas finanças pessoais. Compras por impulso são uma das principais causas de desvios orçamentários e podem comprometer seriamente seus objetivos financeiros. Com o aplicativo Lista de Compras, você pode desenvolver um sistema eficaz de planejamento que não apenas evita impulsos, mas também transforma suas compras em uma fonte consistente de economia. Neste artigo, vamos explorar estratégias comprovadas para planejar suas compras de forma inteligente.</p>
+                    <p data-i18n="blog_financial_shopping_planning_intro">O planejamento financeiro para compras é uma habilidade essencial para manter o controle sobre suas finanças pessoais. Compras por impulso são uma das principais causas de desvios orçamentários e podem comprometer seriamente seus objetivos financeiros. Com o aplicativo Lista de Compras, você pode desenvolver um sistema eficaz de planejamento que não apenas evita impulsos, mas também transforma suas compras em uma fonte consistente de economia. Neste artigo, vamos explorar estratégias comprovadas para planejar suas compras de forma inteligente.</p>
                     
-                    <h2>A Psicologia das Compras por Impulso</h2>
-                    <p>Antes de desenvolver estratégias de planejamento, é importante entender por que fazemos compras por impulso:</p>
-                    
-                    <ul>
-                        <li><strong>Gatilhos emocionais:</strong> Compras como resposta a emoções como estresse, tristeza ou tédio</li>
-                        <li><strong>Influência do ambiente:</strong> Layout de lojas, promoções estratégicas e marketing sensorial</li>
-                        <li><strong>Decisões sob pressão:</strong> Pressa e falta de tempo levando a escolhas apressadas</li>
-                        <li><strong>Falta de planejamento:</strong> Ir às compras sem uma lista clara aumenta a probabilidade de gastos impulsivos</li>
-                    </ul>
-                    
-                    <p>Entender esses gatilhos é o primeiro passo para desenvolver estratégias eficazes de planejamento financeiro.</p>
-                    
-                    <h2>Os Pilares do Planejamento Financeiro para Compras</h2>
-                    <p>Um planejamento financeiro eficaz para compras se baseia em três pilares fundamentais:</p>
-                    
-                    <h3>1. Conhecimento Prévio</h3>
-                    <p>Saber exatamente o que você precisa comprar antes de entrar em um estabelecimento comercial. Isso envolve:</p>
+                    <h2 data-i18n="blog_financial_shopping_planning_psychology_title">A Psicologia das Compras por Impulso</h2>
+                    <p data-i18n="blog_financial_shopping_planning_psychology_content">Antes de desenvolver estratégias de planejamento, é importante entender por que fazemos compras por impulso:</p>
                     
                     <ul>
-                        <li>Criar listas detalhadas baseadas em necessidades reais</li>
-                        <li>Verificar estoque em casa para evitar compras duplicadas</li>
-                        <li>Estabelecer orçamentos realistas para cada categoria</li>
-                        <li>Pesquisar preços antecipadamente</li>
+                        <li><strong data-i18n="blog_financial_shopping_planning_psychology_factor1_title">Gatilhos emocionais:</strong> <span data-i18n="blog_financial_shopping_planning_psychology_factor1_desc">Compras como resposta a emoções como estresse, tristeza ou tédio</span></li>
+                        <li><strong data-i18n="blog_financial_shopping_planning_psychology_factor2_title">Influência do ambiente:</strong> <span data-i18n="blog_financial_shopping_planning_psychology_factor2_desc">Layout de lojas, promoções estratégicas e marketing sensorial</span></li>
+                        <li><strong data-i18n="blog_financial_shopping_planning_psychology_factor3_title">Decisões sob pressão:</strong> <span data-i18n="blog_financial_shopping_planning_psychology_factor3_desc">Pressa e falta de tempo levando a escolhas apressadas</span></li>
+                        <li><strong data-i18n="blog_financial_shopping_planning_psychology_factor4_title">Falta de planejamento:</strong> <span data-i18n="blog_financial_shopping_planning_psychology_factor4_desc">Ir às compras sem uma lista clara aumenta a probabilidade de gastos impulsivos</span></li>
                     </ul>
                     
-                    <h3>2. Controle Durante a Compra</h3>
-                    <p>Manter o foco e a disciplina durante o processo de compra:</p>
+                    <p data-i18n="blog_financial_shopping_planning_psychology_conclusion">Entender esses gatilhos é o primeiro passo para desenvolver estratégias eficazes de planejamento financeiro.</p>
+                    
+                    <h2 data-i18n="blog_financial_shopping_planning_pillars_title">Os Pilares do Planejamento Financeiro para Compras</h2>
+                    <p data-i18n="blog_financial_shopping_planning_pillars_content">Um planejamento financeiro eficaz para compras se baseia em três pilares fundamentais:</p>
+                    
+                    <h3 data-i18n="blog_financial_shopping_planning_pillar1_title">1. Conhecimento Prévio</h3>
+                    <p data-i18n="blog_financial_shopping_planning_pillar1_content">Saber exatamente o que você precisa comprar antes de entrar em um estabelecimento comercial. Isso envolve:</p>
                     
                     <ul>
-                        <li>Seguir a lista previamente planejada</li>
-                        <li>Evitar distrações e desvios do plano original</li>
-                        <li>Registrar preços reais durante a compra</li>
-                        <li>Tomar decisões conscientes sobre qualquer alteração no plano</li>
+                        <li data-i18n="blog_financial_shopping_planning_pillar1_task1">Criar listas detalhadas baseadas em necessidades reais</li>
+                        <li data-i18n="blog_financial_shopping_planning_pillar1_task2">Verificar estoque em casa para evitar compras duplicadas</li>
+                        <li data-i18n="blog_financial_shopping_planning_pillar1_task3">Estabelecer orçamentos realistas para cada categoria</li>
+                        <li data-i18n="blog_financial_shopping_planning_pillar1_task4">Pesquisar preços antecipadamente</li>
                     </ul>
                     
-                    <h3>3. Análise Pós-Compra</h3>
-                    <p>Avaliar o que funcionou e o que pode ser melhorado:</p>
+                    <h3 data-i18n="blog_financial_shopping_planning_pillar2_title">2. Controle Durante a Compra</h3>
+                    <p data-i18n="blog_financial_shopping_planning_pillar2_content">Manter o foco e a disciplina durante o processo de compra:</p>
                     
                     <ul>
-                        <li>Comparar gastos reais com o orçamento planejado</li>
-                        <li>Identificar compras por impulso e seus gatilhos</li>
-                        <li>Avaliar a eficácia das estratégias utilizadas</li>
-                        <li>Ajustar o planejamento para compras futuras</li>
+                        <li data-i18n="blog_financial_shopping_planning_pillar2_task1">Seguir a lista previamente planejada</li>
+                        <li data-i18n="blog_financial_shopping_planning_pillar2_task2">Evitar distrações e desvios do plano original</li>
+                        <li data-i18n="blog_financial_shopping_planning_pillar2_task3">Registrar preços reais durante a compra</li>
+                        <li data-i18n="blog_financial_shopping_planning_pillar2_task4">Tomar decisões conscientes sobre qualquer alteração no plano</li>
                     </ul>
                     
-                    <h2>Estratégia 1: Criação de Listas Inteligentes</h2>
-                    <p>Uma lista de compras não é apenas uma lista de itens - é uma ferramenta estratégica de planejamento:</p>
-                    
-                    <h3>Organização por Categorias</h3>
-                    <p>Organize sua lista seguindo a ordem natural do supermercado:</p>
+                    <h3 data-i18n="blog_financial_shopping_planning_pillar3_title">3. Análise Pós-Compra</h3>
+                    <p data-i18n="blog_financial_shopping_planning_pillar3_content">Avaliar o que funcionou e o que pode ser melhorado:</p>
                     
                     <ul>
-                        <li>Produtos perecíveis (frutas, vegetais, carnes)</li>
-                        <li>Produtos de limpeza e higiene</li>
-                        <li>Itens de despensa (enlatados, grãos, etc.)</li>
-                        <li>Produtos de padaria e confeitaria</li>
+                        <li data-i18n="blog_financial_shopping_planning_pillar3_task1">Comparar gastos reais com o orçamento planejado</li>
+                        <li data-i18n="blog_financial_shopping_planning_pillar3_task2">Identificar compras por impulso e seus gatilhos</li>
+                        <li data-i18n="blog_financial_shopping_planning_pillar3_task3">Avaliar a eficácia das estratégias utilizadas</li>
+                        <li data-i18n="blog_financial_shopping_planning_pillar3_task4">Ajustar o planejamento para compras futuras</li>
                     </ul>
                     
-                    <p>O aplicativo Lista de Compras oferece 10 categorias pré-definidas que facilitam essa organização.</p>
+                    <h2 data-i18n="blog_financial_shopping_planning_strategy1_title">Estratégia 1: Criação de Listas Inteligentes</h2>
+                    <p data-i18n="blog_financial_shopping_planning_strategy1_content">Uma lista de compras não é apenas uma lista de itens - é uma ferramenta estratégica de planejamento:</p>
                     
-                    <h3>Definição de Prioridades</h3>
-                    <p>Classifique os itens por ordem de importância:</p>
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy1_organization_title">Organização por Categorias</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy1_organization_content">Organize sua lista seguindo a ordem natural do supermercado:</p>
                     
                     <ul>
-                        <li><strong>Essenciais:</strong> Itens que você precisa independentemente do orçamento</li>
-                        <li><strong>Importantes:</strong> Itens desejáveis que cabem no orçamento</li>
-                        <li><strong>Opcionais:</strong> Itens que só devem ser comprados se sobrar dinheiro</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy1_organization_item1">Produtos perecíveis (frutas, vegetais, carnes)</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy1_organization_item2">Produtos de limpeza e higiene</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy1_organization_item3">Itens de despensa (enlatados, grãos, etc.)</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy1_organization_item4">Produtos de padaria e confeitaria</li>
                     </ul>
                     
-                    <h3>Inclusão de Orçamentos</h3>
-                    <p>Para cada categoria, estabeleça um orçamento máximo:</p>
+                    <p data-i18n="blog_financial_shopping_planning_strategy1_organization_benefit">O aplicativo Lista de Compras oferece 10 categorias pré-definidas que facilitam essa organização.</p>
+                    
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy1_priorities_title">Definição de Prioridades</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy1_priorities_content">Classifique os itens por ordem de importância:</p>
                     
                     <ul>
-                        <li>Alimentos: R$ 300,00</li>
-                        <li>Produtos de limpeza: R$ 50,00</li>
-                        <li>Higiene pessoal: R$ 80,00</li>
-                        <li>Outros: R$ 70,00</li>
+                        <li><strong data-i18n="blog_financial_shopping_planning_strategy1_priorities_level1_title">Essenciais:</strong> <span data-i18n="blog_financial_shopping_planning_strategy1_priorities_level1_desc">Itens que você precisa independentemente do orçamento</span></li>
+                        <li><strong data-i18n="blog_financial_shopping_planning_strategy1_priorities_level2_title">Importantes:</strong> <span data-i18n="blog_financial_shopping_planning_strategy1_priorities_level2_desc">Itens desejáveis que cabem no orçamento</span></li>
+                        <li><strong data-i18n="blog_financial_shopping_planning_strategy1_priorities_level3_title">Opcionais:</strong> <span data-i18n="blog_financial_shopping_planning_strategy1_priorities_level3_desc">Itens que só devem ser comprados se sobrar dinheiro</span></li>
                     </ul>
                     
-                    <p>O aplicativo permite definir esses limites e acompanhar o progresso em tempo real.</p>
-                    
-                    <h2>Estratégia 2: Estabelecimento de Limites Financeiros</h2>
-                    <p>Limites claros são essenciais para evitar gastos impulsivos:</p>
-                    
-                    <h3>Orçamento Total</h3>
-                    <p>Defina um valor máximo para a compra inteira e comprometa-se a não ultrapassá-lo.</p>
-                    
-                    <h3>Limites por Categoria</h3>
-                    <p>Além do orçamento total, estabeleça limites para categorias propensas a gastos excessivos:</p>
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy1_budgets_title">Inclusão de Orçamentos</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy1_budgets_content">Para cada categoria, estabeleça um orçamento máximo:</p>
                     
                     <ul>
-                        <li>Lanches e guloseimas: R$ 30,00</li>
-                        <li>Bebidas não essenciais: R$ 40,00</li>
-                        <li>Produtos de marca premium: R$ 50,00</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy1_budget_example1">Alimentos: R$ 300,00</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy1_budget_example2">Produtos de limpeza: R$ 50,00</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy1_budget_example3">Higiene pessoal: R$ 80,00</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy1_budget_example4">Outros: R$ 70,00</li>
                     </ul>
                     
-                    <h3>Regra do Item Surpresa</h3>
-                    <p>Para qualquer item não planejado, estabeleça uma regra:</p>
+                    <p data-i18n="blog_financial_shopping_planning_strategy1_budgets_benefit">O aplicativo permite definir esses limites e acompanhar o progresso em tempo real.</p>
+                    
+                    <h2 data-i18n="blog_financial_shopping_planning_strategy2_title">Estratégia 2: Estabelecimento de Limites Financeiros</h2>
+                    <p data-i18n="blog_financial_shopping_planning_strategy2_content">Limites claros são essenciais para evitar gastos impulsivos:</p>
+                    
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy2_total_title">Orçamento Total</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy2_total_content">Defina um valor máximo para a compra inteira e comprometa-se a não ultrapassá-lo.</p>
+                    
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy2_categories_title">Limites por Categoria</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy2_categories_content">Além do orçamento total, estabeleça limites para categorias propensas a gastos excessivos:</p>
                     
                     <ul>
-                        <li>Se custar menos de R$ 20,00, pode ser comprado</li>
-                        <li>Se custar entre R$ 20,00 e R$ 100,00, precisa de 10 minutos de reflexão</li>
-                        <li>Se custar mais de R$ 100,00, precisa ser adicionado à lista para a próxima compra</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy2_categories_example1">Lanches e guloseimas: R$ 30,00</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy2_categories_example2">Bebidas não essenciais: R$ 40,00</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy2_categories_example3">Produtos de marca premium: R$ 50,00</li>
                     </ul>
                     
-                    <h2>Estratégia 3: Uso de Técnicas de Pausa</h2>
-                    <p>Quando confrontado com uma tentação de compra, use técnicas de pausa para evitar decisões impulsivas:</p>
-                    
-                    <h3>Regra dos 24 Horas</h3>
-                    <p>Para itens acima de um determinado valor (por exemplo, R$ 50,00), espere 24 horas antes de comprar.</p>
-                    
-                    <h3>Técnica da Lista de Desejos</h3>
-                    <p>Mantenha uma lista separada de itens desejados:</p>
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy2_rule_title">Regra do Item Surpresa</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy2_rule_content">Para qualquer item não planejado, estabeleça uma regra:</p>
                     
                     <ul>
-                        <li>Adicione qualquer item que deseje comprar mas que não esteja na lista planejada</li>
-                        <li>Reavalie essa lista periodicamente</li>
-                        <li>Transfira itens para a lista de compras apenas após reflexão</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy2_rule_level1">Se custar menos de R$ 20,00, pode ser comprado</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy2_rule_level2">Se custar entre R$ 20,00 e R$ 100,00, precisa de 10 minutos de reflexão</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy2_rule_level3">Se custar mais de R$ 100,00, precisa ser adicionado à lista para a próxima compra</li>
                     </ul>
                     
-                    <p>O aplicativo Lista de Compras permite criar listas separadas para esse propósito.</p>
+                    <h2 data-i18n="blog_financial_shopping_planning_strategy3_title">Estratégia 3: Uso de Técnicas de Pausa</h2>
+                    <p data-i18n="blog_financial_shopping_planning_strategy3_content">Quando confrontado com uma tentação de compra, use técnicas de pausa para evitar decisões impulsivas:</p>
                     
-                    <h3>Pausa para Reflexão</h3>
-                    <p>Quando sentir o impulso de comprar algo não planejado:</p>
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy3_24hours_title">Regra dos 24 Horas</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy3_24hours_content">Para itens acima de um determinado valor (por exemplo, R$ 50,00), espere 24 horas antes de comprar.</p>
+                    
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy3_wishlist_title">Técnica da Lista de Desejos</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy3_wishlist_content">Mantenha uma lista separada de itens desejados:</p>
                     
                     <ul>
-                        <li>Pare e respire profundamente três vezes</li>
-                        <li>Pergunte-se: "Realmente preciso disso?"</li>
-                        <li>Considere o impacto no orçamento</li>
-                        <li>Avalie alternativas mais econômicas</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy3_wishlist_task1">Adicione qualquer item que deseje comprar mas que não esteja na lista planejada</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy3_wishlist_task2">Reavalie essa lista periodicamente</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy3_wishlist_task3">Transfira itens para a lista de compras apenas após reflexão</li>
                     </ul>
                     
-                    <h2>Estratégia 4: Análise de Impacto Orçamentário</h2>
-                    <p>Antes de qualquer compra não planejada, faça uma análise rápida de impacto:</p>
+                    <p data-i18n="blog_financial_shopping_planning_strategy3_wishlist_benefit">O aplicativo Lista de Compras permite criar listas separadas para esse propósito.</p>
                     
-                    <h3>Impacto Imediato</h3>
-                    <p>Como essa compra afeta o orçamento da compra atual?</p>
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy3_reflection_title">Pausa para Reflexão</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy3_reflection_content">Quando sentir o impulso de comprar algo não planejado:</p>
                     
                     <ul>
-                        <li>Vou precisar eliminar outro item da lista?</li>
-                        <li>Vou ultrapassar o orçamento da categoria?</li>
-                        <li>Vou comprometer itens essenciais?</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy3_reflection_step1">Pare e respire profundamente três vezes</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy3_reflection_step2">Pergunte-se: "Realmente preciso disso?"</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy3_reflection_step3">Considere o impacto no orçamento</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy3_reflection_step4">Avalie alternativas mais econômicas</li>
                     </ul>
                     
-                    <h3>Impacto Mensal</h3>
-                    <p>Se essa compra se tornar um hábito, qual seria o impacto mensal?</p>
+                    <h2 data-i18n="blog_financial_shopping_planning_strategy4_title">Estratégia 4: Análise de Impacto Orçamentário</h2>
+                    <p data-i18n="blog_financial_shopping_planning_strategy4_content">Antes de qualquer compra não planejada, faça uma análise rápida de impacto:</p>
+                    
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy4_immediate_title">Impacto Imediato</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy4_immediate_content">Como essa compra afeta o orçamento da compra atual?</p>
                     
                     <ul>
-                        <li>Um item de R$ 30,00 comprado semanalmente custa R$ 120,00 por mês</li>
-                        <li>Isso poderia financiar outra necessidade importante?</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy4_immediate_question1">Vou precisar eliminar outro item da lista?</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy4_immediate_question2">Vou ultrapassar o orçamento da categoria?</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy4_immediate_question3">Vou comprometer itens essenciais?</li>
                     </ul>
                     
-                    <h3>Impacto em Objetivos</h3>
-                    <p>Como essa compra afeta seus objetivos financeiros?</p>
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy4_monthly_title">Impacto Mensal</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy4_monthly_content">Se essa compra se tornar um hábito, qual seria o impacto mensal?</p>
                     
                     <ul>
-                        <li>Diminui a quantia disponível para economias?</li>
-                        <li>Atrasa o alcance de metas importantes?</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy4_monthly_example1">Um item de R$ 30,00 comprado semanalmente custa R$ 120,00 por mês</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy4_monthly_example2">Isso poderia financiar outra necessidade importante?</li>
                     </ul>
                     
-                    <h2>Estratégia 5: Criação de um Sistema de Recompensas</h2>
-                    <p>Para manter a motivação no planejamento financeiro, estabeleça um sistema de recompensas:</p>
-                    
-                    <h3>Recompensas por Performance</h3>
-                    <p>Recompense-se por atingir objetivos de economia:</p>
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy4_goals_title">Impacto em Objetivos</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy4_goals_content">Como essa compra afeta seus objetivos financeiros?</p>
                     
                     <ul>
-                        <li>Economizar 10% acima do planejado: pequena recompensa</li>
-                        <li>Economizar 20% acima do planejado: recompensa moderada</li>
-                        <li>Economizar 30% acima do planejado: recompensa significativa</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy4_goals_question1">Diminui a quantia disponível para economias?</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy4_goals_question2">Atrasa o alcance de metas importantes?</li>
                     </ul>
                     
-                    <h3>Recompensas por Consistência</h3>
-                    <p>Recompense a consistência no planejamento:</p>
+                    <h2 data-i18n="blog_financial_shopping_planning_strategy5_title">Estratégia 5: Criação de um Sistema de Recompensas</h2>
+                    <p data-i18n="blog_financial_shopping_planning_strategy5_content">Para manter a motivação no planejamento financeiro, estabeleça um sistema de recompensas:</p>
+                    
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy5_performance_title">Recompensas por Performance</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy5_performance_content">Recompense-se por atingir objetivos de economia:</p>
                     
                     <ul>
-                        <li>3 meses consecutivos dentro do orçamento: recompensa especial</li>
-                        <li>6 meses consecutivos dentro do orçamento: recompensa maior</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy5_performance_reward1">Economizar 10% acima do planejado: pequena recompensa</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy5_performance_reward2">Economizar 20% acima do planejado: recompensa moderada</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy5_performance_reward3">Economizar 30% acima do planejado: recompensa significativa</li>
                     </ul>
                     
-                    <p>Importante: as recompensas devem ser proporcionais às economias e não comprometer os objetivos financeiros.</p>
-                    
-                    <h2>Estratégia 6: Uso de Dados Históricos</h2>
-                    <p>Utilize o histórico de compras para tomar decisões mais informadas:</p>
-                    
-                    <h3>Análise de Padrões de Consumo</h3>
-                    <p>Identifique padrões para melhorar o planejamento futuro:</p>
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy5_consistency_title">Recompensas por Consistência</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy5_consistency_content">Recompense a consistência no planejamento:</p>
                     
                     <ul>
-                        <li>Quais categorias costumam ultrapassar o orçamento?</li>
-                        <li>Em quais situações você mais gasta por impulso?</li>
-                        <li>Quais estratégias funcionaram melhor no passado?</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy5_consistency_reward1">3 meses consecutivos dentro do orçamento: recompensa especial</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy5_consistency_reward2">6 meses consecutivos dentro do orçamento: recompensa maior</li>
                     </ul>
                     
-                    <h3>Identificação de Tendências de Preços</h3>
-                    <p>Use dados históricos para identificar oportunidades:</p>
+                    <p data-i18n="blog_financial_shopping_planning_strategy5_conclusion">Importante: as recompensas devem ser proporcionais às economias e não comprometer os objetivos financeiros.</p>
+                    
+                    <h2 data-i18n="blog_financial_shopping_planning_strategy6_title">Estratégia 6: Uso de Dados Históricos</h2>
+                    <p data-i18n="blog_financial_shopping_planning_strategy6_content">Utilize o histórico de compras para tomar decisões mais informadas:</p>
+                    
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy6_analysis_title">Análise de Padrões de Consumo</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy6_analysis_content">Identifique padrões para melhorar o planejamento futuro:</p>
                     
                     <ul>
-                        <li>Quando certos produtos costumam estar em promoção?</li>
-                        <li>Quais estabelecimentos oferecem melhores preços consistentemente?</li>
-                        <li>Como os preços variam ao longo do ano?</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy6_analysis_question1">Quais categorias costumam ultrapassar o orçamento?</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy6_analysis_question2">Em quais situações você mais gasta por impulso?</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy6_analysis_question3">Quais estratégias funcionaram melhor no passado?</li>
                     </ul>
                     
-                    <h2>Estratégia 7: Envolvimento da Família</h2>
-                    <p>Se você compartilha responsabilidades financeiras, envolva a família no planejamento:</p>
-                    
-                    <h3>Definição de Papéis</h3>
-                    <p>Estabeleça quem é responsável por planejar cada tipo de compra:</p>
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy6_trends_title">Identificação de Tendências de Preços</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy6_trends_content">Use dados históricos para identificar oportunidades:</p>
                     
                     <ul>
-                        <li>Uma pessoa cuida das compras de alimentos</li>
-                        <li>Outra pessoa cuida de produtos de limpeza e higiene</li>
-                        <li>Decisões conjuntas para grandes compras</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy6_trends_question1">Quando certos produtos costumam estar em promoção?</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy6_trends_question2">Quais estabelecimentos oferecem melhores preços consistentemente?</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy6_trends_question3">Como os preços variam ao longo do ano?</li>
                     </ul>
                     
-                    <h3>Comunicação de Objetivos</h3>
-                    <p>Mantenha todos informados sobre objetivos financeiros:</p>
+                    <h2 data-i18n="blog_financial_shopping_planning_strategy7_title">Estratégia 7: Envolvimento da Família</h2>
+                    <p data-i18n="blog_financial_shopping_planning_strategy7_content">Se você compartilha responsabilidades financeiras, envolva a família no planejamento:</p>
+                    
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy7_roles_title">Definição de Papéis</h3>
+                    <p data-i18n="blog_financial_shopping_planning_strategy7_roles_content">Estabeleça quem é responsável por planejar cada tipo de compra:</p>
                     
                     <ul>
-                        <li>Metas de economia mensal e anual</li>
-                        <li>Grandes objetivos (viagens, reformas, investimentos)</li>
-                        <li>Restrições orçamentárias temporárias</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy7_roles_task1">Uma pessoa cuida das compras de alimentos</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy7_roles_task2">Outra pessoa cuida de produtos de limpeza e higiene</li>
+                        <li data-i18n="blog_financial_shopping_planning_strategy7_roles_task3">Decisões conjuntas para grandes compras</li>
                     </ul>
                     
-                    <h3>Uso de Listas Compartilhadas</h3>
-                    <p>O aplicativo Lista de Compras permite criar listas compartilhadas que:</p>
-                    
-                    <ul>
-                        <li>Evitam compras duplicadas</li>
-                        <li>Permite colaboração no planejamento</li>
-                        <li>Facilita a comunicação sobre necessidades</li>
-                        <li>Permite acompanhamento conjunto dos gastos</li>
-                    </ul>
-                    
-                    <h2>Dicas Avançadas para Evitar Compras por Impulso</h2>
-                    
-                    <h3>Evite Compras com Fome ou Estresse</h3>
-                    <p>Esses estados emocionais aumentam significativamente a probabilidade de gastos impulsivos. Planeje suas compras:</p>
-                    
-                    <ul>
-                        <li>Após uma refeição satisfatória</li>
-                        <li>Quando estiver em um estado emocional neutro</li>
-                        <li>Com tempo suficiente para não sentir pressa</li>
-                    </ul>
-                    
-                    <h3>Compre nos Dias Certos</h3>
-                    <p>Alguns dias da semana oferecem melhores oportunidades:</p>
-                    
-                    <ul>
-                        <li>Segunda e terça-feiras: menos pessoas, menos tentações</li>
-                        <li>Fim do dia: produtos perecíveis com descontos</li>
-                        <li>Dias de promoções específicas de cada estabelecimento</li>
-                    </ul>
-                    
-                    <h3>Evite Canais de Compra Impulsiva</h3>
-                    <p>Alguns canais aumentam a probabilidade de compras por impulso:</p>
-                    
-                    <ul>
-                        <li>Compras online sem lista prévia</li>
-                        <li>Aplicativos de delivery sem planejamento</li>
-                        <li>Lojas de conveniência para compras não essenciais</li>
-                    </ul>
-                    
-                    <h2>Como o Aplicativo Lista de Compras Potencializa o Planejamento</h2>
-                    
-                    <p>O aplicativo Lista de Compras oferece funcionalidades específicas para cada estratégia de planejamento:</p>
-                    
-                    <ul>
-                        <li><strong>Planejamento:</strong> Criação de listas detalhadas com orçamentos por categoria</li>
-                        <li><strong>Controle:</strong> Acompanhamento em tempo real de gastos</li>
-                        <li><strong>Análise:</strong> Gráficos e estatísticas para identificar padrões</li>
-                        <li><strong>Alertas:</strong> Notificações quando se aproximar dos limites</li>
-                        <li><strong>Histórico:</strong> Dados para melhorar o planejamento futuro</li>
-                        <li><strong>Compartilhamento:</strong> Coordenação com outros membros da família</li>
-                    </ul>
-                    
-                    <h2>Conclusão</h2>
-                    <p>O planejamento financeiro para compras é uma habilidade que pode transformar sua saúde financeira. Ao combinar estratégias comprovadas com o poder do aplicativo Lista de Compras, você pode evitar compras por impulso e economizar significativamente ao longo do tempo.</p>
-                    
-                    <p>Lembre-se de que o sucesso não está em ser perfeito, mas em ser consistente. Comece implementando uma ou duas estratégias que sejam mais relevantes para sua realidade, e gradualmente incorpore mais técnicas ao seu processo de planejamento.</p>
-                    
-                    <p>Com disciplina e as ferramentas certas, você pode transformar suas compras de uma fonte de estresse financeiro em uma atividade planejada e econômica. Experimente aplicar essas estratégias e veja a diferença que fazem no seu orçamento!</p>
-                </div>
-            </article>
-            
-            <div class="back-to-blog">
-                <a href="../blog.html" class="btn btn-secondary">← Voltar para o Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>Lista de Compras</h3>
-                    <p>Gerencie suas compras de forma inteligente</p>
-                </div>
-                <div class="footer-links">
-                    <a href="../index.html#features">Recursos</a>
-                    <a href="../index.html#download">Download</a>
-                    <a href="../index.html#contact">Contato</a>
-                    <a href="../politica-privacidade.html">Política de Privacidade</a>
-                    <a href="../termos-de-uso.html">Termos de Uso</a>
-                    <a href="../blog.html">Blog</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Lista de Compras. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Atualizar o ano no footer
-        document.addEventListener('DOMContentLoaded', () => {
-            const yearElement = document.querySelector('.footer-bottom p');
-            if (yearElement) {
-                const currentYear = new Date().getFullYear();
-                yearElement.innerHTML = yearElement.innerHTML.replace('2025', currentYear);
-            }
-        });
-    </script>
-</body>
-</html>
+                    <h3 data-i18n="blog_financial_shopping_planning_strategy7_goals_title">Comunicação de Objetivos</h3>

@@ -1,95 +1,47 @@
-# Dependências e pastas de módulos
+# Node.js dependencies
 node_modules/
-bower_components/
 
-# Arquivos de build e distribuição
+# Build outputs
 dist/
 build/
 out/
 
 # Logs
-logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# Arquivos temporários do sistema
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
-*.tmp
-*.temp
 
-# Arquivos de configuração do editor
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
 
-# Arquivos de ambiente
+# Environment files
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Arquivos de cache
+# Temporary files
+*.tmp
+*.temp
+
+# Cache files
 .cache/
-*.cache
 
-# Arquivos de backup e temporários
-*.bak
-*.backup
-*.old
-*.orig
-*~
+# Project specific ignores
+assets/screenshots/*.png
 
-# Arquivos gerados automaticamente
-*.min.js
-*.min.css
-*.map
-
-# Arquivos específicos do projeto que são redundantes
-script_backup.js
-script_fixed.js
+# Script backup files
 script_original.js
-
-# Arquivos de erro HTTP (podem ser tratados pelo servidor)
-400.html
-401.html
-403.html
-405.html
-500.html
-erro.html
-
-# Documentação auxiliar
-RESUMO_ARTIGOS_BLOG.md
-artigos-blog.txt
-
-# Arquivos de debug e desenvolvimento
-debug/
-coverage/
-*.prof
-
-# Arquivos do sistema de versionamento
-*.patch
-*.diff
-
-# Arquivos de IDE e ferramentas
-*.sublime-project
-*.sublime-workspace
-.atoms/
-.history/
-
-# Arquivos de sistema operacional
-.DS_Store?
-ehthumbs_vista.db
-Icon?
-Thumbs.db
-
-# Arquivos de configuração do Git
-.git/credentials
-
-# Pasta de assets se contiver arquivos gerados (opcional)
-#assets/generated/
+script_fixed.js
+script_backup.js

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orçamento Inteligente: Como Usar Dados para Economizar nas Compras - Blog Lista de Compras</title>
-    <meta name="description" content="Aprenda a criar orçamentos inteligentes usando dados para economizar dinheiro nas compras com nosso aplicativo de lista de compras.">
+    <title data-i18n="blog_smart_budget_title">Orçamento Inteligente: Como Usar Dados para Economizar nas Compras - Blog Lista de Compras</title>
+    <meta name="description" content="Aprenda a criar orçamentos inteligentes usando dados para economizar dinheiro nas compras com nosso aplicativo de lista de compras." data-i18n-meta="blog_smart_budget_meta_desc">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
 </head>
@@ -17,7 +17,23 @@
                 <p class="subtitle">Orçamento e Gastos Inteligentes!</p>
             </div>
             <nav class="nav">
-                <ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#features">Recursos</a></li><li><a href="../index.html#download">Download</a></li><li><a href="../index.html#contact">Contato</a></li><li><a href="../blog.html">Blog</a></li></ul>
+                <ul>
+                    <li><a href="../index.html" data-i18n="home">Home</a></li>
+                    <li><a href="../index.html#features" data-i18n="features">Recursos</a></li>
+                    <li><a href="../index.html#download" data-i18n="download">Download</a></li>
+                    <li><a href="../index.html#contact" data-i18n="contact">Contato</a></li>
+                    <li><a href="../blog.html" data-i18n="blog">Blog</a></li>
+                    <!-- Language Switcher -->
+                    <li class="language-switcher">
+                        <select id="language-select" onchange="changeLanguage(this.value)">
+                            <option value="pt">PT</option>
+                            <option value="en">EN</option>
+                            <option value="es">ES</option>
+                            <option value="de">DE</option>
+                            <option value="it">IT</option>
+                        </select>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -27,320 +43,238 @@
         <div class="container">
             <article>
                 <header class="post-header">
-                    <h1 class="post-title-single">Orçamento Inteligente: Como Usar Dados para Economizar nas Compras</h1>
-                    <p class="post-meta-single">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                    <h1 class="post-title-single" data-i18n="blog_smart_budget_header">Orçamento Inteligente: Como Usar Dados para Economizar nas Compras</h1>
+                    <p class="post-meta-single" data-i18n="blog_smart_budget_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
                 </header>
                 
                 <div class="post-content-single">
-                    <p>O orçamento tradicional muitas vezes falha porque se baseia em estimativas e suposições. Um orçamento inteligente, por outro lado, utiliza dados reais para criar previsões precisas e identificar oportunidades de economia. Com o aplicativo Lista de Compras, você tem acesso a uma riqueza de dados sobre seus hábitos de consumo que podem transformar sua abordagem orçamentária. Neste artigo, vamos explorar como usar dados de forma inteligente para criar orçamentos mais eficazes e economizar dinheiro nas compras.</p>
+                    <p data-i18n="blog_smart_budget_intro">O orçamento tradicional muitas vezes falha porque se baseia em estimativas e suposições. Um orçamento inteligente, por outro lado, utiliza dados reais para criar previsões precisas e identificar oportunidades de economia. Com o aplicativo Lista de Compras, você tem acesso a uma riqueza de dados sobre seus hábitos de consumo que podem transformar sua abordagem orçamentária. Neste artigo, vamos explorar como usar dados de forma inteligente para criar orçamentos mais eficazes e economizar dinheiro nas compras.</p>
                     
-                    <h2>A Revolução dos Dados no Planejamento Financeiro</h2>
-                    <p>Nunca antes os consumidores tiveram acesso a tantos dados sobre seus próprios hábitos de consumo. A chave para um orçamento inteligente está em transformar esses dados em insights acionáveis:</p>
-                    
-                    <ul>
-                        <li><strong>Precisão em vez de estimativas:</strong> Basear orçamentos em dados reais em vez de palpites</li>
-                        <li><strong>Identificação de padrões:</strong> Descobrir ciclos de consumo e tendências de gastos</li>
-                        <li><strong>Previsão informada:</strong> Antecipar necessidades com base em histórico</li>
-                        <li><strong>Otimização contínua:</strong> Ajustar orçamentos com base em resultados reais</li>
-                    </ul>
-                    
-                    <p>O aplicativo Lista de Compras coleta dados valiosos sobre cada compra que você faz, criando uma base sólida para orçamentos inteligentes.</p>
-                    
-                    <h2>Os Pilares de um Orçamento Inteligente</h2>
-                    <p>Um orçamento inteligente se baseia em três pilares fundamentais:</p>
-                    
-                    <h3>1. Dados Históricos como Base</h3>
-                    <p>Utilize seu histórico de compras como ponto de partida para orçamentos futuros:</p>
+                    <h2 data-i18n="blog_smart_budget_data_revolution_title">A Revolução dos Dados no Planejamento Financeiro</h2>
+                    <p data-i18n="blog_smart_budget_data_revolution_content">Nunca antes os consumidores tiveram acesso a tantos dados sobre seus próprios hábitos de consumo. A chave para um orçamento inteligente está em transformar esses dados em insights acionáveis:</p>
                     
                     <ul>
-                        <li>Análise de gastos por categoria ao longo do tempo</li>
-                        <li>Identificação de padrões sazonais e cíclicos</li>
-                        <li>Compreensão de variações mensais e anuais</li>
-                        <li>Base para projeções realistas</li>
+                        <li><strong data-i18n="blog_smart_budget_data_revolution_benefit1_title">Precisão em vez de estimativas:</strong> <span data-i18n="blog_smart_budget_data_revolution_benefit1_desc">Basear orçamentos em dados reais em vez de palpites</span></li>
+                        <li><strong data-i18n="blog_smart_budget_data_revolution_benefit2_title">Identificação de padrões:</strong> <span data-i18n="blog_smart_budget_data_revolution_benefit2_desc">Descobrir ciclos de consumo e tendências de gastos</span></li>
+                        <li><strong data-i18n="blog_smart_budget_data_revolution_benefit3_title">Previsão informada:</strong> <span data-i18n="blog_smart_budget_data_revolution_benefit3_desc">Antecipar necessidades com base em histórico</span></li>
+                        <li><strong data-i18n="blog_smart_budget_data_revolution_benefit4_title">Otimização contínua:</strong> <span data-i18n="blog_smart_budget_data_revolution_benefit4_desc">Ajustar orçamentos com base em resultados reais</span></li>
                     </ul>
                     
-                    <h3>2. Análise em Tempo Real</h3>
-                    <p>Monitore seu progresso em relação ao orçamento enquanto as compras acontecem:</p>
+                    <p data-i18n="blog_smart_budget_data_revolution_app_intro">O aplicativo Lista de Compras coleta dados valiosos sobre cada compra que você faz, criando uma base sólida para orçamentos inteligentes.</p>
+                    
+                    <h2 data-i18n="blog_smart_budget_pillars_title">Os Pilares de um Orçamento Inteligente</h2>
+                    <p data-i18n="blog_smart_budget_pillars_content">Um orçamento inteligente se baseia em três pilares fundamentais:</p>
+                    
+                    <h3 data-i18n="blog_smart_budget_pillar1_title">1. Dados Históricos como Base</h3>
+                    <p data-i18n="blog_smart_budget_pillar1_content">Utilize seu histórico de compras como ponto de partida para orçamentos futuros:</p>
                     
                     <ul>
-                        <li>Acompanhamento imediato de gastos</li>
-                        <li>Alertas quando se aproximar dos limites</li>
-                        <li>Ajustes dinâmicos com base em circunstâncias reais</li>
-                        <li>Tomada de decisão informada durante o processo de compra</li>
+                        <li data-i18n="blog_smart_budget_pillar1_feature1">Análise de gastos por categoria ao longo do tempo</li>
+                        <li data-i18n="blog_smart_budget_pillar1_feature2">Identificação de padrões sazonais e cíclicos</li>
+                        <li data-i18n="blog_smart_budget_pillar1_feature3">Compreensão de variações mensais e anuais</li>
+                        <li data-i18n="blog_smart_budget_pillar1_feature4">Base para projeções realistas</li>
                     </ul>
                     
-                    <h3>3. Aprendizado Contínuo</h3>
-                    <p>Utilize cada ciclo orçamentário como oportunidade de aprendizado:</p>
+                    <h3 data-i18n="blog_smart_budget_pillar2_title">2. Análise em Tempo Real</h3>
+                    <p data-i18n="blog_smart_budget_pillar2_content">Monitore seu progresso em relação ao orçamento enquanto as compras acontecem:</p>
                     
                     <ul>
-                        <li>Análise de desvios entre planejado e realizado</li>
-                        <li>Identificação de causas de variações orçamentárias</li>
-                        <li>Ajuste de estratégias com base em resultados</li>
-                        <li>Melhoria contínua dos processos de planejamento</li>
+                        <li data-i18n="blog_smart_budget_pillar2_feature1">Acompanhamento imediato de gastos</li>
+                        <li data-i18n="blog_smart_budget_pillar2_feature2">Alertas quando se aproximar dos limites</li>
+                        <li data-i18n="blog_smart_budget_pillar2_feature3">Ajustes dinâmicos com base em circunstâncias reais</li>
+                        <li data-i18n="blog_smart_budget_pillar2_feature4">Tomada de decisão informada durante o processo de compra</li>
                     </ul>
                     
-                    <h2>Estratégia 1: Criação de Orçamentos Baseados em Dados Reais</h2>
-                    <p>Em vez de criar orçamentos baseados em suposições, utilize dados reais do seu histórico:</p>
-                    
-                    <h3>Análise de Consumo por Categoria</h3>
-                    <p>Examine seus gastos reais em cada categoria para estabelecer orçamentos realistas:</p>
+                    <h3 data-i18n="blog_smart_budget_pillar3_title">3. Aprendizado Contínuo</h3>
+                    <p data-i18n="blog_smart_budget_pillar3_content">Utilize cada ciclo orçamentário como oportunidade de aprendizado:</p>
                     
                     <ul>
-                        <li><strong>Média mensal:</strong> Calcule a média de gastos em cada categoria nos últimos 3-6 meses</li>
-                        <li><strong>Variação:</strong> Entenda a amplitude de variação em cada categoria</li>
-                        <li><strong>Tendências:</strong> Identifique se os gastos estão aumentando ou diminuindo</li>
-                        <li><strong>Outliers:</strong> Reconheça gastos incomuns que não devem ser considerados normais</li>
+                        <li data-i18n="blog_smart_budget_pillar3_feature1">Análise de desvios entre planejado e realizado</li>
+                        <li data-i18n="blog_smart_budget_pillar3_feature2">Identificação de causas de variações orçamentárias</li>
+                        <li data-i18n="blog_smart_budget_pillar3_feature3">Ajuste de estratégias com base em resultados</li>
+                        <li data-i18n="blog_smart_budget_pillar3_feature4">Melhoria contínua dos processos de planejamento</li>
                     </ul>
                     
-                    <h3>Consideração de Fatores Sazonais</h3>
-                    <p>Muitos gastos variam conforme a época do ano:</p>
+                    <h2 data-i18n="blog_smart_budget_strategy1_title">Estratégia 1: Criação de Orçamentos Baseados em Dados Reais</h2>
+                    <p data-i18n="blog_smart_budget_strategy1_content">Em vez de criar orçamentos baseados em suposições, utilize dados reais do seu histórico:</p>
+                    
+                    <h3 data-i18n="blog_smart_budget_strategy1_analysis_title">Análise de Consumo por Categoria</h3>
+                    <p data-i18n="blog_smart_budget_strategy1_analysis_content">Examine seus gastos reais em cada categoria para estabelecer orçamentos realistas:</p>
                     
                     <ul>
-                        <li>Gastos com alimentação podem aumentar durante o verão (mais frutas)</li>
-                        <li>Produtos de limpeza podem variar com mudanças de estação</li>
-                        <li>Gastos com itens sazonais (Natal, Páscoa, etc.)</li>
-                        <li>Variações por eventos pessoais (aniversários, festas)</li>
+                        <li><strong data-i18n="blog_smart_budget_strategy1_analysis_factor1_title">Média mensal:</strong> <span data-i18n="blog_smart_budget_strategy1_analysis_factor1_desc">Calcule a média de gastos em cada categoria nos últimos 3-6 meses</span></li>
+                        <li><strong data-i18n="blog_smart_budget_strategy1_analysis_factor2_title">Variação:</strong> <span data-i18n="blog_smart_budget_strategy1_analysis_factor2_desc">Entenda a amplitude de variação em cada categoria</span></li>
+                        <li><strong data-i18n="blog_smart_budget_strategy1_analysis_factor3_title">Tendências:</strong> <span data-i18n="blog_smart_budget_strategy1_analysis_factor3_desc">Identifique se os gastos estão aumentando ou diminuindo</span></li>
+                        <li><strong data-i18n="blog_smart_budget_strategy1_analysis_factor4_title">Outliers:</strong> <span data-i18n="blog_smart_budget_strategy1_analysis_factor4_desc">Reconheça gastos incomuns que não devem ser considerados normais</span></li>
                     </ul>
                     
-                    <p>O aplicativo Lista de Compras ajuda nessa análise ao:</p>
+                    <h3 data-i18n="blog_smart_budget_strategy1_seasonal_title">Consideração de Fatores Sazonais</h3>
+                    <p data-i18n="blog_smart_budget_strategy1_seasonal_content">Muitos gastos variam conforme a época do ano:</p>
                     
                     <ul>
-                        <li>Armazenar histórico completo de compras</li>
-                        <li>Categorizar automaticamente os gastos</li>
-                        <li>Gerar relatórios mensais e anuais</li>
-                        <li>Mostrar tendências ao longo do tempo</li>
+                        <li data-i18n="blog_smart_budget_strategy1_seasonal_example1">Gastos com alimentação podem aumentar durante o verão (mais frutas)</li>
+                        <li data-i18n="blog_smart_budget_strategy1_seasonal_example2">Produtos de limpeza podem variar com mudanças de estação</li>
+                        <li data-i18n="blog_smart_budget_strategy1_seasonal_example3">Gastos com itens sazonais (Natal, Páscoa, etc.)</li>
+                        <li data-i18n="blog_smart_budget_strategy1_seasonal_example4">Variações por eventos pessoais (aniversários, festas)</li>
                     </ul>
                     
-                    <h2>Estratégia 2: Estabelecimento de Limites Inteligentes</h2>
-                    <p>Limites orçamentários devem ser baseados em dados, não em desejos:</p>
-                    
-                    <h3>Limites Baseados em Percentis</h3>
-                    <p>Em vez de limites arbitrários, use percentis estatísticos:</p>
+                    <p data-i18n="blog_smart_budget_strategy1_app_intro">O aplicativo Lista de Compras ajuda nessa análise ao:</p>
                     
                     <ul>
-                        <li><strong>Percentil 80:</strong> Valor abaixo do qual 80% das compras ocorrem (conservador)</li>
-                        <li><strong>Percentil 90:</strong> Valor abaixo do qual 90% das compras ocorrem (moderado)</li>
-                        <li><strong>Percentil 95:</strong> Valor abaixo do qual 95% das compras ocorrem (liberal)</li>
+                        <li data-i18n="blog_smart_budget_strategy1_app_feature1">Armazenar histórico completo de compras</li>
+                        <li data-i18n="blog_smart_budget_strategy1_app_feature2">Categorizar automaticamente os gastos</li>
+                        <li data-i18n="blog_smart_budget_strategy1_app_feature3">Gerar relatórios mensais e anuais</li>
+                        <li data-i18n="blog_smart_budget_strategy1_app_feature4">Mostrar tendências ao longo do tempo</li>
                     </ul>
                     
-                    <h3>Ajuste Dinâmico de Limites</h3>
-                    <p>Modifique limites com base em circunstâncias reais:</p>
+                    <h2 data-i18n="blog_smart_budget_strategy2_title">Estratégia 2: Estabelecimento de Limites Inteligentes</h2>
+                    <p data-i18n="blog_smart_budget_strategy2_content">Limites orçamentários devem ser baseados em dados, não em desejos:</p>
+                    
+                    <h3 data-i18n="blog_smart_budget_strategy2_limits_title">Limites Baseados em Percentis</h3>
+                    <p data-i18n="blog_smart_budget_strategy2_limits_content">Em vez de limites arbitrários, use percentis estatísticos:</p>
                     
                     <ul>
-                        <li>Aumentar limites para meses com eventos especiais</li>
-                        <li>Reduzir limites em meses com menor necessidade</li>
-                        <li>Ajustar com base em mudanças de renda ou situação</li>
-                        <li>Modificar limites com base em aprendizados de ciclos anteriores</li>
+                        <li><strong data-i18n="blog_smart_budget_strategy2_limits_percentile80_title">Percentil 80:</strong> <span data-i18n="blog_smart_budget_strategy2_limits_percentile80_desc">Valor abaixo do qual 80% das compras ocorrem (conservador)</span></li>
+                        <li><strong data-i18n="blog_smart_budget_strategy2_limits_percentile90_title">Percentil 90:</strong> <span data-i18n="blog_smart_budget_strategy2_limits_percentile90_desc">Valor abaixo do qual 90% das compras ocorrem (moderado)</span></li>
+                        <li><strong data-i18n="blog_smart_budget_strategy2_limits_percentile95_title">Percentil 95:</strong> <span data-i18n="blog_smart_budget_strategy2_limits_percentile95_desc">Valor abaixo do qual 95% das compras ocorrem (liberal)</span></li>
                     </ul>
                     
-                    <h2>Estratégia 3: Uso de Alertas Baseados em Dados</h2>
-                    <p>Alertas inteligentes podem prevenir desvios orçamentários:</p>
-                    
-                    <h3>Alertas Proativos</h3>
-                    <p>Antecipe problemas antes que eles ocorram:</p>
+                    <h3 data-i18n="blog_smart_budget_strategy2_dynamic_title">Ajuste Dinâmico de Limites</h3>
+                    <p data-i18n="blog_smart_budget_strategy2_dynamic_content">Modifique limites com base em circunstâncias reais:</p>
                     
                     <ul>
-                        <li>Alerta quando 70% do orçamento de uma categoria for consumido</li>
-                        <li>Notificação quando padrões de consumo indicarem possível ultrapassagem</li>
-                        <li>Aviso quando itens caros forem adicionados à lista</li>
-                        <li>Lembrete de itens que precisam ser comprados com base no histórico</li>
+                        <li data-i18n="blog_smart_budget_strategy2_dynamic_tip1">Aumentar limites para meses com eventos especiais</li>
+                        <li data-i18n="blog_smart_budget_strategy2_dynamic_tip2">Reduzir limites em meses com menor necessidade</li>
+                        <li data-i18n="blog_smart_budget_strategy2_dynamic_tip3">Ajustar com base em mudanças de renda ou situação</li>
+                        <li data-i18n="blog_smart_budget_strategy2_dynamic_tip4">Modificar limites com base em aprendizados de ciclos anteriores</li>
                     </ul>
                     
-                    <h3>Alertas Reativos</h3>
-                    <p>Reaja imediatamente a situações que requerem atenção:</p>
+                    <h2 data-i18n="blog_smart_budget_strategy3_title">Estratégia 3: Uso de Alertas Baseados em Dados</h2>
+                    <p data-i18n="blog_smart_budget_strategy3_content">Alertas inteligentes podem prevenir desvios orçamentários:</p>
+                    
+                    <h3 data-i18n="blog_smart_budget_strategy3_proactive_title">Alertas Proativos</h3>
+                    <p data-i18n="blog_smart_budget_strategy3_proactive_content">Antecipe problemas antes que eles ocorram:</p>
                     
                     <ul>
-                        <li>Notificação imediata quando um limite for ultrapassado</li>
-                        <li>Alerta quando itens não planejados forem adicionados</li>
-                        <li>Aviso quando padrões de consumo mudarem significativamente</li>
+                        <li data-i18n="blog_smart_budget_strategy3_proactive_alert1">Alerta quando 70% do orçamento de uma categoria for consumido</li>
+                        <li data-i18n="blog_smart_budget_strategy3_proactive_alert2">Notificação quando padrões de consumo indicarem possível ultrapassagem</li>
+                        <li data-i18n="blog_smart_budget_strategy3_proactive_alert3">Aviso quando itens caros forem adicionados à lista</li>
+                        <li data-i18n="blog_smart_budget_strategy3_proactive_alert4">Lembrete de itens que precisam ser comprados com base no histórico</li>
                     </ul>
                     
-                    <p>O aplicativo Lista de Compras oferece recursos de alerta que podem ser configurados com base em suas preferências e padrões de consumo.</p>
-                    
-                    <h2>Estratégia 4: Análise de Desvios e Aprendizado</h2>
-                    <p>Cada ciclo orçamentário oferece oportunidades de aprendizado:</p>
-                    
-                    <h3>Identificação de Desvios</h3>
-                    <p>Analise onde e por que ocorreram desvios em relação ao planejado:</p>
+                    <h3 data-i18n="blog_smart_budget_strategy3_reactive_title">Alertas Reativos</h3>
+                    <p data-i18n="blog_smart_budget_strategy3_reactive_content">Reaja imediatamente a situações que requerem atenção:</p>
                     
                     <ul>
-                        <li>Quais categorias ultrapassaram os limites?</li>
-                        <li>Quais foram as causas dos desvios?</li>
-                        <li>Quais padrões podem ser melhorados?</li>
-                        <li>Quais estratégias funcionaram melhor?</li>
+                        <li data-i18n="blog_smart_budget_strategy3_reactive_alert1">Notificação imediata quando um limite for ultrapassado</li>
+                        <li data-i18n="blog_smart_budget_strategy3_reactive_alert2">Alerta quando itens não planejados forem adicionados</li>
+                        <li data-i18n="blog_smart_budget_strategy3_reactive_alert3">Aviso quando padrões de consumo mudarem significativamente</li>
                     </ul>
                     
-                    <h3>Categorização de Desvios</h3>
-                    <p>Entenda a natureza dos desvios para melhor planejamento futuro:</p>
+                    <p data-i18n="blog_smart_budget_strategy3_app_intro">O aplicativo Lista de Compras oferece recursos de alerta que podem ser configurados com base em suas preferências e padrões de consumo.</p>
+                    
+                    <h2 data-i18n="blog_smart_budget_strategy4_title">Estratégia 4: Análise de Desvios e Aprendizado</h2>
+                    <p data-i18n="blog_smart_budget_strategy4_content">Cada ciclo orçamentário oferece oportunidades de aprendizado:</p>
+                    
+                    <h3 data-i18n="blog_smart_budget_strategy4_identification_title">Identificação de Desvios</h3>
+                    <p data-i18n="blog_smart_budget_strategy4_identification_content">Analise onde e por que ocorreram desvios em relação ao planejado:</p>
                     
                     <ul>
-                        <li><strong>Desvios planejados:</strong> Eventos antecipados (festas, viagens)</li>
-                        <li><strong>Desvios sistêmicos:</strong> Padrões consistentes de ultrapassagem</li>
-                        <li><strong>Desvios imprevistos:</strong> Situações não antecipadas</li>
-                        <li><strong>Desvios de comportamento:</strong> Falhas na disciplina orçamentária</li>
+                        <li data-i18n="blog_smart_budget_strategy4_identification_question1">Quais categorias ultrapassaram os limites?</li>
+                        <li data-i18n="blog_smart_budget_strategy4_identification_question2">Quais foram as causas dos desvios?</li>
+                        <li data-i18n="blog_smart_budget_strategy4_identification_question3">Quais padrões podem ser melhorados?</li>
+                        <li data-i18n="blog_smart_budget_strategy4_identification_question4">Quais estratégias funcionaram melhor?</li>
                     </ul>
                     
-                    <h2>Estratégia 5: Projeções e Planejamento Futuro</h2>
-                    <p>Utilize dados históricos para planejar orçamentos futuros de forma mais precisa:</p>
-                    
-                    <h3>Projeções Baseadas em Tendências</h3>
-                    <p>Analise tendências para prever necessidades futuras:</p>
+                    <h3 data-i18n="blog_smart_budget_strategy4_categorization_title">Categorização de Desvios</h3>
+                    <p data-i18n="blog_smart_budget_strategy4_categorization_content">Entenda a natureza dos desvios para melhor planejamento futuro:</p>
                     
                     <ul>
-                        <li>Se seus gastos com alimentos aumentaram 5% mensalmente, projete esse aumento</li>
-                        <li>Se você adicionou um novo membro à família, ajuste orçamentos adequadamente</li>
-                        <li>Se sua renda mudou, reavalie toda a estrutura orçamentária</li>
+                        <li><strong data-i18n="blog_smart_budget_strategy4_categorization_type1_title">Desvios planejados:</strong> <span data-i18n="blog_smart_budget_strategy4_categorization_type1_desc">Eventos antecipados (festas, viagens)</span></li>
+                        <li><strong data-i18n="blog_smart_budget_strategy4_categorization_type2_title">Desvios sistêmicos:</strong> <span data-i18n="blog_smart_budget_strategy4_categorization_type2_desc">Padrões consistentes de ultrapassagem</span></li>
+                        <li><strong data-i18n="blog_smart_budget_strategy4_categorization_type3_title">Desvios imprevistos:</strong> <span data-i18n="blog_smart_budget_strategy4_categorization_type3_desc">Situações não antecipadas</span></li>
+                        <li><strong data-i18n="blog_smart_budget_strategy4_categorization_type4_title">Desvios de comportamento:</strong> <span data-i18n="blog_smart_budget_strategy4_categorization_type4_desc">Falhas na disciplina orçamentária</span></li>
                     </ul>
                     
-                    <h3>Cenários de Planejamento</h3>
-                    <p>Crie diferentes cenários orçamentários para situações variadas:</p>
+                    <h2 data-i18n="blog_smart_budget_strategy5_title">Estratégia 5: Projeções e Planejamento Futuro</h2>
+                    <p data-i18n="blog_smart_budget_strategy5_content">Utilize dados históricos para planejar orçamentos futuros de forma mais precisa:</p>
+                    
+                    <h3 data-i18n="blog_smart_budget_strategy5_projections_title">Projeções Baseadas em Tendências</h3>
+                    <p data-i18n="blog_smart_budget_strategy5_projections_content">Analise tendências para prever necessidades futuras:</p>
                     
                     <ul>
-                        <li><strong>Cenário otimista:</strong> Melhores condições financeiras</li>
-                        <li><strong>Cenário realista:</strong> Condições normais esperadas</li>
-                        <li><strong>Cenário conservador:</strong> Condições desafiadoras</li>
+                        <li data-i18n="blog_smart_budget_strategy5_projections_example1">Se seus gastos com alimentos aumentaram 5% mensalmente, projete esse aumento</li>
+                        <li data-i18n="blog_smart_budget_strategy5_projections_example2">Se você adicionou um novo membro à família, ajuste orçamentos adequadamente</li>
+                        <li data-i18n="blog_smart_budget_strategy5_projections_example3">Se sua renda mudou, reavalie toda a estrutura orçamentária</li>
                     </ul>
                     
-                    <h2>Estratégia 6: Integração com Objetivos Financeiros</h2>
-                    <p>Conecte seus orçamentos de compras com objetivos financeiros maiores:</p>
-                    
-                    <h3>Alocação de Recursos</h3>
-                    <p>Determine quanto de suas economias em compras deve ser direcionado para objetivos:</p>
+                    <h3 data-i18n="blog_smart_budget_strategy5_scenarios_title">Cenários de Planejamento</h3>
+                    <p data-i18n="blog_smart_budget_strategy5_scenarios_content">Crie diferentes cenários orçamentários para situações variadas:</p>
                     
                     <ul>
-                        <li>Reserva de emergência</li>
-                        <li>Viagens e lazer</li>
-                        <li>Investimentos pessoais</li>
-                        <li>Grandes compras planejadas</li>
+                        <li><strong data-i18n="blog_smart_budget_strategy5_scenarios_type1_title">Cenário otimista:</strong> <span data-i18n="blog_smart_budget_strategy5_scenarios_type1_desc">Melhores condições financeiras</span></li>
+                        <li><strong data-i18n="blog_smart_budget_strategy5_scenarios_type2_title">Cenário realista:</strong> <span data-i18n="blog_smart_budget_strategy5_scenarios_type2_desc">Condições normais esperadas</span></li>
+                        <li><strong data-i18n="blog_smart_budget_strategy5_scenarios_type3_title">Cenário conservador:</strong> <span data-i18n="blog_smart_budget_strategy5_scenarios_type3_desc">Condições desafiadoras</span></li>
                     </ul>
                     
-                    <h3>Medição de Progresso</h3>
-                    <p>Utilize dados para medir o progresso em direção aos objetivos:</p>
+                    <h2 data-i18n="blog_smart_budget_strategy6_title">Estratégia 6: Integração com Objetivos Financeiros</h2>
+                    <p data-i18n="blog_smart_budget_strategy6_content">Conecte seus orçamentos de compras com objetivos financeiros maiores:</p>
+                    
+                    <h3 data-i18n="blog_smart_budget_strategy6_allocation_title">Alocação de Recursos</h3>
+                    <p data-i18n="blog_smart_budget_strategy6_allocation_content">Determine quanto de suas economias em compras deve ser direcionado para objetivos:</p>
                     
                     <ul>
-                        <li>Quanto você economizou este mês em relação ao planejado?</li>
-                        <li>Como essa economia contribui para seus objetivos maiores?</li>
-                        <li>Quais estratégias estão gerando melhores resultados?</li>
+                        <li data-i18n="blog_smart_budget_strategy6_allocation_goal1">Reserva de emergência</li>
+                        <li data-i18n="blog_smart_budget_strategy6_allocation_goal2">Viagens e lazer</li>
+                        <li data-i18n="blog_smart_budget_strategy6_allocation_goal3">Investimentos pessoais</li>
+                        <li data-i18n="blog_smart_budget_strategy6_allocation_goal4">Grandes compras planejadas</li>
                     </ul>
                     
-                    <h2>Estratégia 7: Otimização Contínua</h2>
-                    <p>Um orçamento inteligente é um processo vivo que evolui constantemente:</p>
-                    
-                    <h3>Revisão Periódica</h3>
-                    <p>Estabeleça ciclos regulares de revisão e ajuste:</p>
+                    <h3 data-i18n="blog_smart_budget_strategy6_progress_title">Medição de Progresso</h3>
+                    <p data-i18n="blog_smart_budget_strategy6_progress_content">Utilize dados para medir o progresso em direção aos objetivos:</p>
                     
                     <ul>
-                        <li>Revisão mensal de desempenho orçamentário</li>
-                        <li>Ajuste de orçamentos com base em resultados reais</li>
-                        <li>Atualização de estratégias com base em aprendizados</li>
-                        <li>Refinamento de limites e alertas</li>
+                        <li data-i18n="blog_smart_budget_strategy6_progress_question1">Quanto você economizou este mês em relação ao planejado?</li>
+                        <li data-i18n="blog_smart_budget_strategy6_progress_question2">Como essa economia contribui para seus objetivos maiores?</li>
+                        <li data-i18n="blog_smart_budget_strategy6_progress_question3">Quais estratégias estão gerando melhores resultados?</li>
                     </ul>
                     
-                    <h3>Experimentação Controlada</h3>
-                    <p>Teste diferentes abordagens para identificar as mais eficazes:</p>
+                    <h2 data-i18n="blog_smart_budget_strategy7_title">Estratégia 7: Otimização Contínua</h2>
+                    <p data-i18n="blog_smart_budget_strategy7_content">Um orçamento inteligente é um processo vivo que evolui constantemente:</p>
+                    
+                    <h3 data-i18n="blog_smart_budget_strategy7_review_title">Revisão Periódica</h3>
+                    <p data-i18n="blog_smart_budget_strategy7_review_content">Estabeleça ciclos regulares de revisão e ajuste:</p>
                     
                     <ul>
-                        <li>Experimente diferentes estruturas de categorias</li>
-                        <li>Teste diferentes níveis de limites orçamentários</li>
-                        <li>Experimente diferentes estratégias de alerta</li>
-                        <li>Meça o impacto de cada mudança</li>
+                        <li data-i18n="blog_smart_budget_strategy7_review_task1">Revisão mensal de desempenho orçamentário</li>
+                        <li data-i18n="blog_smart_budget_strategy7_review_task2">Ajuste de orçamentos com base em resultados reais</li>
+                        <li data-i18n="blog_smart_budget_strategy7_review_task3">Atualização de estratégias com base em aprendizados</li>
+                        <li data-i18n="blog_smart_budget_strategy7_review_task4">Refinamento de limites e alertas</li>
                     </ul>
                     
-                    <h2>Dicas Avançadas para Orçamentos Inteligentes</h2>
-                    
-                    <h3>Uso de Benchmarks</h3>
-                    <p>Compare seu desempenho com benchmarks relevantes:</p>
+                    <h3 data-i18n="blog_smart_budget_strategy7_experimentation_title">Experimentação Controlada</h3>
+                    <p data-i18n="blog_smart_budget_strategy7_experimentation_content">Teste diferentes abordagens para identificar as mais eficazes:</p>
                     
                     <ul>
-                        <li>Média de gastos com alimentação por pessoa/renda</li>
-                        <li>Percentuais recomendados por categoria</li>
-                        <li>Comparação com orçamentos de pessoas em situações similares</li>
+                        <li data-i18n="blog_smart_budget_strategy7_experimentation_test1">Experimente diferentes estruturas de categorias</li>
+                        <li data-i18n="blog_smart_budget_strategy7_experimentation_test2">Teste diferentes níveis de limites orçamentários</li>
+                        <li data-i18n="blog_smart_budget_strategy7_experimentation_test3">Experimente diferentes estratégias de alerta</li>
+                        <li data-i18n="blog_smart_budget_strategy7_experimentation_test4">Meça o impacto de cada mudança</li>
                     </ul>
                     
-                    <h3>Consideração de Fatores Externos</h3>
-                    <p>Leve em conta fatores externos que podem afetar seus orçamentos:</p>
+                    <h2 data-i18n="blog_smart_budget_advanced_tips_title">Dicas Avançadas para Orçamentos Inteligentes</h2>
+                    
+                    <h3 data-i18n="blog_smart_budget_advanced_tip1_title">Uso de Benchmarks</h3>
+                    <p data-i18n="blog_smart_budget_advanced_tip1_content">Compare seu desempenho com benchmarks relevantes:</p>
                     
                     <ul>
-                        <li>Inflação e variações de preços</li>
-                        <li>Mudanças sazonais e climáticas</li>
-                        <li>Eventos econômicos e sociais</li>
-                        <li>Mudanças na disponibilidade de produtos</li>
+                        <li data-i18n="blog_smart_budget_advanced_tip1_benchmark1">Média de gastos com alimentação por pessoa/renda</li>
+                        <li data-i18n="blog_smart_budget_advanced_tip1_benchmark2">Percentuais recomendados por categoria</li>
+                        <li data-i18n="blog_smart_budget_advanced_tip1_benchmark3">Comparação com orçamentos de pessoas em situações similares</li>
                     </ul>
                     
-                    <h3>Automação de Processos</h3>
-                    <p>Automatize partes do processo para reduzir esforço e aumentar consistência:</p>
+                    <h3 data-i18n="blog_smart_budget_advanced_tip2_title">Consideração de Fatores Externos</h3>
+                    <p data-i18n="blog_smart_budget_advanced_tip2_content">Leve em conta fatores externos que podem afetar seus orçamentos:</p>
                     
                     <ul>
-                        <li>Criação automática de orçamentos baseados em histórico</li>
-                        <li>Ajustes automáticos com base em tendências identificadas</li>
-                        <li>Geração automática de relatórios e análises</li>
-                        <li>Envio automático de alertas e lembretes</li>
-                    </ul>
-                    
-                    <h2>Como o Aplicativo Lista de Compras Potencializa Orçamentos Inteligentes</h2>
-                    
-                    <p>O aplicativo Lista de Compras oferece funcionalidades específicas para cada aspecto de orçamentos inteligentes:</p>
-                    
-                    <ul>
-                        <li><strong>Histórico completo:</strong> Base para todas as análises e projeções</li>
-                        <li><strong>Categorização automática:</strong> Facilita análises por tipo de produto</li>
-                        <li><strong>Limites configuráveis:</strong> Controle orçamentário personalizado</li>
-                        <li><strong>Alertas inteligentes:</strong> Prevenção de desvios orçamentários</li>
-                        <li><strong>Gráficos e estatísticas:</strong> Visualização clara de padrões e tendências</li>
-                        <li><strong>Funcionamento offline:</strong> Registro de gastos mesmo sem internet</li>
-                        <li><strong>Compartilhamento:</strong> Coordenação com familiares para orçamentos conjuntos</li>
-                        <li><strong>Personalização:</strong> Adaptação às necessidades específicas de cada usuário</li>
-                    </ul>
-                    
-                    <h2>Conclusão</h2>
-                    <p>Um orçamento inteligente baseado em dados é uma ferramenta poderosa para transformar sua relação com o consumo e maximizar suas economias. Ao utilizar dados reais em vez de estimativas, você pode criar orçamentos mais realistas, identificar oportunidades de economia e tomar decisões financeiras mais informadas.</p>
-                    
-                    <p>O aplicativo Lista de Compras oferece a infraestrutura necessária para implementar essa abordagem data-driven ao controle financeiro. Com histórico completo de compras, categorização automática, limites configuráveis e alertas inteligentes, você tem todas as ferramentas necessárias para criar orçamentos verdadeiramente inteligentes.</p>
-                    
-                    <p>Lembre-se de que a chave para o sucesso está na consistência e na análise contínua dos seus dados. Comece implementando uma ou duas estratégias apresentadas neste artigo, e gradualmente incorpore mais técnicas à sua rotina orçamentária.</p>
-                    
-                    <p>Com disciplina e as ferramentas certas, você pode transformar suas compras de uma fonte de estresse financeiro em uma atividade planejada e econômica. Experimente aplicar essas estratégias e veja a diferença que fazem no seu orçamento!</p>
-                </div>
-            </article>
-            
-            <div class="back-to-blog">
-                <a href="../blog.html" class="btn btn-secondary">← Voltar para o Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>Lista de Compras</h3>
-                    <p>Gerencie suas compras de forma inteligente</p>
-                </div>
-                <div class="footer-links">
-                    <a href="../index.html#features">Recursos</a>
-                    <a href="../index.html#download">Download</a>
-                    <a href="../index.html#contact">Contato</a>
-                    <a href="../politica-privacidade.html">Política de Privacidade</a>
-                    <a href="../termos-de-uso.html">Termos de Uso</a>
-                    <a href="../blog.html">Blog</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Lista de Compras. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Atualizar o ano no footer
-        document.addEventListener('DOMContentLoaded', () => {
-            const yearElement = document.querySelector('.footer-bottom p');
-            if (yearElement) {
-                const currentYear = new Date().getFullYear();
-                yearElement.innerHTML = yearElement.innerHTML.replace('2025', currentYear);
-            }
-        });
-    </script>
-</body>
-</html>
+                        <li data-i18n="blog_smart_budget_advanced_tip2_factor1">Inflação e variações de pre

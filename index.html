@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Compras - Gerencie suas compras de forma inteligente</title>
+    <title data-i18n="site_title">Lista de Compras - Gerencie suas compras de forma inteligente</title>
     <meta name="description" content="Aplicativo Android para gerenciamento de listas de compras com controle financeiro, categorias e histórico completo. Funciona 100% offline.">
     <link rel="stylesheet" href="styles.css?v=1.0" id="main-css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -18,11 +18,21 @@
             </div>
             <nav class="nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#features">Recursos</a></li>
-                    <li><a href="#download">Download</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="#features" data-i18n="features">Recursos</a></li>
+                    <li><a href="#download" data-i18n="download">Download</a></li>
+                    <li><a href="#contact" data-i18n="contact">Contato</a></li>
+                    <li><a href="blog.html" data-i18n="blog">Blog</a></li>
+                    <!-- Language Switcher -->
+                    <li class="language-switcher">
+                        <select id="language-select" onchange="changeLanguage(this.value)">
+                            <option value="pt">PT</option>
+                            <option value="en">EN</option>
+                            <option value="es">ES</option>
+                            <option value="de">DE</option>
+                            <option value="it">IT</option>
+                        </select>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -32,11 +42,11 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h2>Gerencie suas compras de forma inteligente</h2>
-                <p>Aplicativo completo para criar, organizar e acompanhar suas listas de compras com controle financeiro detalhado. Tudo offline e 100% gratuito.</p>
+                <h2 data-i18n="hero_title">Gerencie suas compras de forma inteligente</h2>
+                <p data-i18n="hero_description">Aplicativo completo para criar, organizar e acompanhar suas listas de compras com controle financeiro detalhado. Tudo offline e 100% gratuito.</p>
                 <div class="cta-buttons">
-                    <a href="#download" class="btn btn-primary">Baixar na Google Play</a>
-                    <a href="#features" class="btn btn-secondary">Saiba mais</a>
+                    <a href="#download" class="btn btn-primary" data-i18n="hero_button_primary">Baixar na Google Play</a>
+                    <a href="#features" class="btn btn-secondary" data-i18n="hero_button_secondary">Saiba mais</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -48,37 +58,37 @@
     <!-- Recursos -->
     <section id="features" class="features">
         <div class="container">
-            <h2>Recursos Principais</h2>
+            <h2 data-i18n="features_title">Recursos Principais</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">📱</div>
-                    <h3>Funcionamento Offline</h3>
-                    <p>100% funcional sem internet. Todos os dados armazenados localmente no seu dispositivo.</p>
+                    <h3 data-i18n="feature_offline_title">Funcionamento Offline</h3>
+                    <p data-i18n="feature_offline_desc">100% funcional sem internet. Todos os dados armazenados localmente no seu dispositivo.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📊</div>
-                    <h3>Controle Financeiro</h3>
-                    <p>Acompanhe seus gastos com gráficos e estatísticas por categoria e estabelecimento.</p>
+                    <h3 data-i18n="feature_finance_title">Controle Financeiro</h3>
+                    <p data-i18n="feature_finance_desc">Acompanhe seus gastos com gráficos e estatísticas por categoria e estabelecimento.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📋</div>
-                    <h3>Gestão de Listas</h3>
-                    <p>Crie múltiplas listas com nome, mercado e data. Visualize o progresso em tempo real.</p>
+                    <h3 data-i18n="feature_lists_title">Gestão de Listas</h3>
+                    <p data-i18n="feature_lists_desc">Crie múltiplas listas com nome, mercado e data. Visualize o progresso em tempo real.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🏷️</div>
-                    <h3>Categorias</h3>
-                    <p>10 categorias pré-definidas com ícones para organizar seus itens de forma eficiente.</p>
+                    <h3 data-i18n="feature_categories_title">Categorias</h3>
+                    <p data-i18n="feature_categories_desc">10 categorias pré-definidas com ícones para organizar seus itens de forma eficiente.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📤</div>
-                    <h3>Compartilhamento</h3>
-                    <p>Envie suas listas para amigos e familiares via WhatsApp com link da Play Store.</p>
+                    <h3 data-i18n="feature_share_title">Compartilhamento</h3>
+                    <p data-i18n="feature_share_desc">Envie suas listas para amigos e familiares via WhatsApp com link da Play Store.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎨</div>
-                    <h3>Personalização</h3>
-                    <p>Tema claro/escuro, múltiplos idiomas e moedas para sua melhor experiência.</p>
+                    <h3 data-i18n="feature_custom_title">Personalização</h3>
+                    <p data-i18n="feature_custom_desc">Tema claro/escuro, múltiplos idiomas e moedas para sua melhor experiência.</p>
                 </div>
             </div>
         </div>
@@ -87,27 +97,27 @@
     <!-- Como Funciona -->
     <section class="how-it-works">
         <div class="container">
-            <h2>Como Funciona</h2>
+            <h2 data-i18n="how_it_works_title">Como Funciona</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Crie sua Lista</h3>
-                    <p>Adicione nome, mercado e data para sua nova lista de compras.</p>
+                    <h3 data-i18n="step_create_title">Crie sua Lista</h3>
+                    <p data-i18n="step_create_desc">Adicione nome, mercado e data para sua nova lista de compras.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Adicione Itens</h3>
-                    <p>Inclua produtos com quantidade, unidade e preço estimado.</p>
+                    <h3 data-i18n="step_add_title">Adicione Itens</h3>
+                    <p data-i18n="step_add_desc">Inclua produtos com quantidade, unidade e preço estimado.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Marque como Comprado</h3>
-                    <p>Atualize os preços reais e marque itens conforme os compra.</p>
+                    <h3 data-i18n="step_check_title">Marque como Comprado</h3>
+                    <p data-i18n="step_check_desc">Atualize os preços reais e marque itens conforme os compra.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
-                    <h3>Analise seus Gastos</h3>
-                    <p>Veja estatísticas e gráficos com seus hábitos de consumo.</p>
+                    <h3 data-i18n="step_analyze_title">Analise seus Gastos</h3>
+                    <p data-i18n="step_analyze_desc">Veja estatísticas e gráficos com seus hábitos de consumo.</p>
                 </div>
             </div>
         </div>
@@ -116,8 +126,8 @@
     <!-- Carrossel de Imagens -->
     <section class="carousel-section">
         <div class="container">
-            <h2>Galeria do Aplicativo</h2>
-            <p>Confira algumas telas do nosso aplicativo em ação</p>
+            <h2 data-i18n="gallery_title">Galeria do Aplicativo</h2>
+            <p data-i18n="gallery_subtitle">Confira algumas telas do nosso aplicativo em ação</p>
             
             <div class="carousel-container">
                 <div class="carousel">
@@ -175,23 +185,23 @@
     <!-- Download -->
     <section id="download" class="download">
         <div class="container">
-            <h2>Baixe Agora Gratuitamente</h2>
-            <p>Disponível exclusivamente na Google Play Store. Instale e comece a organizar suas compras hoje mesmo!</p>
+            <h2 data-i18n="download_title">Baixe Agora Gratuitamente</h2>
+            <p data-i18n="download_description">Disponível exclusivamente na Google Play Store. Instale e comece a organizar suas compras hoje mesmo!</p>
             <a href="https://play.google.com/store/apps/details?id=seu.app.id" class="btn btn-download">
-                <img src="assets/badges/google-play-badge.png" alt="Baixar na Google Play" />
+                <img src="assets/badges/google-play-badge.png" alt="Baixar na Google Play" data-i18n="download_badge_alt" />
             </a>
             <div class="app-info">
                 <div class="info-item">
                     <span class="info-icon">🔒</span>
-                    <p>100% Grátis</p>
+                    <p data-i18n="app_info_free">100% Grátis</p>
                 </div>
                 <div class="info-item">
                     <span class="info-icon">📶</span>
-                    <p>Funciona Offline</p>
+                    <p data-i18n="app_info_offline">Funciona Offline</p>
                 </div>
                 <div class="info-item">
                     <span class="info-icon">🛡️</span>
-                    <p>Privacidade Garantida</p>
+                    <p data-i18n="app_info_privacy">Privacidade Garantida</p>
                 </div>
             </div>
         </div>
@@ -202,11 +212,11 @@
     <!-- Contato -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Entre em Contato</h2>
+            <h2 data-i18n="contact_title">Entre em Contato</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Tem dúvidas ou sugestões?</h3>
-                    <p>Estamos aqui para ajudar! Entre em contato conosco através dos canais abaixo:</p>
+                    <h3 data-i18n="contact_subtitle">Tem dúvidas ou sugestões?</h3>
+                    <p data-i18n="contact_description">Estamos aqui para ajudar! Entre em contato conosco através dos canais abaixo:</p>
                     <ul>
                         <li>📧 junior@listadecompras.shop</li>
                         <li>📱 +xx (xx) 99999-9999</li>
@@ -214,10 +224,10 @@
                     </ul>
                 </div>
                 <form class="contact-form" action="send_email.php" method="POST">
-                    <input type="text" name="name" placeholder="Seu nome" required>
-                    <input type="email" name="email" placeholder="Seu e-mail" required>
-                    <textarea name="message" placeholder="Sua mensagem" required></textarea>
-                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    <input type="text" name="name" placeholder="Seu nome" data-i18n-placeholder="form_name_placeholder" required>
+                    <input type="email" name="email" placeholder="Seu e-mail" data-i18n-placeholder="form_email_placeholder" required>
+                    <textarea name="message" placeholder="Sua mensagem" data-i18n-placeholder="form_message_placeholder" required></textarea>
+                    <button type="submit" class="btn btn-primary" data-i18n="form_button">Enviar Mensagem</button>
                 </form>
             </div>
         </div>
@@ -232,20 +242,61 @@
                     <p>Gerencie suas compras de forma inteligente</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#features">Recursos</a>
-                    <a href="#download">Download</a>
-                    <a href="#contact">Contato</a>
-                    <a href="politica-privacidade.html">Política de Privacidade</a>
-                    <a href="termos-de-uso.html">Termos de Uso</a>
+                    <a href="#features" data-i18n="features">Recursos</a>
+                    <a href="#download" data-i18n="download">Download</a>
+                    <a href="#contact" data-i18n="contact">Contato</a>
+                    <a href="politica-privacidade.html" data-i18n="privacy_policy">Política de Privacidade</a>
+                    <a href="termos-de-uso.html" data-i18n="terms_of_use">Termos de Uso</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Lista de Compras. Todos os direitos reservados.</p>
+                <p>&copy; 2025 <span data-i18n="footer_copyright">Lista de Compras. Todos os direitos reservados.</span></p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="translations.js"></script>
+    <script>
+        // Language switcher function
+        function changeLanguage(lang) {
+            // Update all elements with data-i18n attributes
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.placeholder = translations[lang][key];
+                    } else {
+                        element.textContent = translations[lang][key];
+                    }
+                }
+            });
+            
+            // Update meta description
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription && translations[lang].site_description) {
+                metaDescription.setAttribute('content', translations[lang].site_description);
+            }
+            
+            // Update page title
+            if (translations[lang].site_title) {
+                document.title = translations[lang].site_title;
+            }
+            
+            // Save language preference in localStorage
+            localStorage.setItem('preferredLanguage', lang);
+            
+            // Update language selector
+            document.getElementById('language-select').value = lang;
+        }
+        
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check for saved language preference or default to Portuguese
+            const savedLang = localStorage.getItem('preferredLanguage') || 'pt';
+            changeLanguage(savedLang);
+        });
+    </script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JT98JSW1CV"></script>

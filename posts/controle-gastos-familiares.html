@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Como Controlar os Gastos Familiares com Eficiência - Blog Lista de Compras</title>
-    <meta name="description" content="Aprenda estratégias eficazes para controlar os gastos familiares e economizar dinheiro usando nosso aplicativo de lista de compras.">
-    <link rel="stylesheet" href="../styles.css">
+    <title data-i18n="blog_family_expenses_title">Como Controlar os Gastos Familiares com Eficiência</title>
+    <meta name="description" content="Aprenda estratégias eficazes para controlar os gastos familiares e economizar dinheiro usando nosso aplicativo de lista de compras." data-i18n-meta="blog_family_expenses_meta_desc">
+    <link rel="stylesheet" href="../styles.css?v=1.0">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -17,7 +17,23 @@
                 <p class="subtitle">Orçamento e Gastos Inteligentes!</p>
             </div>
             <nav class="nav">
-                <ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#features">Recursos</a></li><li><a href="../index.html#download">Download</a></li><li><a href="../index.html#contact">Contato</a></li><li><a href="../blog.html">Blog</a></li></ul>
+                <ul>
+                    <li><a href="../index.html" data-i18n="home">Home</a></li>
+                    <li><a href="../index.html#features" data-i18n="features">Recursos</a></li>
+                    <li><a href="../index.html#download" data-i18n="download">Download</a></li>
+                    <li><a href="../index.html#contact" data-i18n="contact">Contato</a></li>
+                    <li><a href="../blog.html" data-i18n="blog">Blog</a></li>
+                    <!-- Language Switcher -->
+                    <li class="language-switcher">
+                        <select id="language-select" onchange="changeLanguage(this.value)">
+                            <option value="pt">PT</option>
+                            <option value="en">EN</option>
+                            <option value="es">ES</option>
+                            <option value="de">DE</option>
+                            <option value="it">IT</option>
+                        </select>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -27,157 +43,113 @@
         <div class="container">
             <article>
                 <header class="post-header">
-                    <h1 class="post-title-single">Como Controlar os Gastos Familiares com Eficiência</h1>
-                    <p class="post-meta-single">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                    <h1 class="post-title-single" data-i18n="blog_family_expenses_header">Como Controlar os Gastos Familiares com Eficiência</h1>
+                    <p class="post-meta-single" data-i18n="blog_family_expenses_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
                 </header>
                 
                 <div class="post-content-single">
-                    <p>Controlar os gastos familiares é um desafio constante para muitas famílias. Com preços em constante aumento e despesas imprevistas, é essencial ter estratégias eficazes para manter as finanças sob controle. O aplicativo Lista de Compras oferece ferramentas poderosas para ajudar você a controlar os gastos familiares com eficiência.</p>
+                    <p data-i18n="blog_family_expenses_intro">Controlar os gastos familiares é um desafio constante para muitas famílias. Com preços em constante aumento e despesas imprevistas, é essencial ter estratégias eficazes para manter as finanças sob controle. O aplicativo Lista de Compras oferece ferramentas poderosas para ajudar você a controlar os gastos familiares com eficiência.</p>
                     
-                    <h2>Por Que Controlar os Gastos Familiares é Importante</h2>
-                    <p>Controlar os gastos familiares vai além de simplesmente economizar dinheiro. É sobre:</p>
-                    
-                    <ul>
-                        <li><strong>Reduzir o estresse financeiro:</strong> Saber exatamente para onde vai o dinheiro traz tranquilidade</li>
-                        <li><strong>Alcançar objetivos financeiros:</strong> Planejar para viagens, educação dos filhos, reformas, etc.</li>
-                        <li><strong>Preparar-se para emergências:</strong> Ter uma reserva para situações inesperadas</li>
-                        <li><strong>Tomar decisões informadas:</strong> Compreender padrões de consumo para melhorar hábitos</li>
-                    </ul>
-                    
-                    <h2>Desafios Comuns no Controle de Gastos Familiares</h2>
-                    
-                    <h3>Falta de Visibilidade</h3>
-                    <p>Muitas famílias não têm uma visão clara de seus gastos mensais, o que dificulta o controle financeiro. O aplicativo Lista de Compras resolve esse problema registrando todos os gastos com compras e gerando relatórios detalhados.</p>
-                    
-                    <h3>Gastos Impulsivos</h3>
-                    <p>Compras por impulso podem comprometer significativamente o orçamento familiar. Com listas planejadas e controle de gastos em tempo real, o aplicativo ajuda a evitar essas armadilhas.</p>
-                    
-                    <h3>Falta de Planejamento</h3>
-                    <p>Sem um planejamento adequado, é fácil ultrapassar o orçamento mensal. O aplicativo permite criar orçamentos por categoria e acompanhar o progresso em tempo real.</p>
-                    
-                    <h2>Estratégias Eficazes para Controlar Gastos Familiares</h2>
-                    
-                    <h3>1. Estabeleça um Orçamento Familiar</h3>
-                    <p>Comece definindo um orçamento mensal para todas as despesas da família, incluindo compras. Utilize o aplicativo para:</p>
+                    <h2 data-i18n="blog_family_expenses_why_important_title">Por Que Controlar os Gastos Familiares é Importante</h2>
+                    <p data-i18n="blog_family_expenses_why_important_content">Controlar os gastos familiares vai além de simplesmente economizar dinheiro. É sobre:</p>
                     
                     <ul>
-                        <li>Criar categorias de gastos claras</li>
-                        <li>Definir limites para cada categoria</li>
-                        <li>Acompanhar o progresso em tempo real</li>
+                        <li><strong data-i18n="blog_family_expenses_reason1_strong">Reduzir o estresse financeiro:</strong> <span data-i18n="blog_family_expenses_reason1_content">Saber exatamente para onde vai o dinheiro traz tranquilidade</span></li>
+                        <li><strong data-i18n="blog_family_expenses_reason2_strong">Alcançar objetivos financeiros:</strong> <span data-i18n="blog_family_expenses_reason2_content">Planejar para viagens, educação dos filhos, reformas, etc.</span></li>
+                        <li><strong data-i18n="blog_family_expenses_reason3_strong">Preparar-se para emergências:</strong> <span data-i18n="blog_family_expenses_reason3_content">Ter uma reserva para situações inesperadas</span></li>
+                        <li><strong data-i18n="blog_family_expenses_reason4_strong">Tomar decisões informadas:</strong> <span data-i18n="blog_family_expenses_reason4_content">Compreender padrões de consumo para melhorar hábitos</span></li>
                     </ul>
                     
-                    <h3>2. Envolve Toda a Família</h3>
-                    <p>O controle de gastos é mais eficaz quando toda a família participa. Utilize a função de compartilhamento do aplicativo para:</p>
+                    <h2 data-i18n="blog_family_expenses_common_challenges_title">Desafios Comuns no Controle de Gastos Familiares</h2>
+                    
+                    <h3 data-i18n="blog_family_expenses_challenge1_title">Falta de Visibilidade</h3>
+                    <p data-i18n="blog_family_expenses_challenge1_content">Muitas famílias não têm uma visão clara de seus gastos mensais, o que dificulta o controle financeiro. O aplicativo Lista de Compras resolve esse problema registrando todos os gastos com compras e gerando relatórios detalhados.</p>
+                    
+                    <h3 data-i18n="blog_family_expenses_challenge2_title">Gastos Impulsivos</h3>
+                    <p data-i18n="blog_family_expenses_challenge2_content">Compras por impulso podem comprometer significativamente o orçamento familiar. Com listas planejadas e controle de gastos em tempo real, o aplicativo ajuda a evitar essas armadilhas.</p>
+                    
+                    <h3 data-i18n="blog_family_expenses_challenge3_title">Falta de Planejamento</h3>
+                    <p data-i18n="blog_family_expenses_challenge3_content">Sem um planejamento adequado, é fácil ultrapassar o orçamento mensal. O aplicativo permite criar orçamentos por categoria e acompanhar o progresso em tempo real.</p>
+                    
+                    <h2 data-i18n="blog_family_expenses_strategies_title">Estratégias Eficazes para Controlar Gastos Familiares</h2>
+                    
+                    <h3 data-i18n="blog_family_expenses_strategy1_title">1. Estabeleça um Orçamento Familiar</h3>
+                    <p data-i18n="blog_family_expenses_strategy1_content">Comece definindo um orçamento mensal para todas as despesas da família, incluindo compras. Utilize o aplicativo para:</p>
                     
                     <ul>
-                        <li>Enviar listas para outros membros da família</li>
-                        <li>Permitir que todos contribuam para as listas</li>
-                        <li>Criar consciência financeira em todos os membros</li>
+                        <li data-i18n="blog_family_expenses_strategy1_tip1">Criar categorias de gastos claras</li>
+                        <li data-i18n="blog_family_expenses_strategy1_tip2">Definir limites para cada categoria</li>
+                        <li data-i18n="blog_family_expenses_strategy1_tip3">Acompanhar o progresso em tempo real</li>
                     </ul>
                     
-                    <h3>3. Utilize a Função de Histórico</h3>
-                    <p>O histórico de compras do aplicativo é uma ferramenta valiosa para identificar padrões de consumo e oportunidades de economia:</p>
+                    <h3 data-i18n="blog_family_expenses_strategy2_title">2. Envolve Toda a Família</h3>
+                    <p data-i18n="blog_family_expenses_strategy2_content">O controle de gastos é mais eficaz quando toda a família participa. Utilize a função de compartilhamento do aplicativo para:</p>
                     
                     <ul>
-                        <li>Compare gastos mensais para identificar tendências</li>
-                        <li>Identifique categorias onde você pode economizar</li>
-                        <li>Planeje melhor futuras compras com base em dados reais</li>
+                        <li data-i18n="blog_family_expenses_strategy2_tip1">Enviar listas para outros membros da família</li>
+                        <li data-i18n="blog_family_expenses_strategy2_tip2">Permitir que todos contribuam para as listas</li>
+                        <li data-i18n="blog_family_expenses_strategy2_tip3">Criar consciência financeira em todos os membros</li>
                     </ul>
                     
-                    <h3>4. Planeje Compras por Período</h3>
-                    <p>Em vez de fazer compras grandes e esporádicas, planeje compras menores ao longo do mês:</p>
+                    <h3 data-i18n="blog_family_expenses_strategy3_title">3. Utilize a Função de Histórico</h3>
+                    <p data-i18n="blog_family_expenses_strategy3_content">O histórico de compras do aplicativo é uma ferramenta valiosa para identificar padrões de consumo e oportunidades de economia:</p>
                     
                     <ul>
-                        <li>Evite o desperdício de alimentos</li>
-                        <li>Mantenha melhor controle dos preços</li>
-                        <li>Adapte-se a promoções de última hora</li>
+                        <li data-i18n="blog_family_expenses_strategy3_tip1">Compare gastos mensais para identificar tendências</li>
+                        <li data-i18n="blog_family_expenses_strategy3_tip2">Identifique categorias onde você pode economizar</li>
+                        <li data-i18n="blog_family_expenses_strategy3_tip3">Planeje melhor futuras compras com base em dados reais</li>
                     </ul>
                     
-                    <h3>5. Estabeleça Metas de Economia</h3>
-                    <p>Defina metas claras de economia e utilize o aplicativo para acompanhá-las:</p>
+                    <h3 data-i18n="blog_family_expenses_strategy4_title">4. Planeje Compras por Período</h3>
+                    <p data-i18n="blog_family_expenses_strategy4_content">Em vez de fazer compras grandes e esporádicas, planeje compras menores ao longo do mês:</p>
                     
                     <ul>
-                        <li>Crie uma categoria específica para economias</li>
-                        <li>Acompanhe seu progresso mensal</li>
-                        <li>Celebre conquistas para manter a motivação</li>
+                        <li data-i18n="blog_family_expenses_strategy4_tip1">Evite o desperdício de alimentos</li>
+                        <li data-i18n="blog_family_expenses_strategy4_tip2">Mantenha melhor controle dos preços</li>
+                        <li data-i18n="blog_family_expenses_strategy4_tip3">Adapte-se a promoções de última hora</li>
                     </ul>
                     
-                    <h2>Como o Aplicativo Lista de Compras Facilita o Controle Financeiro</h2>
+                    <h3 data-i18n="blog_family_expenses_strategy5_title">5. Estabeleça Metas de Economia</h3>
+                    <p data-i18n="blog_family_expenses_strategy5_content">Defina metas claras de economia e utilize o aplicativo para acompanhá-las:</p>
                     
-                    <h3>Registro Detalhado de Gastos</h3>
-                    <p>O aplicativo permite registrar não apenas os itens da sua lista de compras, mas também seus preços reais. Isso cria um histórico detalhado de seus gastos com alimentação e outros produtos.</p>
+                    <ul>
+                        <li data-i18n="blog_family_expenses_strategy5_tip1">Crie uma categoria específica para economias</li>
+                        <li data-i18n="blog_family_expenses_strategy5_tip2">Acompanhe seu progresso mensal</li>
+                        <li data-i18n="blog_family_expenses_strategy5_tip3">Celebre conquistas para manter a motivação</li>
+                    </ul>
                     
-                    <h3>Gráficos e Estatísticas</h3>
-                    <p>A função de controle financeiro gera gráficos e estatísticas que mostram seus padrões de consumo por categoria e estabelecimento, facilitando a identificação de onde você pode economizar.</p>
+                    <h2 data-i18n="blog_family_expenses_how_app_helps_title">Como o Aplicativo Lista de Compras Facilita o Controle Financeiro</h2>
                     
-                    <h3>Alertas de Orçamento</h3>
-                    <p>Você pode estabelecer orçamentos para diferentes categorias de gastos e o aplicativo o alertará quando estiver próximo do limite, ajudando a manter o controle.</p>
+                    <h3 data-i18n="blog_family_expenses_app_feature1_title">Registro Detalhado de Gastos</h3>
+                    <p data-i18n="blog_family_expenses_app_feature1_content">O aplicativo permite registrar não apenas os itens da sua lista de compras, mas também seus preços reais. Isso cria um histórico detalhado de seus gastos com alimentação e outros produtos.</p>
                     
-                    <h3>Histórico Completo</h3>
-                    <p>O histórico de compras permite que você compare gastos em diferentes períodos, identifique tendências e faça previsões mais precisas para o futuro.</p>
+                    <h3 data-i18n="blog_family_expenses_app_feature2_title">Gráficos e Estatísticas</h3>
+                    <p data-i18n="blog_family_expenses_app_feature2_content">A função de controle financeiro gera gráficos e estatísticas que mostram seus padrões de consumo por categoria e estabelecimento, facilitando a identificação de onde você pode economizar.</p>
                     
-                    <h3>Funcionamento Offline</h3>
-                    <p>O aplicativo funciona 100% offline, garantindo que você possa registrar suas compras mesmo sem conexão à internet, mantendo sempre seus dados atualizados.</p>
+                    <h3 data-i18n="blog_family_expenses_app_feature3_title">Alertas de Orçamento</h3>
+                    <p data-i18n="blog_family_expenses_app_feature3_content">Você pode estabelecer orçamentos para diferentes categorias de gastos e o aplicativo o alertará quando estiver próximo do limite, ajudando a manter o controle.</p>
                     
-                    <h2>Dicas Avançadas para Famílias</h2>
+                    <h3 data-i18n="blog_family_expenses_app_feature4_title">Histórico Completo</h3>
+                    <p data-i18n="blog_family_expenses_app_feature4_content">O histórico de compras permite que você compare gastos em diferentes períodos, identifique tendências e faça previsões mais precisas para o futuro.</p>
                     
-                    <h3>Crie Listas Específicas para Cada Membro</h3>
-                    <p>Se diferentes membros da família fazem compras separadamente, crie listas específicas para cada um e combine um sistema de reembolso.</p>
+                    <h3 data-i18n="blog_family_expenses_app_feature5_title">Funcionamento Offline</h3>
+                    <p data-i18n="blog_family_expenses_app_feature5_content">O aplicativo funciona 100% offline, garantindo que você possa registrar suas compras mesmo sem conexão à internet, mantendo sempre seus dados atualizados.</p>
                     
-                    <h3>Estabeleça "Dias de Compras"</h3>
-                    <p>Defina dias específicos da semana para fazer compras, evitando idas frequentes ao supermercado que podem resultar em gastos desnecessários.</p>
+                    <h2 data-i18n="blog_family_expenses_advanced_tips_title">Dicas Avançadas para Famílias</h2>
                     
-                    <h3>Use a Função de Categorias</h3>
-                    <p>As 10 categorias pré-definidas do aplicativo ajudam a organizar seus gastos e identificar onde estão os maiores gastos da família.</p>
+                    <h3 data-i18n="blog_family_expenses_tip1_title">Crie Listas Específicas para Cada Membro</h3>
+                    <p data-i18n="blog_family_expenses_tip1_content">Se diferentes membros da família fazem compras separadamente, crie listas específicas para cada um e combine um sistema de reembolso.</p>
                     
-                    <h3>Analise os Dados Mensalmente</h3>
-                    <p>Dedique um tempo mensalmente para analisar os relatórios do aplicativo e identificar oportunidades de melhoria no controle de gastos.</p>
+                    <h3 data-i18n="blog_family_expenses_tip2_title">Estabeleça "Dias de Compras"</h3>
+                    <p data-i18n="blog_family_expenses_tip2_content">Defina dias específicos da semana para fazer compras, evitando idas frequentes ao supermercado que podem resultar em gastos desnecessários.</p>
                     
-                    <h2>Conclusão</h2>
-                    <p>Controlar os gastos familiares não precisa ser uma tarefa complicada ou estressante. Com as estratégias certas e o uso inteligente do aplicativo Lista de Compras, você pode transformar o controle financeiro em uma atividade simples e eficaz que trará benefícios reais para toda a família.</p>
+                    <h3 data-i18n="blog_family_expenses_tip3_title">Use a Função de Categorias</h3>
+                    <p data-i18n="blog_family_expenses_tip3_content">As 10 categorias pré-definidas do aplicativo ajudam a organizar seus gastos e identificar onde estão os maiores gastos da família.</p>
                     
-                    <p>O segredo está na consistência e no uso das ferramentas certas. Experimente aplicar essas estratégias e veja como sua situação financeira pode melhorar significativamente.</p>
-                </div>
-            </article>
-            
-            <div class="back-to-blog">
-                <a href="../blog.html" class="btn btn-secondary">← Voltar para o Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>Lista de Compras</h3>
-                    <p>Gerencie suas compras de forma inteligente</p>
-                </div>
-                <div class="footer-links">
-                    <a href="../index.html#features">Recursos</a>
-                    <a href="../index.html#download">Download</a>
-                    <a href="../index.html#contact">Contato</a>
-                    <a href="../politica-privacidade.html">Política de Privacidade</a>
-                    <a href="../termos-de-uso.html">Termos de Uso</a>
-                    <a href="../blog.html">Blog</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Lista de Compras. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Atualizar o ano no footer
-        document.addEventListener('DOMContentLoaded', () => {
-            const yearElement = document.querySelector('.footer-bottom p');
-            if (yearElement) {
-                const currentYear = new Date().getFullYear();
-                yearElement.innerHTML = yearElement.innerHTML.replace('2025', currentYear);
-            }
-        });
-    </script>
-</body>
-</html>
+                    <h3 data-i18n="blog_family_expenses_tip4_title">Analise os Dados Mensalmente</h3>
+                    <p data-i18n="blog_family_expenses_tip4_content">Dedique um tempo mensalmente para analisar os relatórios do aplicativo e identificar oportunidades de melhoria no controle de gastos.</p>
+                    
+                    <h2 data-i18n="blog_family_expenses_conclusion_title">Conclusão</h2>
+                    <p data-i18n="blog_family_expenses_conclusion_content1">Controlar os gastos familiares não precisa ser uma tarefa complicada ou estressante. Com as estratégias certas e o uso inteligente do aplicativo Lista de Compras, você pode transformar o controle financeiro em uma atividade simples e eficaz que trará benefícios reais para toda a família.</p>
+                    
+                    <p data-i18n="blog_family_expenses_conclusion_content2">O segredo está na consistência e no

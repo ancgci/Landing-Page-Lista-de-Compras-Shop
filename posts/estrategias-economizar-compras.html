@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estratégias Avançadas para Economizar nas Compras - Blog Lista de Compras</title>
-    <meta name="description" content="Descubra estratégias avançadas para economizar dinheiro nas compras com nosso aplicativo de lista de compras e controle financeiro.">
+    <title data-i18n="blog_advanced_shopping_savings_title">Estratégias Avançadas para Economizar nas Compras - Blog Lista de Compras</title>
+    <meta name="description" content="Descubra estratégias avançadas para economizar dinheiro nas compras com nosso aplicativo de lista de compras e controle financeiro." data-i18n-meta="blog_advanced_shopping_savings_meta_desc">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
 </head>
@@ -17,7 +17,23 @@
                 <p class="subtitle">Orçamento e Gastos Inteligentes!</p>
             </div>
             <nav class="nav">
-                <ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#features">Recursos</a></li><li><a href="../index.html#download">Download</a></li><li><a href="../index.html#contact">Contato</a></li><li><a href="../blog.html">Blog</a></li></ul>
+                <ul>
+                    <li><a href="../index.html" data-i18n="home">Home</a></li>
+                    <li><a href="../index.html#features" data-i18n="features">Recursos</a></li>
+                    <li><a href="../index.html#download" data-i18n="download">Download</a></li>
+                    <li><a href="../index.html#contact" data-i18n="contact">Contato</a></li>
+                    <li><a href="../blog.html" data-i18n="blog">Blog</a></li>
+                    <!-- Language Switcher -->
+                    <li class="language-switcher">
+                        <select id="language-select" onchange="changeLanguage(this.value)">
+                            <option value="pt">PT</option>
+                            <option value="en">EN</option>
+                            <option value="es">ES</option>
+                            <option value="de">DE</option>
+                            <option value="it">IT</option>
+                        </select>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -27,183 +43,183 @@
         <div class="container">
             <article>
                 <header class="post-header">
-                    <h1 class="post-title-single">Estratégias Avançadas para Economizar nas Compras</h1>
-                    <p class="post-meta-single">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                    <h1 class="post-title-single" data-i18n="blog_advanced_shopping_savings_header">Estratégias Avançadas para Economizar nas Compras</h1>
+                    <p class="post-meta-single" data-i18n="blog_advanced_shopping_savings_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
                 </header>
                 
                 <div class="post-content-single">
-                    <p>Economizar dinheiro nas compras vai além de simplesmente procurar promoções. Requer uma abordagem estratégica e sistemática que envolve planejamento, análise de dados e disciplina. Com o aplicativo Lista de Compras, você pode implementar estratégias avançadas que realmente fazem a diferença no seu orçamento mensal. Neste artigo, vamos explorar técnicas avançadas que podem transformar suas compras em uma fonte de economia significativa.</p>
+                    <p data-i18n="blog_advanced_shopping_savings_intro">Economizar dinheiro nas compras vai além de simplesmente procurar promoções. Requer uma abordagem estratégica e sistemática que envolve planejamento, análise de dados e disciplina. Com o aplicativo Lista de Compras, você pode implementar estratégias avançadas que realmente fazem a diferença no seu orçamento mensal. Neste artigo, vamos explorar técnicas avançadas que podem transformar suas compras em uma fonte de economia significativa.</p>
                     
-                    <h2>A Importância de uma Mentalidade de Economia</h2>
-                    <p>Antes de aplicar qualquer estratégia, é fundamental desenvolver uma mentalidade focada em economia. Isso não significa abrir mão de tudo que você gosta, mas sim tomar decisões conscientes sobre como e onde gastar seu dinheiro. O aplicativo Lista de Compras ajuda a cultivar essa mentalidade ao:</p>
-                    
-                    <ul>
-                        <li>Forçar você a pensar antes de comprar</li>
-                        <li>Visualizar o impacto real de cada gasto</li>
-                        <li>Estabelecer metas claras de economia</li>
-                        <li>Monitorar seu progresso em tempo real</li>
-                    </ul>
-                    
-                    <h2>Estratégia 1: Análise de Custo por Unidade</h2>
-                    <p>Uma das estratégias mais eficazes para economizar nas compras é analisar o custo por unidade de cada produto. Muitas vezes, embalagens maiores oferecem melhor custo-benefício, mas nem sempre isso é verdade. Utilize o aplicativo para:</p>
+                    <h2 data-i18n="blog_advanced_shopping_savings_mindset_title">A Importância de uma Mentalidade de Economia</h2>
+                    <p data-i18n="blog_advanced_shopping_savings_mindset_content">Antes de aplicar qualquer estratégia, é fundamental desenvolver uma mentalidade focada em economia. Isso não significa abrir mão de tudo que você gosta, mas sim tomar decisões conscientes sobre como e onde gastar seu dinheiro. O aplicativo Lista de Compras ajuda a cultivar essa mentalidade ao:</p>
                     
                     <ul>
-                        <li>Registrar preços de diferentes tamanhos do mesmo produto</li>
-                        <li>Calcular o custo por unidade (por kg, litro, unidade, etc.)</li>
-                        <li>Identificar as opções mais econômicas</li>
-                        <li>Criar uma base de dados para compras futuras</li>
+                        <li data-i18n="blog_advanced_shopping_savings_mindset_benefit1">Forçar você a pensar antes de comprar</li>
+                        <li data-i18n="blog_advanced_shopping_savings_mindset_benefit2">Visualizar o impacto real de cada gasto</li>
+                        <li data-i18n="blog_advanced_shopping_savings_mindset_benefit3">Estabelecer metas claras de economia</li>
+                        <li data-i18n="blog_advanced_shopping_savings_mindset_benefit4">Monitorar seu progresso em tempo real</li>
                     </ul>
                     
-                    <p>Por exemplo, um pacote de 500g de café pode custar R$ 15,00, enquanto um de 200g custa R$ 8,00. À primeira vista, o pacote maior parece melhor, mas o custo por grama é de R$ 0,03 para o maior e R$ 0,04 para o menor. No entanto, se você não consome 500g antes de vencer, o menor pode ser mais econômico.</p>
-                    
-                    <h2>Estratégia 2: Compra Baseada em Ciclos de Consumo</h2>
-                    <p>Cada produto tem um ciclo de consumo diferente. Alimentos perecíveis devem ser comprados com base em seu consumo real, enquanto itens não perecíveis podem ser comprados em maior quantidade quando em promoção. O aplicativo Lista de Compras permite que você:</p>
+                    <h2 data-i18n="blog_advanced_shopping_savings_strategy1_title">Estratégia 1: Análise de Custo por Unidade</h2>
+                    <p data-i18n="blog_advanced_shopping_savings_strategy1_content">Uma das estratégias mais eficazes para economizar nas compras é analisar o custo por unidade de cada produto. Muitas vezes, embalagens maiores oferecem melhor custo-benefício, mas nem sempre isso é verdade. Utilize o aplicativo para:</p>
                     
                     <ul>
-                        <li>Rastreie o consumo real de cada item</li>
-                        <li>Calcule a frequência de reposição</li>
-                        <li>Planeje compras com base em dados reais</li>
-                        <li>Evite desperdícios e escassez</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy1_benefit1">Registrar preços de diferentes tamanhos do mesmo produto</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy1_benefit2">Calcular o custo por unidade (por kg, litro, unidade, etc.)</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy1_benefit3">Identificar as opções mais econômicas</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy1_benefit4">Criar uma base de dados para compras futuras</li>
                     </ul>
                     
-                    <h2>Estratégia 3: Criação de um Sistema de Preços Base</h2>
-                    <p>Com o tempo, o aplicativo Lista de Compras ajuda você a criar um sistema de preços base para os produtos que compra regularmente. Isso permite identificar:</p>
+                    <p data-i18n="blog_advanced_shopping_savings_strategy1_example">Por exemplo, um pacote de 500g de café pode custar R$ 15,00, enquanto um de 200g custa R$ 8,00. À primeira vista, o pacote maior parece melhor, mas o custo por grama é de R$ 0,03 para o maior e R$ 0,04 para o menor. No entanto, se você não consome 500g antes de vencer, o menor pode ser mais econômico.</p>
+                    
+                    <h2 data-i18n="blog_advanced_shopping_savings_strategy2_title">Estratégia 2: Compra Baseada em Ciclos de Consumo</h2>
+                    <p data-i18n="blog_advanced_shopping_savings_strategy2_content">Cada produto tem um ciclo de consumo diferente. Alimentos perecíveis devem ser comprados com base em seu consumo real, enquanto itens não perecíveis podem ser comprados em maior quantidade quando em promoção. O aplicativo Lista de Compras permite que você:</p>
                     
                     <ul>
-                        <li>Quando um produto está realmente em promoção</li>
-                        <li>Quais estabelecimentos oferecem melhores preços</li>
-                        <li>Quais marcas oferecem melhor custo-benefício</li>
-                        <li>Quando há aumentos de preços injustificados</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy2_benefit1">Rastreie o consumo real de cada item</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy2_benefit2">Calcule a frequência de reposição</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy2_benefit3">Planeje compras com base em dados reais</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy2_benefit4">Evite desperdícios e escassez</li>
                     </ul>
                     
-                    <p>Esse sistema funciona registrando os preços reais pagos ao longo do tempo, criando uma linha de base para comparações futuras.</p>
-                    
-                    <h2>Estratégia 4: Uso de Listas Inteligentes</h2>
-                    <p>As listas de compras não devem ser apenas uma lista de itens. Devem ser ferramentas inteligentes que:</p>
+                    <h2 data-i18n="blog_advanced_shopping_savings_strategy3_title">Estratégia 3: Criação de um Sistema de Preços Base</h2>
+                    <p data-i18n="blog_advanced_shopping_savings_strategy3_content">Com o tempo, o aplicativo Lista de Compras ajuda você a criar um sistema de preços base para os produtos que compra regularmente. Isso permite identificar:</p>
                     
                     <ul>
-                        <li>Priorizam itens essenciais</li>
-                        <li>Incluem alternativas para itens caros</li>
-                        <li>Consideram promoções atuais</li>
-                        <li>Respeitam limites orçamentários</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy3_benefit1">Quando um produto está realmente em promoção</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy3_benefit2">Quais estabelecimentos oferecem melhores preços</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy3_benefit3">Quais marcas oferecem melhor custo-benefício</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy3_benefit4">Quando há aumentos de preços injustificados</li>
                     </ul>
                     
-                    <p>Com o aplicativo Lista de Compras, você pode criar múltiplas listas para diferentes situações e estabelecimentos, otimizando suas compras.</p>
+                    <p data-i18n="blog_advanced_shopping_savings_strategy3_explanation">Esse sistema funciona registrando os preços reais pagos ao longo do tempo, criando uma linha de base para comparações futuras.</p>
                     
-                    <h2>Estratégia 5: Análise de Tendências de Preços</h2>
-                    <p>Alguns produtos seguem padrões sazonais de preços. Frutas, por exemplo, costumam ser mais baratas quando estão em temporada. Utilize o histórico de compras do aplicativo para:</p>
+                    <h2 data-i18n="blog_advanced_shopping_savings_strategy4_title">Estratégia 4: Uso de Listas Inteligentes</h2>
+                    <p data-i18n="blog_advanced_shopping_savings_strategy4_content">As listas de compras não devem ser apenas uma lista de itens. Devem ser ferramentas inteligentes que:</p>
                     
                     <ul>
-                        <li>Identificar padrões sazonais de preços</li>
-                        <li>Planejar compras estratégicas</li>
-                        <li>Prever aumentos de preços</li>
-                        <li>Antecipar-se a promoções</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy4_benefit1">Priorizam itens essenciais</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy4_benefit2">Incluem alternativas para itens caros</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy4_benefit3">Consideram promoções atuais</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy4_benefit4">Respeitam limites orçamentários</li>
                     </ul>
                     
-                    <h2>Estratégia 6: Compra Coletiva Inteligente</h2>
-                    <p>Se você divide compras com familiares ou amigos, o aplicativo Lista de Compras permite criar listas compartilhadas que:</p>
+                    <p data-i18n="blog_advanced_shopping_savings_strategy4_explanation">Com o aplicativo Lista de Compras, você pode criar múltiplas listas para diferentes situações e estabelecimentos, otimizando suas compras.</p>
+                    
+                    <h2 data-i18n="blog_advanced_shopping_savings_strategy5_title">Estratégia 5: Análise de Tendências de Preços</h2>
+                    <p data-i18n="blog_advanced_shopping_savings_strategy5_content">Alguns produtos seguem padrões sazonais de preços. Frutas, por exemplo, costumam ser mais baratas quando estão em temporada. Utilize o histórico de compras do aplicativo para:</p>
                     
                     <ul>
-                        <li>Evitam compras duplicadas</li>
-                        <li>Permite divisão de custos</li>
-                        <li>Facilita a compra em volume para economia</li>
-                        <li>Otimizam rotas de compras</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy5_benefit1">Identificar padrões sazonais de preços</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy5_benefit2">Planejar compras estratégicas</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy5_benefit3">Prever aumentos de preços</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy5_benefit4">Antecipar-se a promoções</li>
                     </ul>
                     
-                    <h2>Estratégia 7: Estabelecimento Ideal por Categoria</h2>
-                    <p>Cada supermercado tem suas especialidades. Alguns oferecem melhores preços em carnes, outros em produtos de limpeza. Utilize o aplicativo para:</p>
+                    <h2 data-i18n="blog_advanced_shopping_savings_strategy6_title">Estratégia 6: Compra Coletiva Inteligente</h2>
+                    <p data-i18n="blog_advanced_shopping_savings_strategy6_content">Se você divide compras com familiares ou amigos, o aplicativo Lista de Compras permite criar listas compartilhadas que:</p>
                     
                     <ul>
-                        <li>Mapear preços por estabelecimento</li>
-                        <li>Criar listas específicas para cada mercado</li>
-                        <li>Otimizar suas compras por local</li>
-                        <li>Reduzir o tempo de compra</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy6_benefit1">Evitam compras duplicadas</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy6_benefit2">Permite divisão de custos</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy6_benefit3">Facilita a compra em volume para economia</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy6_benefit4">Otimizam rotas de compras</li>
                     </ul>
                     
-                    <h2>Estratégia 8: Controle de Impulsos com Metas</h2>
-                    <p>Compras por impulso são uma das maiores ameaças ao orçamento. Estabeleça metas claras e utilize o aplicativo para:</p>
+                    <h2 data-i18n="blog_advanced_shopping_savings_strategy7_title">Estratégia 7: Estabelecimento Ideal por Categoria</h2>
+                    <p data-i18n="blog_advanced_shopping_savings_strategy7_content">Cada supermercado tem suas especialidades. Alguns oferecem melhores preços em carnes, outros em produtos de limpeza. Utilize o aplicativo para:</p>
                     
                     <ul>
-                        <li>Definir limites para categorias de desejos</li>
-                        <li>Receber alertas quando se aproximar dos limites</li>
-                        <li>Justificar cada compra não planejada</li>
-                        <li>Rastrear o impacto de compras impulsivas</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy7_benefit1">Mapear preços por estabelecimento</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy7_benefit2">Criar listas específicas para cada mercado</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy7_benefit3">Otimizar suas compras por local</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy7_benefit4">Reduzir o tempo de compra</li>
                     </ul>
                     
-                    <h2>Estratégia 9: Análise Pós-Compra</h2>
-                    <p>Após cada compra, utilize o aplicativo para analisar:</p>
+                    <h2 data-i18n="blog_advanced_shopping_savings_strategy8_title">Estratégia 8: Controle de Impulsos com Metas</h2>
+                    <p data-i18n="blog_advanced_shopping_savings_strategy8_content">Compras por impulso são uma das maiores ameaças ao orçamento. Estabeleça metas claras e utilize o aplicativo para:</p>
                     
                     <ul>
-                        <li>Desvios do orçamento planejado</li>
-                        <li>Itens comprados por impulso</li>
-                        <li>Oportunidades perdidas de economia</li>
-                        <li>Melhorias para compras futuras</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy8_benefit1">Definir limites para categorias de desejos</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy8_benefit2">Receber alertas quando se aproximar dos limites</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy8_benefit3">Justificar cada compra não planejada</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy8_benefit4">Rastrear o impacto de compras impulsivas</li>
                     </ul>
                     
-                    <h2>Estratégia 10: Integração com Planejamento Financeiro</h2>
-                    <p>Suas compras devem se integrar com seu planejamento financeiro geral. O aplicativo Lista de Compras permite:</p>
+                    <h2 data-i18n="blog_advanced_shopping_savings_strategy9_title">Estratégia 9: Análise Pós-Compra</h2>
+                    <p data-i18n="blog_advanced_shopping_savings_strategy9_content">Após cada compra, utilize o aplicativo para analisar:</p>
                     
                     <ul>
-                        <li>Visualizar gastos com compras no contexto geral</li>
-                        <li>Ajustar orçamentos com base em padrões reais</li>
-                        <li>Estabelecer metas de economia específicas</li>
-                        <li>Rastrear progresso em objetivos financeiros</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy9_benefit1">Desvios do orçamento planejado</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy9_benefit2">Itens comprados por impulso</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy9_benefit3">Oportunidades perdidas de economia</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy9_benefit4">Melhorias para compras futuras</li>
                     </ul>
                     
-                    <h2>Dicas Avançadas para Economizar Ainda Mais</h2>
-                    
-                    <h3>Uso de Cartões de Fidelidade</h3>
-                    <p>Mesmo com o aplicativo controlando seus gastos, cartões de fidelidade podem oferecer economias adicionais. Registre os benefícios desses cartões no aplicativo para:</p>
+                    <h2 data-i18n="blog_advanced_shopping_savings_strategy10_title">Estratégia 10: Integração com Planejamento Financeiro</h2>
+                    <p data-i18n="blog_advanced_shopping_savings_strategy10_content">Suas compras devem se integrar com seu planejamento financeiro geral. O aplicativo Lista de Compras permite:</p>
                     
                     <ul>
-                        <li>Comparar economias reais com esforço necessário</li>
-                        <li>Identificar os cartões mais vantajosos</li>
-                        <li>Evitar compras apenas para acumular pontos</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy10_benefit1">Visualizar gastos com compras no contexto geral</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy10_benefit2">Ajustar orçamentos com base em padrões reais</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy10_benefit3">Estabelecer metas de economia específicas</li>
+                        <li data-i18n="blog_advanced_shopping_savings_strategy10_benefit4">Rastrear progresso em objetivos financeiros</li>
                     </ul>
                     
-                    <h3>Compra de Itens Duráveis em Promoção</h3>
-                    <p>Itens como eletrodomésticos, móveis e utensílios de cozinha devem ser comprados quando em promoção significativa. Utilize o aplicativo para:</p>
+                    <h2 data-i18n="blog_advanced_shopping_savings_advanced_tips_title">Dicas Avançadas para Economizar Ainda Mais</h2>
+                    
+                    <h3 data-i18n="blog_advanced_shopping_savings_advanced_tip1_title">Uso de Cartões de Fidelidade</h3>
+                    <p data-i18n="blog_advanced_shopping_savings_advanced_tip1_content">Mesmo com o aplicativo controlando seus gastos, cartões de fidelidade podem oferecer economias adicionais. Registre os benefícios desses cartões no aplicativo para:</p>
                     
                     <ul>
-                        <li>Rastrear preços ao longo do tempo</li>
-                        <li>Estabelecer preços ideais para compra</li>
-                        <li>Evitar compras precipitadas</li>
+                        <li data-i18n="blog_advanced_shopping_savings_advanced_tip1_benefit1">Comparar economias reais com esforço necessário</li>
+                        <li data-i18n="blog_advanced_shopping_savings_advanced_tip1_benefit2">Identificar os cartões mais vantajosos</li>
+                        <li data-i18n="blog_advanced_shopping_savings_advanced_tip1_benefit3">Evitar compras apenas para acumular pontos</li>
                     </ul>
                     
-                    <h3>Planejamento de Eventos</h3>
-                    <p>Eventos como festas, viagens e mudanças requerem planejamento especial. Crie listas específicas com:</p>
+                    <h3 data-i18n="blog_advanced_shopping_savings_advanced_tip2_title">Compra de Itens Duráveis em Promoção</h3>
+                    <p data-i18n="blog_advanced_shopping_savings_advanced_tip2_content">Itens como eletrodomésticos, móveis e utensílios de cozinha devem ser comprados quando em promoção significativa. Utilize o aplicativo para:</p>
                     
                     <ul>
-                        <li>Orçamentos detalhados</li>
-                        <li>Pesquisa de preços antecipada</li>
-                        <li>Alternativas econômicas</li>
-                        <li>Controle de gastos durante a execução</li>
+                        <li data-i18n="blog_advanced_shopping_savings_advanced_tip2_benefit1">Rastrear preços ao longo do tempo</li>
+                        <li data-i18n="blog_advanced_shopping_savings_advanced_tip2_benefit2">Estabelecer preços ideais para compra</li>
+                        <li data-i18n="blog_advanced_shopping_savings_advanced_tip2_benefit3">Evitar compras precipitadas</li>
                     </ul>
                     
-                    <h2>Como o Aplicativo Lista de Compras Potencializa Essas Estratégias</h2>
-                    
-                    <p>O aplicativo Lista de Compras não é apenas uma ferramenta para criar listas - é uma plataforma completa para otimização de compras:</p>
+                    <h3 data-i18n="blog_advanced_shopping_savings_advanced_tip3_title">Planejamento de Eventos</h3>
+                    <p data-i18n="blog_advanced_shopping_savings_advanced_tip3_content">Eventos como festas, viagens e mudanças requerem planejamento especial. Crie listas específicas com:</p>
                     
                     <ul>
-                        <li><strong>Histórico completo:</strong> Todos os dados de compras anteriores para análise</li>
-                        <li><strong>Controle financeiro:</strong> Acompanhamento em tempo real de gastos</li>
-                        <li><strong>Gráficos e estatísticas:</strong> Visualização clara de padrões de consumo</li>
-                        <li><strong>Categorias organizadas:</strong> Estrutura para análise por tipo de produto</li>
-                        <li><strong>Funcionamento offline:</strong> Acesso a dados mesmo sem internet</li>
-                        <li><strong>Compartilhamento:</strong> Coordenação com outros membros da família</li>
+                        <li data-i18n="blog_advanced_shopping_savings_advanced_tip3_benefit1">Orçamentos detalhados</li>
+                        <li data-i18n="blog_advanced_shopping_savings_advanced_tip3_benefit2">Pesquisa de preços antecipada</li>
+                        <li data-i18n="blog_advanced_shopping_savings_advanced_tip3_benefit3">Alternativas econômicas</li>
+                        <li data-i18n="blog_advanced_shopping_savings_advanced_tip3_benefit4">Controle de gastos durante a execução</li>
                     </ul>
                     
-                    <h2>Conclusão</h2>
-                    <p>Economizar nas compras é uma habilidade que pode ser desenvolvida e aprimorada com o tempo. As estratégias avançadas apresentadas neste artigo, quando combinadas com o poder do aplicativo Lista de Compras, podem transformar suas compras em uma fonte consistente de economia.</p>
+                    <h2 data-i18n="blog_advanced_shopping_savings_app_title">Como o Aplicativo Lista de Compras Potencializa Essas Estratégias</h2>
                     
-                    <p>Lembre-se de que a chave para o sucesso está na consistência e na análise contínua dos seus hábitos de consumo. Comece implementando uma ou duas estratégias por vez, e gradualmente incorpore mais técnicas à sua rotina de compras.</p>
+                    <p data-i18n="blog_advanced_shopping_savings_app_intro">O aplicativo Lista de Compras não é apenas uma ferramenta para criar listas - é uma plataforma completa para otimização de compras:</p>
                     
-                    <p>Com disciplina e as ferramentas certas, você pode economizar centenas de reais por mês sem abrir mão da qualidade de vida. Experimente aplicar essas estratégias e veja a diferença que fazem no seu orçamento!</p>
+                    <ul>
+                        <li><strong data-i18n="blog_advanced_shopping_savings_app_feature1_title">Histórico completo:</strong> <span data-i18n="blog_advanced_shopping_savings_app_feature1_desc">Todos os dados de compras anteriores para análise</span></li>
+                        <li><strong data-i18n="blog_advanced_shopping_savings_app_feature2_title">Controle financeiro:</strong> <span data-i18n="blog_advanced_shopping_savings_app_feature2_desc">Acompanhamento em tempo real de gastos</span></li>
+                        <li><strong data-i18n="blog_advanced_shopping_savings_app_feature3_title">Gráficos e estatísticas:</strong> <span data-i18n="blog_advanced_shopping_savings_app_feature3_desc">Visualização clara de padrões de consumo</span></li>
+                        <li><strong data-i18n="blog_advanced_shopping_savings_app_feature4_title">Categorias organizadas:</strong> <span data-i18n="blog_advanced_shopping_savings_app_feature4_desc">Estrutura para análise por tipo de produto</span></li>
+                        <li><strong data-i18n="blog_advanced_shopping_savings_app_feature5_title">Funcionamento offline:</strong> <span data-i18n="blog_advanced_shopping_savings_app_feature5_desc">Acesso a dados mesmo sem internet</span></li>
+                        <li><strong data-i18n="blog_advanced_shopping_savings_app_feature6_title">Compartilhamento:</strong> <span data-i18n="blog_advanced_shopping_savings_app_feature6_desc">Coordenação com outros membros da família</span></li>
+                    </ul>
+                    
+                    <h2 data-i18n="blog_advanced_shopping_savings_conclusion_title">Conclusão</h2>
+                    <p data-i18n="blog_advanced_shopping_savings_conclusion_content1">Economizar nas compras é uma habilidade que pode ser desenvolvida e aprimorada com o tempo. As estratégias avançadas apresentadas neste artigo, quando combinadas com o poder do aplicativo Lista de Compras, podem transformar suas compras em uma fonte consistente de economia.</p>
+                    
+                    <p data-i18n="blog_advanced_shopping_savings_conclusion_content2">Lembre-se de que a chave para o sucesso está na consistência e na análise contínua dos seus hábitos de consumo. Comece implementando uma ou duas estratégias por vez, e gradualmente incorpore mais técnicas à sua rotina de compras.</p>
+                    
+                    <p data-i18n="blog_advanced_shopping_savings_final_cta">Com disciplina e as ferramentas certas, você pode economizar centenas de reais por mês sem abrir mão da qualidade de vida. Experimente aplicar essas estratégias e veja a diferença que fazem no seu orçamento!</p>
                 </div>
             </article>
             
             <div class="back-to-blog">
-                <a href="../blog.html" class="btn btn-secondary">← Voltar para o Blog</a>
+                <a href="../blog.html" class="btn btn-secondary" data-i18n="blog_advanced_shopping_savings_back_to_blog">← Voltar para o Blog</a>
             </div>
         </div>
     </section>
@@ -217,28 +233,60 @@
                     <p>Gerencie suas compras de forma inteligente</p>
                 </div>
                 <div class="footer-links">
-                    <a href="../index.html#features">Recursos</a>
-                    <a href="../index.html#download">Download</a>
-                    <a href="../index.html#contact">Contato</a>
-                    <a href="../politica-privacidade.html">Política de Privacidade</a>
-                    <a href="../termos-de-uso.html">Termos de Uso</a>
-                    <a href="../blog.html">Blog</a>
+                    <a href="../index.html#features" data-i18n="features">Recursos</a>
+                    <a href="../index.html#download" data-i18n="download">Download</a>
+                    <a href="../index.html#contact" data-i18n="contact">Contato</a>
+                    <a href="../politica-privacidade.html" data-i18n="privacy_policy">Política de Privacidade</a>
+                    <a href="../termos-de-uso.html" data-i18n="terms_of_use">Termos de Uso</a>
+                    <a href="../blog.html" data-i18n="blog">Blog</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Lista de Compras. Todos os direitos reservados.</p>
+                <p>&copy; 2025 <span data-i18n="footer_copyright">Lista de Compras. Todos os direitos reservados.</span></p>
             </div>
         </div>
     </footer>
 
+    <script src="../script.js"></script>
+    <script src="../translations.js"></script>
     <script>
-        // Atualizar o ano no footer
-        document.addEventListener('DOMContentLoaded', () => {
-            const yearElement = document.querySelector('.footer-bottom p');
-            if (yearElement) {
-                const currentYear = new Date().getFullYear();
-                yearElement.innerHTML = yearElement.innerHTML.replace('2025', currentYear);
+        // Language switcher function
+        function changeLanguage(lang) {
+            // Update all elements with data-i18n attributes
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.placeholder = translations[lang][key];
+                    } else {
+                        element.textContent = translations[lang][key];
+                    }
+                }
+            });
+            
+            // Update meta description
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription && translations[lang].blog_advanced_shopping_savings_meta_desc) {
+                metaDescription.setAttribute('content', translations[lang].blog_advanced_shopping_savings_meta_desc);
             }
+            
+            // Update page title
+            if (translations[lang].blog_advanced_shopping_savings_title) {
+                document.title = translations[lang].blog_advanced_shopping_savings_title;
+            }
+            
+            // Save language preference in localStorage
+            localStorage.setItem('preferredLanguage', lang);
+            
+            // Update language selector
+            document.getElementById('language-select').value = lang;
+        }
+        
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check for saved language preference or default to Portuguese
+            const savedLang = localStorage.getItem('preferredLanguage') || 'pt';
+            changeLanguage(savedLang);
         });
     </script>
 </body>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planejamento de Compras Mensais: Guia Completo para Economizar - Blog Lista de Compras</title>
-    <meta name="description" content="Aprenda a planejar suas compras mensais de forma eficaz para economizar dinheiro e evitar desperdícios com nosso aplicativo.">
+    <title data-i18n="blog_monthly_shopping_planning_title">Planejamento de Compras Mensais: Guia Completo para Economizar - Blog Lista de Compras</title>
+    <meta name="description" content="Aprenda a planejar suas compras mensais de forma eficaz para economizar dinheiro e evitar desperdícios com nosso aplicativo." data-i18n-meta="blog_monthly_shopping_planning_meta_desc">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
 </head>
@@ -17,7 +17,23 @@
                 <p class="subtitle">Orçamento e Gastos Inteligentes!</p>
             </div>
             <nav class="nav">
-                <ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#features">Recursos</a></li><li><a href="../index.html#download">Download</a></li><li><a href="../index.html#contact">Contato</a></li><li><a href="../blog.html">Blog</a></li></ul>
+                <ul>
+                    <li><a href="../index.html" data-i18n="home">Home</a></li>
+                    <li><a href="../index.html#features" data-i18n="features">Recursos</a></li>
+                    <li><a href="../index.html#download" data-i18n="download">Download</a></li>
+                    <li><a href="../index.html#contact" data-i18n="contact">Contato</a></li>
+                    <li><a href="../blog.html" data-i18n="blog">Blog</a></li>
+                    <!-- Language Switcher -->
+                    <li class="language-switcher">
+                        <select id="language-select" onchange="changeLanguage(this.value)">
+                            <option value="pt">PT</option>
+                            <option value="en">EN</option>
+                            <option value="es">ES</option>
+                            <option value="de">DE</option>
+                            <option value="it">IT</option>
+                        </select>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -27,187 +43,187 @@
         <div class="container">
             <article>
                 <header class="post-header">
-                    <h1 class="post-title-single">Planejamento de Compras Mensais: Guia Completo para Economizar</h1>
-                    <p class="post-meta-single">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
+                    <h1 class="post-title-single" data-i18n="blog_monthly_shopping_planning_header">Planejamento de Compras Mensais: Guia Completo para Economizar</h1>
+                    <p class="post-meta-single" data-i18n="blog_monthly_shopping_planning_meta">Publicado em 19 de Setembro de 2025 por Equipe Lista de Compras</p>
                 </header>
                 
                 <div class="post-content-single">
-                    <p>O planejamento de compras mensais é uma habilidade essencial para manter suas finanças sob controle e evitar desperdícios. Com o aplicativo Lista de Compras, você pode transformar esse processo em uma atividade simples e eficaz que trará benefícios reais para seu orçamento familiar.</p>
+                    <p data-i18n="blog_monthly_shopping_planning_intro">O planejamento de compras mensais é uma habilidade essencial para manter suas finanças sob controle e evitar desperdícios. Com o aplicativo Lista de Compras, você pode transformar esse processo em uma atividade simples e eficaz que trará benefícios reais para seu orçamento familiar.</p>
                     
-                    <h2>Por Que Planejar Suas Compras Mensais?</h2>
-                    <p>Planejar suas compras mensais vai além de simplesmente criar uma lista de itens. É sobre:</p>
-                    
-                    <ul>
-                        <li><strong>Economizar dinheiro:</strong> Evitar compras por impulso e identificar melhores preços</li>
-                        <li><strong>Reduzir desperdícios:</strong> Comprar apenas o necessário e utilizar melhor os alimentos</li>
-                        <li><strong>Ganhar tempo:</strong> Saber exatamente o que comprar e onde encontrar cada item</li>
-                        <li><strong>Manter organização:</strong> Ter controle sobre seus gastos e estoque doméstico</li>
-                    </ul>
-                    
-                    <h2>Benefícios do Planejamento de Compras Mensais</h2>
-                    
-                    <h3>Controle Financeiro Aprimorado</h3>
-                    <p>Ao planejar suas compras mensais, você tem uma visão clara do que será gasto, permitindo um melhor controle do orçamento familiar. O aplicativo Lista de Compras facilita esse processo registrando preços reais e gerando relatórios de gastos.</p>
-                    
-                    <h3>Redução de Desperdícios</h3>
-                    <p>Compras planejadas evitam a compra de itens desnecessários que podem estragar antes de serem utilizados. Além disso, você pode planejar refeições com base no que já tem em casa.</p>
-                    
-                    <h3>Melhor Qualidade de Vida</h3>
-                    <p>Menos idas ao supermercado, menos estresse com gastos inesperados e mais tempo para outras atividades são alguns dos benefícios de um bom planejamento de compras.</p>
-                    
-                    <h2>Passo a Passo para Planejar Suas Compras Mensais</h2>
-                    
-                    <h3>1. Analise Seu Histórico de Compras</h3>
-                    <p>Comece analisando seus gastos passados com compras. Utilize o histórico do aplicativo Lista de Compras para:</p>
+                    <h2 data-i18n="blog_monthly_shopping_planning_why_title">Por Que Planejar Suas Compras Mensais?</h2>
+                    <p data-i18n="blog_monthly_shopping_planning_why_content">Planejar suas compras mensais vai além de simplesmente criar uma lista de itens. É sobre:</p>
                     
                     <ul>
-                        <li>Identificar padrões de consumo</li>
-                        <li>Reconhecer itens que compra regularmente</li>
-                        <li>Descobrir oportunidades de economia</li>
+                        <li><strong data-i18n="blog_monthly_shopping_planning_why_benefit1_title">Economizar dinheiro:</strong> <span data-i18n="blog_monthly_shopping_planning_why_benefit1_desc">Evitar compras por impulso e identificar melhores preços</span></li>
+                        <li><strong data-i18n="blog_monthly_shopping_planning_why_benefit2_title">Reduzir desperdícios:</strong> <span data-i18n="blog_monthly_shopping_planning_why_benefit2_desc">Comprar apenas o necessário e utilizar melhor os alimentos</span></li>
+                        <li><strong data-i18n="blog_monthly_shopping_planning_why_benefit3_title">Ganhar tempo:</strong> <span data-i18n="blog_monthly_shopping_planning_why_benefit3_desc">Saber exatamente o que comprar e onde encontrar cada item</span></li>
+                        <li><strong data-i18n="blog_monthly_shopping_planning_why_benefit4_title">Manter organização:</strong> <span data-i18n="blog_monthly_shopping_planning_why_benefit4_desc">Ter controle sobre seus gastos e estoque doméstico</span></li>
                     </ul>
                     
-                    <h3>2. Verifique Seu Estoque em Casa</h3>
-                    <p>Antes de criar sua lista mensal, faça um inventário do que você já tem em casa:</p>
+                    <h2 data-i18n="blog_monthly_shopping_planning_benefits_title">Benefícios do Planejamento de Compras Mensais</h2>
+                    
+                    <h3 data-i18n="blog_monthly_shopping_planning_benefit1_title">Controle Financeiro Aprimorado</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_benefit1_content">Ao planejar suas compras mensais, você tem uma visão clara do que será gasto, permitindo um melhor controle do orçamento familiar. O aplicativo Lista de Compras facilita esse processo registrando preços reais e gerando relatórios de gastos.</p>
+                    
+                    <h3 data-i18n="blog_monthly_shopping_planning_benefit2_title">Redução de Desperdícios</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_benefit2_content">Compras planejadas evitam a compra de itens desnecessários que podem estragar antes de serem utilizados. Além disso, você pode planejar refeições com base no que já tem em casa.</p>
+                    
+                    <h3 data-i18n="blog_monthly_shopping_planning_benefit3_title">Melhor Qualidade de Vida</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_benefit3_content">Menos idas ao supermercado, menos estresse com gastos inesperados e mais tempo para outras atividades são alguns dos benefícios de um bom planejamento de compras.</p>
+                    
+                    <h2 data-i18n="blog_monthly_shopping_planning_steps_title">Passo a Passo para Planejar Suas Compras Mensais</h2>
+                    
+                    <h3 data-i18n="blog_monthly_shopping_planning_step1_title">1. Analise Seu Histórico de Compras</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_step1_content">Comece analisando seus gastos passados com compras. Utilize o histórico do aplicativo Lista de Compras para:</p>
                     
                     <ul>
-                        <li>Verifique a geladeira, despensa e armários</li>
-                        <li>Identifique itens próximos da validade</li>
-                        <li>Planeje refeições com base no que já possui</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step1_task1">Identificar padrões de consumo</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step1_task2">Reconhecer itens que compra regularmente</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step1_task3">Descobrir oportunidades de economia</li>
                     </ul>
                     
-                    <h3>3. Planeje Suas Refeições</h3>
-                    <p>Planejar suas refeições para o mês ajuda a determinar exatamente quais ingredientes você precisará:</p>
+                    <h3 data-i18n="blog_monthly_shopping_planning_step2_title">2. Verifique Seu Estoque em Casa</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_step2_content">Antes de criar sua lista mensal, faça um inventário do que você já tem em casa:</p>
                     
                     <ul>
-                        <li>Considere dias especiais e eventos</li>
-                        <li>Planeje refeições com sobras para otimizar ingredientes</li>
-                        <li>Inclua opções flexíveis para adaptações</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step2_task1">Verifique a geladeira, despensa e armários</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step2_task2">Identifique itens próximos da validade</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step2_task3">Planeje refeições com base no que já possui</li>
                     </ul>
                     
-                    <h3>4. Crie Listas por Categoria</h3>
-                    <p>Organize sua lista mensal por categorias usando as opções do aplicativo:</p>
+                    <h3 data-i18n="blog_monthly_shopping_planning_step3_title">3. Planeje Suas Refeições</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_step3_content">Planejar suas refeições para o mês ajuda a determinar exatamente quais ingredientes você precisará:</p>
                     
                     <ul>
-                        <li>Alimentos</li>
-                        <li>Bebidas</li>
-                        <li>Limpeza</li>
-                        <li>Higiene</li>
-                        <li>Padaria</li>
-                        <li>Congelados</li>
-                        <li>Enlatados</li>
-                        <li>Bebê</li>
-                        <li>Pet</li>
-                        <li>Outros</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step3_task1">Considere dias especiais e eventos</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step3_task2">Planeje refeições com sobras para otimizar ingredientes</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step3_task3">Inclua opções flexíveis para adaptações</li>
                     </ul>
                     
-                    <h3>5. Estabeleça um Orçamento</h3>
-                    <p>Defina um orçamento realista para suas compras mensais e utilize o aplicativo para:</p>
+                    <h3 data-i18n="blog_monthly_shopping_planning_step4_title">4. Crie Listas por Categoria</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_step4_content">Organize sua lista mensal por categorias usando as opções do aplicativo:</p>
                     
                     <ul>
-                        <li>Dividir o orçamento entre categorias</li>
-                        <li>Acompanhar gastos em tempo real</li>
-                        <li>Receber alertas quando estiver próximo do limite</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step4_category1">Alimentos</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step4_category2">Bebidas</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step4_category3">Limpeza</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step4_category4">Higiene</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step4_category5">Padaria</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step4_category6">Congelados</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step4_category7">Enlatados</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step4_category8">Bebê</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step4_category9">Pet</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step4_category10">Outros</li>
                     </ul>
                     
-                    <h3>6. Pesquise Preços e Promoções</h3>
-                    <p>Antes de fazer suas compras, pesquise preços e promoções:</p>
+                    <h3 data-i18n="blog_monthly_shopping_planning_step5_title">5. Estabeleça um Orçamento</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_step5_content">Defina um orçamento realista para suas compras mensais e utilize o aplicativo para:</p>
                     
                     <ul>
-                        <li>Compare preços entre diferentes estabelecimentos</li>
-                        <li>Identifique itens em promoção que valem a pena</li>
-                        <li>Planeje compras em torno de ofertas estratégicas</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step5_task1">Dividir o orçamento entre categorias</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step5_task2">Acompanhar gastos em tempo real</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step5_task3">Receber alertas quando estiver próximo do limite</li>
                     </ul>
                     
-                    <h2>Estratégias Avançadas de Planejamento</h2>
-                    
-                    <h3>Planejamento por Semanas</h3>
-                    <p>Divida seu planejamento mensal em semanas para melhor controle:</p>
+                    <h3 data-i18n="blog_monthly_shopping_planning_step6_title">6. Pesquise Preços e Promoções</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_step6_content">Antes de fazer suas compras, pesquise preços e promoções:</p>
                     
                     <ul>
-                        <li>Crie listas semanais específicas</li>
-                        <li>Adapte-se a mudanças de última hora</li>
-                        <li>Mantenha flexibilidade para promoções</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step6_task1">Compare preços entre diferentes estabelecimentos</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step6_task2">Identifique itens em promoção que valem a pena</li>
+                        <li data-i18n="blog_monthly_shopping_planning_step6_task3">Planeje compras em torno de ofertas estratégicas</li>
                     </ul>
                     
-                    <h3>Lista de Compras Flexível</h3>
-                    <p>Mantenha uma lista de itens flexíveis que podem ser substituídos por alternativas mais econômicas:</p>
+                    <h2 data-i18n="blog_monthly_shopping_planning_advanced_title">Estratégias Avançadas de Planejamento</h2>
+                    
+                    <h3 data-i18n="blog_monthly_shopping_planning_advanced_weekly_title">Planejamento por Semanas</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_advanced_weekly_content">Divida seu planejamento mensal em semanas para melhor controle:</p>
                     
                     <ul>
-                        <li>Frutas e vegetais sazonais</li>
-                        <li>Proteínas que podem ser substituídas</li>
-                        <li>Produtos da marca própria</li>
+                        <li data-i18n="blog_monthly_shopping_planning_advanced_weekly_task1">Crie listas semanais específicas</li>
+                        <li data-i18n="blog_monthly_shopping_planning_advanced_weekly_task2">Adapte-se a mudanças de última hora</li>
+                        <li data-i18n="blog_monthly_shopping_planning_advanced_weekly_task3">Mantenha flexibilidade para promoções</li>
                     </ul>
                     
-                    <h3>Reserva para Imprevistos</h3>
-                    <p>Reserve uma parte do orçamento para compras imprevistas:</p>
+                    <h3 data-i18n="blog_monthly_shopping_planning_advanced_flexible_title">Lista de Compras Flexível</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_advanced_flexible_content">Mantenha uma lista de itens flexíveis que podem ser substituídos por alternativas mais econômicas:</p>
                     
                     <ul>
-                        <li>Itens esquecidos</li>
-                        <li>Convidados inesperados</li>
-                        <li>Emergências domésticas</li>
+                        <li data-i18n="blog_monthly_shopping_planning_advanced_flexible_item1">Frutas e vegetais sazonais</li>
+                        <li data-i18n="blog_monthly_shopping_planning_advanced_flexible_item2">Proteínas que podem ser substituídas</li>
+                        <li data-i18n="blog_monthly_shopping_planning_advanced_flexible_item3">Produtos da marca própria</li>
                     </ul>
                     
-                    <h2>Como o Aplicativo Lista de Compras Otimiza seu Planejamento</h2>
-                    
-                    <h3>Planejamento Colaborativo</h3>
-                    <p>O aplicativo permite que toda a família participe do planejamento:</p>
+                    <h3 data-i18n="blog_monthly_shopping_planning_advanced_reserve_title">Reserva para Imprevistos</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_advanced_reserve_content">Reserve uma parte do orçamento para compras imprevistas:</p>
                     
                     <ul>
-                        <li>Compartilhe listas via WhatsApp</li>
-                        <li>Permita que outros membros adicionem itens</li>
-                        <li>Mantenha todos informados sobre o planejamento</li>
+                        <li data-i18n="blog_monthly_shopping_planning_advanced_reserve_item1">Itens esquecidos</li>
+                        <li data-i18n="blog_monthly_shopping_planning_advanced_reserve_item2">Convidados inesperados</li>
+                        <li data-i18n="blog_monthly_shopping_planning_advanced_reserve_item3">Emergências domésticas</li>
                     </ul>
                     
-                    <h3>Registro de Preços em Tempo Real</h3>
-                    <p>Durante as compras, registre preços reais para:</p>
+                    <h2 data-i18n="blog_monthly_shopping_planning_app_title">Como o Aplicativo Lista de Compras Otimiza seu Planejamento</h2>
+                    
+                    <h3 data-i18n="blog_monthly_shopping_planning_app_collaborative_title">Planejamento Colaborativo</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_app_collaborative_content">O aplicativo permite que toda a família participe do planejamento:</p>
                     
                     <ul>
-                        <li>Comparar com orçamentos planejados</li>
-                        <li>Identificar oportunidades de economia</li>
-                        <li>Atualizar seu histórico de preços</li>
+                        <li data-i18n="blog_monthly_shopping_planning_app_collaborative_feature1">Compartilhe listas via WhatsApp</li>
+                        <li data-i18n="blog_monthly_shopping_planning_app_collaborative_feature2">Permita que outros membros adicionem itens</li>
+                        <li data-i18n="blog_monthly_shopping_planning_app_collaborative_feature3">Mantenha todos informados sobre o planejamento</li>
                     </ul>
                     
-                    <h3>Gráficos e Análises</h3>
-                    <p>Utilize os gráficos do aplicativo para:</p>
+                    <h3 data-i18n="blog_monthly_shopping_planning_app_realtime_title">Registro de Preços em Tempo Real</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_app_realtime_content">Durante as compras, registre preços reais para:</p>
                     
                     <ul>
-                        <li>Visualizar seus padrões de consumo</li>
-                        <li>Identificar categorias com maior gasto</li>
-                        <li>Planejar melhor futuras compras</li>
+                        <li data-i18n="blog_monthly_shopping_planning_app_realtime_feature1">Comparar com orçamentos planejados</li>
+                        <li data-i18n="blog_monthly_shopping_planning_app_realtime_feature2">Identificar oportunidades de economia</li>
+                        <li data-i18n="blog_monthly_shopping_planning_app_realtime_feature3">Atualizar seu histórico de preços</li>
                     </ul>
                     
-                    <h3>Funcionamento Offline</h3>
-                    <p>O aplicativo funciona 100% offline, permitindo que você:</p>
+                    <h3 data-i18n="blog_monthly_shopping_planning_app_charts_title">Gráficos e Análises</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_app_charts_content">Utilize os gráficos do aplicativo para:</p>
                     
                     <ul>
-                        <li>Planeje compras sem internet</li>
-                        <li>Registre compras em qualquer lugar</li>
-                        <li>Mantenha dados sincronizados automaticamente</li>
+                        <li data-i18n="blog_monthly_shopping_planning_app_charts_feature1">Visualizar seus padrões de consumo</li>
+                        <li data-i18n="blog_monthly_shopping_planning_app_charts_feature2">Identificar categorias com maior gasto</li>
+                        <li data-i18n="blog_monthly_shopping_planning_app_charts_feature3">Planejar melhor futuras compras</li>
                     </ul>
                     
-                    <h2>Dicas Práticas para um Planejamento Mais Eficaz</h2>
+                    <h3 data-i18n="blog_monthly_shopping_planning_app_offline_title">Funcionamento Offline</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_app_offline_content">O aplicativo funciona 100% offline, permitindo que você:</p>
                     
-                    <h3>Estabeleça Dias Fixos para Compras</h3>
-                    <p>Defina dias específicos da semana para fazer compras mensais, evitando idas frequentes ao supermercado.</p>
+                    <ul>
+                        <li data-i18n="blog_monthly_shopping_planning_app_offline_feature1">Planeje compras sem internet</li>
+                        <li data-i18n="blog_monthly_shopping_planning_app_offline_feature2">Registre compras em qualquer lugar</li>
+                        <li data-i18n="blog_monthly_shopping_planning_app_offline_feature3">Mantenha dados sincronizados automaticamente</li>
+                    </ul>
                     
-                    <h3>Utilize a Função de Marcar como Comprado</h3>
-                    <p>Conforme compra itens, marque-os como comprados no aplicativo para manter o controle do progresso.</p>
+                    <h2 data-i18n="blog_monthly_shopping_planning_tips_title">Dicas Práticas para um Planejamento Mais Eficaz</h2>
                     
-                    <h3>Crie Listas Modelo</h3>
-                    <p>Para itens que compra regularmente, crie listas modelo que podem ser duplicadas com poucas alterações.</p>
+                    <h3 data-i18n="blog_monthly_shopping_planning_tips_fixed_days_title">Estabeleça Dias Fixos para Compras</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_tips_fixed_days_content">Defina dias específicos da semana para fazer compras mensais, evitando idas frequentes ao supermercado.</p>
                     
-                    <h3>Revise e Ajuste Regularmente</h3>
-                    <p>Revise seu planejamento mensal no final de cada mês e faça ajustes para o próximo mês com base em sua experiência.</p>
+                    <h3 data-i18n="blog_monthly_shopping_planning_tips_mark_purchased_title">Utilize a Função de Marcar como Comprado</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_tips_mark_purchased_content">Conforme compra itens, marque-os como comprados no aplicativo para manter o controle do progresso.</p>
                     
-                    <h2>Conclusão</h2>
-                    <p>O planejamento de compras mensais é uma das estratégias mais eficazes para economizar dinheiro, reduzir desperdícios e melhorar sua qualidade de vida financeira. Com o aplicativo Lista de Compras, você tem todas as ferramentas necessárias para implementar esse planejamento de forma simples e eficaz.</p>
+                    <h3 data-i18n="blog_monthly_shopping_planning_tips_template_title">Crie Listas Modelo</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_tips_template_content">Para itens que compra regularmente, crie listas modelo que podem ser duplicadas com poucas alterações.</p>
                     
-                    <p>Não subestime o impacto que um bom planejamento pode ter em suas finanças. Comece pequeno, seja consistente e veja como essa prática pode transformar sua relação com as compras e suas finanças familiares.</p>
+                    <h3 data-i18n="blog_monthly_shopping_planning_tips_review_title">Revise e Ajuste Regularmente</h3>
+                    <p data-i18n="blog_monthly_shopping_planning_tips_review_content">Revise seu planejamento mensal no final de cada mês e faça ajustes para o próximo mês com base em sua experiência.</p>
+                    
+                    <h2 data-i18n="blog_monthly_shopping_planning_conclusion_title">Conclusão</h2>
+                    <p data-i18n="blog_monthly_shopping_planning_conclusion_content1">O planejamento de compras mensais é uma das estratégias mais eficazes para economizar dinheiro, reduzir desperdícios e melhorar sua qualidade de vida financeira. Com o aplicativo Lista de Compras, você tem todas as ferramentas necessárias para implementar esse planejamento de forma simples e eficaz.</p>
+                    
+                    <p data-i18n="blog_monthly_shopping_planning_conclusion_content2">Não subestime o impacto que um bom planejamento pode ter em suas finanças. Comece pequeno, seja consistente e veja como essa prática pode transformar sua relação com as compras e suas finanças familiares.</p>
                 </div>
             </article>
             
             <div class="back-to-blog">
-                <a href="../blog.html" class="btn btn-secondary">← Voltar para o Blog</a>
+                <a href="../blog.html" class="btn btn-secondary" data-i18n="blog_monthly_shopping_planning_back_to_blog">← Voltar para o Blog</a>
             </div>
         </div>
     </section>
@@ -221,28 +237,60 @@
                     <p>Gerencie suas compras de forma inteligente</p>
                 </div>
                 <div class="footer-links">
-                    <a href="../index.html#features">Recursos</a>
-                    <a href="../index.html#download">Download</a>
-                    <a href="../index.html#contact">Contato</a>
-                    <a href="../politica-privacidade.html">Política de Privacidade</a>
-                    <a href="../termos-de-uso.html">Termos de Uso</a>
-                    <a href="../blog.html">Blog</a>
+                    <a href="../index.html#features" data-i18n="features">Recursos</a>
+                    <a href="../index.html#download" data-i18n="download">Download</a>
+                    <a href="../index.html#contact" data-i18n="contact">Contato</a>
+                    <a href="../politica-privacidade.html" data-i18n="privacy_policy">Política de Privacidade</a>
+                    <a href="../termos-de-uso.html" data-i18n="terms_of_use">Termos de Uso</a>
+                    <a href="../blog.html" data-i18n="blog">Blog</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Lista de Compras. Todos os direitos reservados.</p>
+                <p>&copy; 2025 <span data-i18n="footer_copyright">Lista de Compras. Todos os direitos reservados.</span></p>
             </div>
         </div>
     </footer>
 
+    <script src="../script.js"></script>
+    <script src="../translations.js"></script>
     <script>
-        // Atualizar o ano no footer
-        document.addEventListener('DOMContentLoaded', () => {
-            const yearElement = document.querySelector('.footer-bottom p');
-            if (yearElement) {
-                const currentYear = new Date().getFullYear();
-                yearElement.innerHTML = yearElement.innerHTML.replace('2025', currentYear);
+        // Language switcher function
+        function changeLanguage(lang) {
+            // Update all elements with data-i18n attributes
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.placeholder = translations[lang][key];
+                    } else {
+                        element.textContent = translations[lang][key];
+                    }
+                }
+            });
+            
+            // Update meta description
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription && translations[lang] && translations[lang].blog_monthly_shopping_planning_meta_desc) {
+                metaDescription.setAttribute('content', translations[lang].blog_monthly_shopping_planning_meta_desc);
             }
+            
+            // Update page title
+            if (translations[lang] && translations[lang].blog_monthly_shopping_planning_title) {
+                document.title = translations[lang].blog_monthly_shopping_planning_title;
+            }
+            
+            // Save language preference in localStorage
+            localStorage.setItem('preferredLanguage', lang);
+            
+            // Update language selector
+            document.getElementById('language-select').value = lang;
+        }
+        
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check for saved language preference or default to Portuguese
+            const savedLang = localStorage.getItem('preferredLanguage') || 'pt';
+            changeLanguage(savedLang);
         });
     </script>
 </body>

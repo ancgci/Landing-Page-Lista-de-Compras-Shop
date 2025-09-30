@@ -18,6 +18,36 @@
     --transition: all 0.3s ease;
 }
 
+/* Language Switcher */
+.language-switcher {
+    margin-left: 30px;
+}
+
+#language-select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#language-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Mobile styles for language switcher */
+@media (max-width: 768px) {
+    .language-switcher {
+        margin: 5px 10px;
+    }
+    
+    #language-select {
+        padding: 8px 12px;
+    }
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
