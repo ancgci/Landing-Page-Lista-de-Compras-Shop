@@ -27,11 +27,11 @@
                     <!-- Language Switcher -->
                     <li class="language-switcher">
                         <div class="flag-select">
-                            <img src="assets/flags/br.png" alt="Português" class="flag-icon active" data-lang="pt" onclick="changeLanguage('pt')">
-                            <img src="assets/flags/us.png" alt="English" class="flag-icon" data-lang="en" onclick="changeLanguage('en')">
-                            <img src="assets/flags/es.png" alt="Español" class="flag-icon" data-lang="es" onclick="changeLanguage('es')">
-                            <img src="assets/flags/de.png" alt="Deutsch" class="flag-icon" data-lang="de" onclick="changeLanguage('de')">
-                            <img src="assets/flags/it.png" alt="Italiano" class="flag-icon" data-lang="it" onclick="changeLanguage('it')">
+                            <img src="/assets/flags/br.png" alt="Português" class="flag-icon active" data-lang="pt" onclick="changeLanguage('pt')">
+                            <img src="/assets/flags/us.png" alt="English" class="flag-icon" data-lang="en" onclick="changeLanguage('en')">
+                            <img src="/assets/flags/es.png" alt="Español" class="flag-icon" data-lang="es" onclick="changeLanguage('es')">
+                            <img src="/assets/flags/de.png" alt="Deutsch" class="flag-icon" data-lang="de" onclick="changeLanguage('de')">
+                            <img src="/assets/flags/it.png" alt="Italiano" class="flag-icon" data-lang="it" onclick="changeLanguage('it')">
                         </div>
                     </li>
                 </ul>
@@ -120,6 +120,23 @@
                     <h3 data-i18n="step_analyze_title">Analise seus Gastos</h3>
                     <p data-i18n="step_analyze_desc">Veja estatísticas e gráficos com seus hábitos de consumo.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vídeo de Demonstração -->
+    <section class="demo-video">
+        <div class="container">
+            <h2 data-i18n="demo_video_title">Veja o App em Ação</h2>
+            <p data-i18n="demo_video_subtitle">Assista ao vídeo demonstrativo do aplicativo em funcionamento</p>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/K4k-6Xxv5ow" 
+                    title="Demonstração do Aplicativo Lista de Compras" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </section>
@@ -269,6 +286,12 @@
                 
                 flag.addEventListener('error', function() {
                     console.error('Error loading flag image:', this.src);
+                    // Fallback: add error class
+                    this.classList.add('error');
+                    // Try to reload the image
+                    setTimeout(() => {
+                        this.src = this.src + '?v=' + new Date().getTime();
+                    }, 1000);
                 });
             });
         }

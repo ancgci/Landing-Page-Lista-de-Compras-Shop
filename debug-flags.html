@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Flags</title>
+    <link rel="stylesheet" href="styles.css?v=1.0">
+    <style>
+        .debug-container {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+        }
+        
+        .debug-info {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="debug-container">
+        <h1>Debug das Bandeiras</h1>
+        
+        <div class="debug-info">
+            <h2>Teste 1: Implementação do index.html</h2>
+            <ul>
+                <li class="language-switcher">
+                    <div class="flag-select">
+                        <img src="assets/flags/br.png" alt="Português" class="flag-icon active" data-lang="pt" onclick="changeLanguage('pt')">
+                        <img src="assets/flags/us.png" alt="English" class="flag-icon" data-lang="en" onclick="changeLanguage('en')">
+                        <img src="assets/flags/es.png" alt="Español" class="flag-icon" data-lang="es" onclick="changeLanguage('es')">
+                        <img src="assets/flags/de.png" alt="Deutsch" class="flag-icon" data-lang="de" onclick="changeLanguage('de')">
+                        <img src="assets/flags/it.png" alt="Italiano" class="flag-icon" data-lang="it" onclick="changeLanguage('it')">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="debug-info">
+            <h2>Teste 2: Implementação do test.html</h2>
+            <img src="assets/flags/br.png" alt="Brasil" class="flag-icon active">
+            <img src="assets/flags/us.png" alt="EUA" class="flag-icon">
+            <img src="assets/flags/es.png" alt="Espanha" class="flag-icon">
+            <img src="assets/flags/de.png" alt="Alemanha" class="flag-icon">
+            <img src="assets/flags/it.png" alt="Itália" class="flag-icon">
+        </div>
+        
+        <div class="debug-info">
+            <h2>Teste 3: Estilo personalizado</h2>
+            <img src="assets/flags/br.png" alt="Brasil" style="width: 30px; height: 20px; margin: 5px; border: 2px solid transparent;">
+            <img src="assets/flags/us.png" alt="EUA" style="width: 30px; height: 20px; margin: 5px; border: 2px solid transparent;">
+            <img src="assets/flags/es.png" alt="Espanha" style="width: 30px; height: 20px; margin: 5px; border: 2px solid transparent;">
+            <img src="assets/flags/de.png" alt="Alemanha" style="width: 30px; height: 20px; margin: 5px; border: 2px solid transparent;">
+            <img src="assets/flags/it.png" alt="Itália" style="width: 30px; height: 20px; margin: 5px; border: 2px solid transparent;">
+        </div>
+        
+        <div class="debug-info">
+            <h2>Informações de Debug</h2>
+            <p id="status">Carregando...</p>
+            <div id="error-info"></div>
+        </div>
+    </div>
+
+    <script>
+        // Função para verificar se as imagens estão carregando corretamente
+        function checkImages() {
+            const flags = document.querySelectorAll('.flag-icon');
+            let loadedCount = 0;
+            let errorCount = 0;
+            
+            flags.forEach((flag, index) => {
+                flag.onload = function() {
+                    loadedCount++;
+                    updateStatus();
+                };
+                
+                flag.onerror = function() {
+                    errorCount++;
+                    document.getElementById('error-info').innerHTML += 
+                        `<p>Erro ao carregar: ${this.src}</p>`;
+                    updateStatus();
+                };
+            });
+            
+            function updateStatus() {
+                document.getElementById('status').innerHTML = 
+                    `Imagens carregadas: ${loadedCount}, Erros: ${errorCount}`;
+            }
+        }
+        
+        // Função simulada de mudança de idioma
+        function changeLanguage(lang) {
+            console.log('Mudando idioma para:', lang);
+            // Remover classe active de todas as bandeiras
+            document.querySelectorAll('.flag-icon').forEach(flag => {
+                flag.classList.remove('active');
+            });
+            
+            // Adicionar classe active à bandeira selecionada
+            const selectedFlag = document.querySelector(`.flag-icon[data-lang="${lang}"]`);
+            if (selectedFlag) {
+                selectedFlag.classList.add('active');
+            }
+        }
+        
+        // Iniciar verificação quando a página carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            checkImages();
+        });
+    </script>
+</body>
+</html>

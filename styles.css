@@ -38,6 +38,8 @@
     border: 2px solid transparent;
     border-radius: 3px;
     transition: all 0.3s ease;
+    display: block;
+    flex-shrink: 0;
 }
 
 .flag-icon:hover {
@@ -268,6 +270,64 @@ body {
 
 .feature-card p {
     color: var(--gray-color);
+}
+
+/* Seção de Vídeo de Demonstração */
+.demo-video {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.demo-video h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+.demo-video p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: var(--gray-color);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsividade para a seção de vídeo */
+@media (max-width: 768px) {
+    .demo-video {
+        padding: 60px 0;
+    }
+    
+    .demo-video h2 {
+        font-size: 1.8rem;
+    }
+    
+    .demo-video p {
+        font-size: 1rem;
+    }
 }
 
 /* Carrossel de Imagens */

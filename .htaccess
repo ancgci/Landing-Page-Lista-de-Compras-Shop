@@ -34,9 +34,9 @@ Options -Indexes
 </IfModule>
 
 # Hotlinking
-RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^https://(www\.)?listadecompras\.shop [NC]
-RewriteRule \.(gif|jpe?g|png)$ - [F,NC,L]
+# RewriteCond %{HTTP_REFERER} !^$
+# RewriteCond %{HTTP_REFERER} !^https://(www\.)?listadecompras\.shop [NC]
+# RewriteRule \.(gif|jpe?g|png)$ - [F,NC,L]
 
 # Bloqueio de bots maliciosos
 <IfModule mod_setenvif.c>

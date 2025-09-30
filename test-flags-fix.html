@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Correção das Bandeiras</title>
+    <link rel="stylesheet" href="styles.css?v=1.1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .test-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .test-title {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .flag-container {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .status {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: #e9ecef;
+        }
+        
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1 class="test-title">Teste de Correção das Bandeiras</h1>
+        
+        <div class="test-container">
+            <h2>Teste 1: Bandeiras com caminho absoluto</h2>
+            <div class="flag-container">
+                <img src="/assets/flags/br.png" alt="Português" class="flag-icon active" data-lang="pt">
+                <img src="/assets/flags/us.png" alt="English" class="flag-icon" data-lang="en">
+                <img src="/assets/flags/es.png" alt="Español" class="flag-icon" data-lang="es">
+                <img src="/assets/flags/de.png" alt="Deutsch" class="flag-icon" data-lang="de">
+                <img src="/assets/flags/it.png" alt="Italiano" class="flag-icon" data-lang="it">
+            </div>
+            <div id="status1" class="status">Verificando...</div>
+        </div>
+        
+        <div class="test-container">
+            <h2>Teste 2: Bandeiras com caminho relativo</h2>
+            <div class="flag-container">
+                <img src="assets/flags/br.png" alt="Português" class="flag-icon active" data-lang="pt">
+                <img src="assets/flags/us.png" alt="English" class="flag-icon" data-lang="en">
+                <img src="assets/flags/es.png" alt="Español" class="flag-icon" data-lang="es">
+                <img src="assets/flags/de.png" alt="Deutsch" class="flag-icon" data-lang="de">
+                <img src="assets/flags/it.png" alt="Italiano" class="flag-icon" data-lang="it">
+            </div>
+            <div id="status2" class="status">Verificando...</div>
+        </div>
+        
+        <div class="test-container">
+            <h2>Teste 3: Bandeiras com fallback inline</h2>
+            <div class="flag-container">
+                <img src="/assets/flags/br.png" alt="Português" style="width: 25px; height: 20px; object-fit: cover; cursor: pointer; border: 2px solid #4CAF50; border-radius: 3px;" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNSAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjUiIGhlaWdodD0iMjAiIGZpbGw9IiM0Q0FGNTAiLz48dGV4dCB4PSIxMi41IiB5PSIxMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPlBUIDwvdGV4dD48L3N2Zz4=';">
+                <img src="/assets/flags/us.png" alt="English" style="width: 25px; height: 20px; object-fit: cover; cursor: pointer; border: 2px solid transparent; border-radius: 3px;" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNSAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjUiIGhlaWdodD0iMjAiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSIxMi41IiB5PSIxMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9IiMwMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPkVUIDwvdGV4dD48L3N2Zz4=';">
+                <img src="/assets/flags/es.png" alt="Español" style="width: 25px; height: 20px; object-fit: cover; cursor: pointer; border: 2px solid transparent; border-radius: 3px;" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNSAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjUiIGhlaWdodD0iMjAiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSIxMi41IiB5PSIxMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9IiMwMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPkVTIDwvdGV4dD48L3N2Zz4=';">
+                <img src="/assets/flags/de.png" alt="Deutsch" style="width: 25px; height: 20px; object-fit: cover; cursor: pointer; border: 2px solid transparent; border-radius: 3px;" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNSAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjUiIGhlaWdodD0iMjAiIGZpbGw9IiNjZWMxYzEiLz48dGV4dCB4PSIxMi41IiB5PSIxMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9IiMwMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPkRFIDwvdGV4dD48L3N2Zz4=';">
+                <img src="/assets/flags/it.png" alt="Italiano" style="width: 25px; height: 20px; object-fit: cover; cursor: pointer; border: 2px solid transparent; border-radius: 3px;" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNSAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjUiIGhlaWdodD0iMjAiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSIxMi41IiB5PSIxMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9IiMwMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPklUIDwvdGV4dD48L3N2Zz4=';">
+            </div>
+            <div id="status3" class="status">Verificando...</div>
+        </div>
+    </div>
+
+    <script>
+        // Função para verificar se as imagens estão carregando corretamente
+        function checkImages(containerId, statusId) {
+            const container = document.getElementById(containerId);
+            const statusElement = document.getElementById(statusId);
+            const flags = container.querySelectorAll('img');
+            
+            let loadedCount = 0;
+            let errorCount = 0;
+            let totalImages = flags.length;
+            
+            flags.forEach((flag, index) => {
+                flag.onload = function() {
+                    loadedCount++;
+                    updateStatus();
+                };
+                
+                flag.onerror = function() {
+                    errorCount++;
+                    updateStatus();
+                };
+            });
+            
+            function updateStatus() {
+                if (loadedCount + errorCount === totalImages) {
+                    if (errorCount === 0) {
+                        statusElement.innerHTML = `Todas as bandeiras carregaram com sucesso! (${loadedCount}/${totalImages})`;
+                        statusElement.className = 'status success';
+                    } else {
+                        statusElement.innerHTML = `Erro ao carregar ${errorCount} bandeira(s). Carregadas: ${loadedCount}/${totalImages}`;
+                        statusElement.className = 'status error';
+                    }
+                }
+            }
+            
+            // Timeout para verificar se todas as imagens foram processadas
+            setTimeout(updateStatus, 3000);
+        }
+        
+        // Iniciar verificação quando a página carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verificar cada teste
+            setTimeout(() => checkImages('test-container', 'status1'), 500);
+            setTimeout(() => checkImages('test-container', 'status2'), 1000);
+            setTimeout(() => checkImages('test-container', 'status3'), 1500);
+        });
+    </script>
+</body>
+</html>
