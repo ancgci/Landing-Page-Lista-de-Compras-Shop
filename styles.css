@@ -21,20 +21,32 @@
 /* Language Switcher */
 .language-switcher {
     margin-left: 30px;
+    display: flex;
+    align-items: center;
 }
 
-#language-select {
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    background-color: white;
-    font-weight: 500;
+.flag-select {
+    display: flex;
+    gap: 5px;
+}
+
+.flag-icon {
+    width: 25px;
+    height: 20px;
+    object-fit: cover;
     cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    transition: all 0.3s ease;
 }
 
-#language-select:focus {
-    outline: none;
+.flag-icon:hover {
+    transform: scale(1.1);
+}
+
+.flag-icon.active {
     border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
 /* Mobile styles for language switcher */
@@ -43,8 +55,9 @@
         margin: 5px 10px;
     }
     
-    #language-select {
-        padding: 8px 12px;
+    .flag-icon {
+        width: 20px;
+        height: 15px;
     }
 }
 
