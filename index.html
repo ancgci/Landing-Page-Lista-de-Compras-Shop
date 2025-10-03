@@ -235,17 +235,17 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3 data-i18n="contact_subtitle">Tem dúvidas ou sugestões?</h3>
-                    <p data-i18n="contact_description">Estamos aqui para ajudar! Entre em contato conosco através dos canais abaixo:</p>
+                    <p data-i18n="contact_description">Estamos aqui para ajudar! Entre em contato conosco.</p>
                     <ul>
-                        <li>📧 junior@listadecompras.shop</li>
-                        <li>📱 +xx (xx) 99999-9999</li>
-                        <li>🌐 https://listadecompras.shop</li>
+
                     </ul>
                 </div>
                 <form class="contact-form" action="send_email.php" method="POST">
                     <input type="text" name="name" placeholder="Seu nome" data-i18n-placeholder="form_name_placeholder" required>
                     <input type="email" name="email" placeholder="Seu e-mail" data-i18n-placeholder="form_email_placeholder" required>
                     <textarea name="message" placeholder="Sua mensagem" data-i18n-placeholder="form_message_placeholder" required></textarea>
+                    <!-- reCAPTCHA v3 token field (hidden) -->
+                    <input type="hidden" id="recaptchaResponse" name="recaptcha_response">
                     <button type="submit" class="btn btn-primary" data-i18n="form_button">Enviar Mensagem</button>
                 </form>
             </div>
@@ -368,5 +368,19 @@
       gtag('js', new Date());
       gtag('config', 'G-JT98JSW1CV');
     </script>
+    
+    <!-- reCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc6U90rAAAAAMi0ZX_JFfa92dGMcgam30A0vMWd"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Lc6U90rAAAAAMi0ZX_JFfa92dGMcgam30A0vMWd', {action: 'submit'}).then(function(token) {
+                document.getElementById('recaptchaResponse').value = token;
+            });
+        });
+    </script>
+    
+    <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-25bd02c6-836b-4b5b-87c8-c00e75b18307" data-elfsight-app-lazy></div>
 </body>
 </html>

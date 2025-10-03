@@ -14,7 +14,7 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Bloqueio de arquivos sensíveis
-<FilesMatch "(\.htaccess|\.env|\.config|\.sql|\.ini|\.log|send_email\.php)">
+<FilesMatch "(\.htaccess|\.env|\.config|\.sql|\.ini|\.log)">
     Require all denied
 </FilesMatch>
 
