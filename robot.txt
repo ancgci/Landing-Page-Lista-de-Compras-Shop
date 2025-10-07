@@ -1,0 +1,28 @@
+# Permite que todos os bots importantes acessem o site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Allow: /
+
+# Evita rastrear páginas que não precisam aparecer no Google
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+
+# Adiciona as páginas de erro que não devem ser indexadas
+Disallow: /400.html
+Disallow: /401.html
+Disallow: /403.html
+Disallow: /405.html
+Disallow: /500.html
+Disallow: /erro.html
+
+# Sitemap (ajuda o Google a indexar melhor)
+Sitemap: https://listadecompras.shop/sitemap.xml

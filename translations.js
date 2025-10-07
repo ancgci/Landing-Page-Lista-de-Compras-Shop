@@ -34,6 +34,8 @@ const translations = {
     "step_check_desc": "Atualize os preços reais e marque itens conforme os compra.",
     "step_analyze_title": "Analise seus Gastos",
     "step_analyze_desc": "Veja estatísticas e gráficos com seus hábitos de consumo.",
+    "demo_video_title": "Veja o App em Ação",
+    "demo_video_subtitle": "Assista ao vídeo demonstrativo do aplicativo em funcionamento",
     "gallery_title": "Galeria do Aplicativo",
     "gallery_subtitle": "Confira algumas telas do nosso aplicativo em ação",
     "download_title": "Baixe Agora Gratuitamente",
@@ -52,6 +54,7 @@ const translations = {
     "footer_copyright": "Lista de Compras. Todos os direitos reservados.",
     "privacy_policy": "Política de Privacidade",
     "terms_of_use": "Termos de Uso",
+    "footer_subtitle": "Gerencie suas compras de forma inteligente",
     // Blog page translations
     "blog_title": "Blog - Lista de Compras",
     "blog_meta_desc": "Blog do aplicativo Lista de Compras - Dicas, tutoriais e novidades sobre gerenciamento financeiro.",
@@ -125,8 +128,7 @@ const translations = {
     "blog_post13_excerpt": "Aprenda a criar orçamentos inteligentes usando dados para economizar dinheiro nas compras com nosso aplicativo de lista de compras...",
     "blog_post13_read_more": "Ler mais",
     "blog_prev_page": "← Anterior",
-    "blog_next_page": "Próximo →",
-    "footer_subtitle": "Gerencie suas compras de forma inteligente"
+    "blog_next_page": "Próximo →"
   },
   "en": {
     "site_title": "Shopping List - Manage your purchases intelligently",
@@ -162,6 +164,8 @@ const translations = {
     "step_check_desc": "Update actual prices and mark items as you buy them.",
     "step_analyze_title": "Analyze Your Expenses",
     "step_analyze_desc": "See statistics and charts with your consumption habits.",
+    "demo_video_title": "See the App in Action",
+    "demo_video_subtitle": "Watch the demo video of the app in action",
     "gallery_title": "App Gallery",
     "gallery_subtitle": "Check out some screens of our app in action",
     "download_title": "Download Now For Free",
@@ -180,6 +184,7 @@ const translations = {
     "footer_copyright": "Shopping List. All rights reserved.",
     "privacy_policy": "Privacy Policy",
     "terms_of_use": "Terms of Use",
+    "footer_subtitle": "Manage your purchases intelligently",
     // Blog page translations
     "blog_title": "Blog - Shopping List",
     "blog_meta_desc": "Shopping List app blog - Tips, tutorials and news about financial management.",
