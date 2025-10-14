@@ -1,0 +1,29 @@
+Automatizar no navegador (JavaScript puro — client-side):
+
+Quando você atualizar ou criar uma página, execute este script para enviar o URL ao IndexNow.
+
+Atenção: para funcionar, seu site deve ser servido via HTTPS em produção (requer CORS permitido na API do IndexNow).
+
+
+fetch('https://api.indexnow.org/indexnow', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json; charset=utf-8'
+  },
+  body: JSON.stringify({
+    host: 'www.seusite.com',
+    key: 'SUA_CHAVE_API',
+    keyLocation: 'https://www.seusite.com/SUA_CHAVE_API.txt',
+    urlList: [
+      'https://www.seusite.com/pagina1',
+      'https://www.seusite.com/pagina2'
+    ]
+  })
+})
+.then(response => {
+  if (response.ok) {
+    alert("URLs enviados com sucesso ao IndexNow!");
+  } else {
+    alert("Erro ao enviar URLs! Código: " + response.status);
+  }
+});

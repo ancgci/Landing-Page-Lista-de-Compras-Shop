@@ -24,6 +24,15 @@ Esta landing page foi criada para promover o aplicativo "Lista de Compras" atrav
 - JavaScript (ES6+)
 - PHP (para processamento do formulário de contato)
 
+## 🍪 Consentimento de Cookies
+
+O site utiliza uma solução local de consentimento de cookies para garantir conformidade com as leis de privacidade (GDPR, LGPD, etc.) e os requisitos do Google AdSense. A implementação inclui:
+
+- Banner de consentimento personalizado
+- Armazenamento de preferências no localStorage
+- Carregamento condicional de scripts do Google Analytics e AdSense
+- Código 100% local sem dependências externas
+
 ## 📁 Estrutura do Projeto
 
 ```

@@ -1,4 +1,4 @@
-# Script PowerShell para inserir o código do Google AdSense em todas as páginas HTML, exceto política de privacidade e termos de uso
+# Script PowerShell para inserir o código do Google AdSense e consentimento de cookies em todas as páginas HTML, exceto política de privacidade e termos de uso
 $adsenseScript = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8703292116579734" crossorigin="anonymous"></script>'
 
 # Obter todas as páginas HTML

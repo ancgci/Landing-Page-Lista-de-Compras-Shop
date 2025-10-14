@@ -1,27 +1,27 @@
 # ================================
-# ULTRA-ROBUST .HTACCESS - x10Hosting
+# ULTRA-ROBUST .HTACCESS - listadecompras.shop
 # ================================
 
 RewriteEngine On
 RewriteBase /
 
-# Redireciona www â†’ non-www
+# Redireciona www ? non-www
 RewriteCond %{HTTP_HOST} ^www\.listadecompras\.shop$ [NC]
 RewriteRule ^(.*)$ https://listadecompras.shop/$1 [R=301,L]
 
-# ForÃ§a HTTPS
+# Força HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Bloqueio de arquivos sensÃ­veis
+# Bloqueio de arquivos sensíveis
 <FilesMatch "(\.htaccess|\.env|\.config|\.sql|\.ini|\.log)">
     Require all denied
 </FilesMatch>
 
-# Bloqueio de listagem de diretÃ³rios
+# Bloqueio de listagem de diretórios
 Options -Indexes
 
-# Cache de recursos estÃ¡ticos
+# Cache de recursos estáticos
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresByType text/css "access plus 1 month"
@@ -35,18 +35,22 @@ Options -Indexes
     ExpiresByType text/xml "access plus 1 day"
 </IfModule>
 
-# Hotlinking
-# RewriteCond %{HTTP_REFERER} !^$
-# RewriteCond %{HTTP_REFERER} !^https://(www\.)?listadecompras\.shop [NC]
-# RewriteRule \.(gif|jpe?g|png)$ - [F,NC,L]
-
-# Bloqueio de bots maliciosos
+# ================================
+# Bot management
+# ================================
 <IfModule mod_setenvif.c>
-    SetEnvIfNoCase User-Agent "wget|curl|python|libwww-perl|bot|spider|crawler" bad_bot
+    # Exceções (Google SEO, Google Ads, Bing, monitores de uptime)
+    SetEnvIfNoCase User-Agent "Googlebot|AdsBot-Google|Mediapartners-Google|Bingbot|UptimeRobot|BetterStack|Pingdom" good_bot
+
+    # Bloqueio de bots ruins e scrapers genéricos
+    SetEnvIfNoCase User-Agent "wget|curl|python|libwww-perl|spider|crawler" bad_bot
+
+    Order Allow,Deny
+    Allow from env=good_bot
     Deny from env=bad_bot
 </IfModule>
 
-# ProteÃ§Ã£o contra XSS e SQL injection
+# Proteção contra XSS e SQL injection
 <IfModule mod_rewrite.c>
     RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
     RewriteCond %{QUERY_STRING} union.*select [NC,OR]
@@ -56,7 +60,7 @@ Options -Indexes
     RewriteRule ^(.*)$ - [F,L]
 </IfModule>
 
-# ProteÃ§Ã£o para formulÃ¡rios
+# Proteção para formulários
 <IfModule mod_rewrite.c>
     RewriteCond %{REQUEST_METHOD} POST
     RewriteCond %{QUERY_STRING} (\<|%3C|>|%3E|;|\||`|\$) [NC]
@@ -80,7 +84,12 @@ Options -Indexes
 # Redirecionamento de URLs antigas
 Redirect 301 /antiga-pagina.html https://listadecompras.shop/nova-pagina.html
 
-# Permite acesso ao sitemap.xml e robots.txt
-<FilesMatch "^(sitemap\.xml|robots\.txt)$">
+# Configuração de páginas de erro personalizadas
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+ErrorDocument 500 /500.html
+
+# Permite acesso a arquivos essenciais de SEO/Ads
+<FilesMatch "^(sitemap\.xml|robots\.txt|ads\.txt|google.*\.html)$">
     Require all granted
 </FilesMatch>
