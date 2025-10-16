@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Compras - Gerencie suas compras de forma inteligente</title>
-    <meta name="description" content="Aplicativo Android para gerenciamento de listas de compras com controle financeiro, categorias e histórico completo. Funciona 100% offline. Baixe grátis na Google Play.">
+    <meta name="description" content="Aplicativo Android para gerenciamento de listas de compras com controle financeiro, categorias e histórico completo. Funciona 100% offline. Baixe grátis na Google Play." data-i18n-meta="home_meta_description">
     <meta name="google-adsense-account" content="ca-pub-8703292116579734">
     <!-- TAG DE VERIFICAÇÃO DO ADSENSE -->
     <meta name="google-site-verification" content="CODIGO_DE_VERIFICACAO_AQUI" />
     <link rel="stylesheet" href="styles.css?v=1.0" id="main-css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="canonical" href="https://listadecompras.shop/" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8703292116579734" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -53,6 +54,7 @@
                             <img src="/assets/flags/es.png" alt="Español" class="flag-icon" data-lang="es" onclick="changeLanguage('es')">
                             <img src="/assets/flags/de.png" alt="Deutsch" class="flag-icon" data-lang="de" onclick="changeLanguage('de')">
                             <img src="/assets/flags/it.png" alt="Italiano" class="flag-icon" data-lang="it" onclick="changeLanguage('it')">
+                            <img src="/assets/flags/cn.png" alt="中文" class="flag-icon" data-lang="zh" onclick="changeLanguage('zh')">
                         </div>
                     </li>
                 </ul>
@@ -332,8 +334,17 @@
             
             // Update meta description
             const metaDescription = document.querySelector('meta[name="description"]');
-            if (metaDescription && translations[lang].site_description) {
-                metaDescription.setAttribute('content', translations[lang].site_description);
+            if (metaDescription) {
+                // Check if there's a specific meta description for this page
+                if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+                    if (translations[lang] && translations[lang].home_meta_description) {
+                        metaDescription.setAttribute('content', translations[lang].home_meta_description);
+                    } else if (translations[lang] && translations[lang].site_description) {
+                        metaDescription.setAttribute('content', translations[lang].site_description);
+                    }
+                } else if (translations[lang] && translations[lang].site_description) {
+                    metaDescription.setAttribute('content', translations[lang].site_description);
+                }
             }
             
             // Update page title

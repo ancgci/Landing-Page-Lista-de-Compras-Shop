@@ -1,4 +1,4 @@
-﻿// Função para detectar o idioma do navegador
+﻿﻿// Função para detectar o idioma do navegador
 function getBrowserLanguage() {
     // Obter o idioma preferido do navegador
     const browserLang = navigator.language || navigator.userLanguage || 'pt';
@@ -17,7 +17,10 @@ function getBrowserLanguage() {
         'de': 'de',
         'de-DE': 'de',
         'it': 'it',
-        'it-IT': 'it'
+        'it-IT': 'it',
+        'zh': 'zh',
+        'zh-CN': 'zh',
+        'zh-TW': 'zh'
     };
     
     // Retornar o idioma mapeado ou português como padrão
